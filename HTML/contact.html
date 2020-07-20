@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Code by: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel&stacked=h -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<title>The Computational Design Group at Simon Fraser University</title>
+
+		<!-- STYLESHEET LINKS -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/flexbox.css">
+	</head>
+
+	<body>
+		<header>
+			<a href="about.html"><img src="img/placeholder-image.png" alt="The Computational Design Group Logo" width="100"></a>
+
+			<nav>
+				<a href="about.html">About</a>
+				<a href="projects.html">Projects</a>
+				<a href="publications.html">Publications</a>
+				<a href="members.html">Members</a>
+				<a href="blog.html">Blog</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
+		<h1>Contact Us</h1>
+
+		<p>Lorem ipsum dolor sit amet, send us a message elit, sed do eiusmod tempor incididunt ut labore et <a href="#placeholder-link">apply now.</a></p>
+
+		<!-- Code by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit -->
+		<form action="/action_page.php">
+  			<label for="name">Name</label><br>
+  			<input type="text" id="fname" name="name"><br>
+  			<label for="email">Email</label><br>
+  			<input type="text" id="lname" email="email"><br>
+  			<label for="message">Message</label><br>
+  			<input type="text" id="message" message="message"><br><br>
+  			<input type="submit" value="Submit">
+		</form> 
+
+		<div>
+			<a href="mailto:someone@eexample.com">email@sfu.ca</a>
+			<a href="www.sfu.ca/siat" target="blank">www.sfu.ca/siat</a>
+			<p>Simon Fraser University - Surrey Campus</p>
+			<p>250-13450 102 Ave Surrey, BC V3T 0A3</p>
+		</div>
+
+		<h2>Lab Location Details</h2>
+
+		<!-- Code by https://www.w3schools.com/graphics/google_maps_intro.asp -->
+		<!-- GOOGLE MAP -->
+		<div id="googleMap" style="width:100%;height:400px;"></div>
+
+		<script>
+			function myMap() {
+				var mapProp= {
+  					center:new google.maps.LatLng(51.508742,-0.120850), zoom:5,
+				};
+				var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+		<!-- END OF GOOGLE MAP -->
+
+		<h2>How to Apply</h2>
+		<h3>Step 1</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<h3>Step 2</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<h3>Step 3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+		<img src="img/placeholder-image.png" alt="Image of SFU application link" width="100%">
+
+		<button>Apply Now</button>
+
+		<footer>
+			<a href="about.html"><img src="img/placeholder-image.png" alt="The Computational Design Group Logo" width="100"><a/>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<p>Simon Fraser University - Surrey Campus</p>
+			<p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
+			<p><a href="mailto:someone@eample.com"><i class="material-icons">&#xe0be;</i>email@sfu.ca</a></p>
+			<p><i class="material-icons">&#xe0cd;</i>778.876.3456</p>
+			<button>Contact Now</button>
+			<p>Computational Design Group, SFU. COPYRIGHT 2020.</p>
+		</footer>
+
+	</body>
+
+</html>
