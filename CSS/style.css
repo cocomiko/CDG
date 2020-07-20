@@ -1,0 +1,331 @@
+
+/* ------------------------------------------------------------ */
+/* STYLE GUIDE NAVIGATION */
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.styleguide-nav {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.styleguide-nav-item {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #0B0402;
+    margin-right: 2em;
+    border-bottom: 3px solid transparent;
+}
+
+.styleguide-nav-item-logo {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    margin-right: auto;
+    text-decoration: none;
+    color: #0B0402;
+    border-bottom: 3px solid transparent;
+}
+
+.styleguide-nav a:hover {
+    border-bottom: 3px solid #221EE0;
+    color: #221EE0;
+}
+
+
+
+
+/* ------------------------------------------------------------ */
+/* TEXT ELEMENTS */
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 6.25em;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 3.125em;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+}
+
+p.paragraph {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+p.body {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+
+
+body {
+    position: static;
+}
+
+
+
+
+/* ------------------------------------------------------------ */
+/* IN TEXT AND BACK TO TOP LINKS */
+
+.in-text-link {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #221EE0;
+}
+
+.in-text-link:hover {
+    border-bottom: 3px solid #221EE0;
+    text-decoration: none;
+}
+
+.anchor-list-item {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #221EE0;
+    position: relative;
+    margin-right: 1em;
+}
+
+.anchor-list-item:hover {
+    border-bottom: 3px solid #221EE0;
+    text-decoration: none;
+    top: -0.3em;
+}
+
+p.back-to-top-text {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: normal;
+    color: #221EE0;
+}
+
+.back-to-top-link {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #221EE0;
+}
+
+img.back-to-top-arrow {
+    position: relative;
+    padding-right: 0.5em;
+    top: 0.1em;
+}
+
+.back-to-top-link:hover img {
+    top: -0.2em;
+    transition-duration: 0.5s;
+}
+
+
+
+
+/* ------------------------------------------------------------ */
+/* BUTTONS */
+
+.primary-button {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #221EE0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    border: none;
+    border-radius: 0.625em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
+    margin-right: 1em;
+}
+
+.primary-button:hover {
+    background: #13117D;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.secondary-button {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: bold;
+    color: #221EE0;
+    background-color: #ffffff;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    border: 0.125em solid #221EE0;
+    border-radius: 0.625em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
+    margin-right: 1em;
+}
+
+.secondary-button:hover {
+    color: #13117D;
+    border-color: #13117D;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+p.tertiary-button-text {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: bold;
+    color: #2e2928;
+    display: inline;
+}
+
+.tertiary-button {
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img.arrow-right {
+    position: relative;
+    padding-left: 1em;
+    top: 0.1em;
+    filter: brightness(0);
+}
+
+.tertiary-button:hover img, .tertiary-button:hover p {
+    color: #221EE0;
+    filter: brightness(1);
+}
+
+.filter-button {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: bold;
+    color: #221EE0;
+    background: #F5F3FF;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-right: 8em;
+    padding-left: 1.5em;
+    border: 0.15em solid #433FFF;
+    border-radius: 0.625em;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.active, .filter-button:hover {
+    border-color: #13117D;
+    color: #13117D;
+}
+
+.filter-description {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+    display: none;
+    overflow: hidden;
+}
+
+
+/* ------------------------------------------------------------ */
+/* FORM INPUT */
+
+.text-input {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(34, 30, 244, 0.25);
+    background: #ffffff;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+    border: 0.14em solid #221EE0;
+    box-sizing: border-box;
+    border-radius: 0.625em;
+}
+
+.text-input:focus {
+    color: #0B0402;
+    background: rgba(0, 87, 255, 0.08);
+    border: 0.14em solid #13117D;
+    outline: 0;
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* HEADERS */
+
+.header-container {
+    position: relative;
+    text-align: center;
+    color: #000000;
+}
+
+.header-text {
+    position: absolute;
+    bottom: 0em;
+    left: 2.5em;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.project-image {
+    width: 33%;
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* HEADERS */
+
+button.project-button {  
+    background-image: url('img/project-image-placeholder.png') 10px 10px no-repeat;
+    width: 200em;
+}
