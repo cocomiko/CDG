@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Projects | Computational Design Group</title>
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
+        <script src="js/jscript.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <section id="styleguide-header">
+                
+                <nav class="styleguide-nav nav-container">
+
+                    <a href="#" class="styleguide-nav-item-logo">CDG</a>
+                    <a href="#" class="styleguide-nav-item">About</a>
+                    <a href="#" class="styleguide-nav-item">Projects</a>
+                    <a href="#" class="styleguide-nav-item">Publications</a>
+                    <a href="#" class="styleguide-nav-item">Members</a>
+                    <a href="#" class="styleguide-nav-item">Blog</a>
+                    <a href="#" class="styleguide-nav-item">Contact</a>
+                    
+                </nav>
+
+            </section>
+
+        </header>
+        
+        <div class="header-container">
+            <img class="header-image" src="img/header-image-placeholder.png">
+            <div class="header-text"><h2>Projects</h2></div>
+        </div>
+
+        <div class="container">
+            <input class="text-input" type="text" id="project-search" placeholder="Search...">
+            
+            <div class="project-box" id="project-box">
+                
+                <div class="project1" id="project1">
+                    <img class="project-image" alt="project1" src="img/project-image-placeholder.png">
+                    <p class="project-title">PROJECT TITLE</p>
+                    <p class="body">This design software...</p>
+                </div>
+
+                <div class="project2" id="project2">
+                    <img class="project-image" alt="project1" src="img/project-image-placeholder.png">
+                    <p class="project-title">FLOW UI</p>
+                    <p class="body">Flow UI is a...</p>
+                </div>
+
+                <div class="project3" id="project3">
+                    <img class="project-image" alt="project1" src="img/project-image-placeholder.png">
+                    <p class="project-title">DESIGN SENSE</p>
+                    <p class="body">Description explaining Design Sense</p>
+                </div>
+
+                <button class="project-button">
+                    <p class="body">Some text...</p>
+                </button>
+
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+            $("#project-search").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#project-box *").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+            });
+        </script>
+
+    </body>
+
+</html>

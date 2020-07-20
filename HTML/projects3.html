@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Projects | Computational Design Group</title>
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
+        <script src="js/jscript.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <section id="styleguide-header">
+                
+                <nav class="styleguide-nav nav-container">
+
+                    <a href="#" class="styleguide-nav-item-logo">CDG</a>
+                    <a href="#" class="styleguide-nav-item">About</a>
+                    <a href="#" class="styleguide-nav-item">Projects</a>
+                    <a href="#" class="styleguide-nav-item">Publications</a>
+                    <a href="#" class="styleguide-nav-item">Members</a>
+                    <a href="#" class="styleguide-nav-item">Blog</a>
+                    <a href="#" class="styleguide-nav-item">Contact</a>
+                    
+                </nav>
+
+            </section>
+
+        </header>
+        
+        <div class="header-container">
+            <img class="header-image" src="img/header-image-placeholder.png">
+            <div class="header-text"><h2>Projects</h2></div>
+        </div>
+
+
+            <div class="filter filter-basic">
+                <div class="filter-nav">
+                  <button class="btn btn-success active" data-filter="">All</button>
+                  <button class="btn btn-primary" data-filter="analytics">Design Analytics</button>
+                  <button class="btn btn-primary" data-filter="gallery">Design Gallery</button>
+                  <button class="btn btn-primary" data-filter="ui">User Interfaces</button>
+                </div>
+                <div class="filter-gallery">
+                  <div class="item" data-category="analytics">
+                    <div class="item-content">
+                      <img src="img/project-image-placeholder.png" alt="image" width="300">
+                    </div>
+                  </div>
+                  <div class="item" data-category="gallery">
+                    <div class="item-content">
+                      <img src="img/project-image-placeholder.png" alt="image" width="300">
+                    </div>
+                  </div>
+                  <div class="item" data-category="gallery">
+                    <div class="item-content">
+                      <img src="img/project-image-placeholder.png" alt="image" width="300">
+                    </div>
+                  </div>
+                  <div class="item" data-category="ui">
+                    <div class="item-content">
+                      <img src="img/project-image-placeholder.png" alt="image" width="300">
+                    </div>
+                  </div>
+                  <div class="item" data-category="analytics">
+                    <div class="item-content">
+                      <img src="img/project-image-placeholder.png" alt="image" width="300">
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+
+
+        <script>
+            $('.filter-basic').mdbFilter();
+        </script>
+
+    </body>
+
+</html>
