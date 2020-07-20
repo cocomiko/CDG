@@ -28,7 +28,7 @@ body {
   height: 100%;
 }
 
-#bannerimage {
+#bannerimage{
   width: 100%;
   background-image: url(https://via.placeholder.com/1400X600.png);
   background-position: center;
