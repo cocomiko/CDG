@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Projects | Computational Design Group</title>
+
+        <link href="../CSS/style.css" rel="stylesheet">
+        <script src="js/jscript.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    </head>
+
+
+    <body>
+
+        <header>
+
+            <section id="styleguide-header">
+                
+                <nav class="styleguide-nav nav-container">
+
+                    <a href="#" class="styleguide-nav-item-logo">CDG</a>
+                    <a href="#" class="styleguide-nav-item">About</a>
+                    <a href="#" class="styleguide-nav-item">Projects</a>
+                    <a href="#" class="styleguide-nav-item">Publications</a>
+                    <a href="#" class="styleguide-nav-item">Members</a>
+                    <a href="#" class="styleguide-nav-item">Blog</a>
+                    <a href="#" class="styleguide-nav-item">Contact</a>
+                    
+                </nav>
+
+            </section>
+
+        </header>
+        
+        <div class="header-container">
+            <img class="header-image" src="../IMG/header-image-placeholder.png">
+            <div class="header-text"><h2>PROJECTS</h2></div>
+        </div>
+
+        <nav class="navbar navbar-light justify-content-center mt-4">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" id="search">
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+          </form>
+        </nav>
+
+        <div class="layout-margin-8 mt-5">
+        <div class="card-deck">
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h4>Flow UI<p class="hidden-project-description">more words more words more words more words more words more words more words</p></h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h4>Design Sense<p class="hidden-project-description">random text random text random text random text random text random text random text</p></h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h4>Project Name<p class="hidden-project-description">hidden description hidden description hidden description hidden description hidden description</p></h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+        <script>
+            $('#search').keyup(function (){
+            $('.card').removeClass('d-none');
+            var filter = $(this).val();
+            $('.card-deck').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().addClass('d-none');
+            })
+        </script>
+
+    </body>
+
+</html>
