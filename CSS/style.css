@@ -2,19 +2,12 @@
 /* ------------------------------------------------------------ */
 /* STYLE GUIDE NAVIGATION */
 
-.nav-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+.navbar {
+    padding: 0.7em !important;
     border-bottom: 1px solid #bbbbbb;
 }
 
-.styleguide-nav {
-    display:flex;
-    flex-wrap: wrap;
-    padding: 2em;
-}
-
+/*
 .styleguide-nav-item {
     font-family: 'Karla', sans-serif;
     font-size: 1.25em;
@@ -23,7 +16,18 @@
     margin-right: 2em;
     border-bottom: 3px solid transparent;
 }
+*/
 
+.nav-link {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.15em;
+    text-decoration: none;
+    color: #0B0402;
+    margin-right: 1.4em;
+    border-bottom: 3px solid transparent;
+}
+
+/*
 .styleguide-nav-item-logo {
     font-family: 'Karla', sans-serif;
     font-size: 1.25em;
@@ -32,13 +36,44 @@
     color: #0B0402;
     border-bottom: 3px solid transparent;
 }
+*/
 
+.navbar-brand {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.15em;
+    margin-right: auto;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #0B0402;
+    border-bottom: 3px solid transparent;
+}
+
+/*
 .styleguide-nav a:hover {
     border-bottom: 3px solid #221EE0;
     color: #221EE0;
 }
+*/
 
+.nav-item a:hover {
+    border-bottom: 3px solid #221EE0;
+    color: #221EE0;
+}
 
+/*collapsed navigation icon*/
+.navbar-toggler .navbar-toggler-icon{
+  background-image: url(../IMG/icons/menu.svg);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline-color: #221EE0;
+}
+
+.navbar-toggler:hover{
+    background-color: rgba(34, 30, 224, 0.1);
+}
 
 
 /* ------------------------------------------------------------ */
@@ -46,7 +81,7 @@
 
 h1 {
     font-family: 'Karla', sans-serif;
-    font-size: 6.25em;
+    font-size: 6em;
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.05em;
@@ -78,7 +113,7 @@ p.paragraph {
     color: #000000;
 }
 
-p.body {
+p {
     font-family: 'Karla', sans-serif;
     font-size: 1.125em;
     font-style: normal;
@@ -100,11 +135,14 @@ body {
 
 .in-text-link {
     font-family: 'Karla', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
     color: #221EE0;
+    padding: 0.1em;
+    margin-left: 0px; 
+    margin-right: 2.4em;
 }
 
 .in-text-link:hover {

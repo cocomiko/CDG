@@ -11,22 +11,10 @@ body {
     overflow-x: hidden !important;
 }
 
-.container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
+.container-fluid{
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
 
 #bannerimage{
   width: 100%;
@@ -61,11 +49,26 @@ body {
     margin: 10px
 }
 
+.slick-next{
+ right: 25px;
+ z-index: 1;
+}
+
+.slick-prev{
+ left: 15px; 
+ z-index: 1;
+}
+
 p{
   padding: 0;  
   margin:0;
 }
 
+.row{
+  margin-right:auto;
+  margin-left:auto;    
+
+}
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
 }
@@ -74,20 +77,28 @@ p{
     body {
         overflow-x: hidden !important;
     }
-    .container {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
 }
 
 @media screen and (min-width: 426px) {
+/*
     .responsive-iframe {
       width: 70%;
       height: 70%;
-        padding: 0;
+      padding: 0;
     }
+*/
 }
 
 ul {
   list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  
  }
+
+.blog-post{
+ margin: 6em;
+ justify-content: center;
+
+}

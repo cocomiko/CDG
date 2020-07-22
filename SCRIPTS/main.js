@@ -75,9 +75,9 @@
 // workplace gallery carousel script
               $('.workplacegallery').slick({
                   dots: true,
-                  infinite: true,
+                  infinite: false,
                   speed: 800,
-                  autoplay: true,
+                  autoplay: false,
                   autoplaySpeed: 2500,
               });  
  
