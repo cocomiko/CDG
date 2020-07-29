@@ -79,6 +79,10 @@
                   speed: 800,
                   autoplay: false,
                   autoplaySpeed: 2500,
+                  slidesToShow: 1,
+                  centerMode: true,
+                  variableWidth: true
+
               });  
  
             
