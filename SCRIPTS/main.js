@@ -5,7 +5,7 @@
                   speed: 300,
                   slidesToShow: 4,
                   slidesToScroll: 4,
-                  autoplay: true,
+                  autoplay: false,
                   autoplaySpeed: 2000,
                   infinite: true,
                   responsive: [
@@ -75,14 +75,14 @@
 // workplace gallery carousel script
               $('.workplacegallery').slick({
                   dots: true,
-                  infinite: false,
-                  speed: 800,
-                  autoplay: false,
-                  autoplaySpeed: 2500,
+                  infinite: true,
+                  speed: 300,
+                  autoplay: true,
+                  autoplaySpeed: 2000,
                   slidesToShow: 1,
                   centerMode: true,
+                  background: true,
                   variableWidth: true
 
               });  
- 
-            
+          
