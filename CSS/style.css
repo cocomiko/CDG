@@ -75,13 +75,25 @@
     background-color: rgba(34, 30, 224, 0.1);
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 
 /* ------------------------------------------------------------ */
 /* TEXT ELEMENTS */
 
+/* something is overriding the text element, can't increase/decrease size?? */
+
 h1 {
     font-family: 'Karla', sans-serif;
-    font-size: 6em;
+    font-size: 10em;
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.05em;
@@ -105,14 +117,6 @@ h3 {
     color: #000000;
 }
 
-p.paragraph {
-    font-family: 'Karla', sans-serif;
-    font-size: 1.25em;
-    font-style: normal;
-    font-weight: normal;
-    color: #000000;
-}
-
 p {
     font-family: 'Karla', sans-serif;
     font-size: 1.125em;
@@ -121,13 +125,9 @@ p {
     color: #000000;
 }
 
-
-
 body {
     position: static;
 }
-
-
 
 
 /* ------------------------------------------------------------ */
@@ -143,6 +143,7 @@ body {
     padding: 0.1em;
     margin-left: 0px; 
     margin-right: 2.4em;
+    display: inline-block;
 }
 
 .in-text-link:hover {
@@ -169,9 +170,10 @@ body {
 
 p.back-to-top-text {
     font-family: 'Karla', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-style: normal;
     font-weight: normal;
+    text-decoration: none;
     color: #221EE0;
 }
 
@@ -181,17 +183,25 @@ p.back-to-top-text {
     font-weight: normal;
     text-decoration: none;
     color: #221EE0;
+    display: inline-block;
 }
 
 img.back-to-top-arrow {
     position: relative;
     padding-right: 0.5em;
-    top: 0.1em;
+    top: -0.2em;
+    transition-duration: 0.5s;
 }
 
 .back-to-top-link:hover img {
-    top: -0.2em;
+    top: -0.5em;
     transition-duration: 0.5s;
+}
+
+/* my hack job of trying to solve this issue - underline still showing up even when I write 'none'*/
+.back-to-top-link:hover p {
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 
@@ -247,6 +257,36 @@ img.back-to-top-arrow {
     cursor: pointer;
 }
 
+.tertiary-button {
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img.arrow-right {
+    position: relative;
+    padding-left: 0.5em;
+    top: 0.1em;
+    right: 0em;
+    filter: brightness(0);
+    transition-duration: 0.5s;
+}
+
+.tertiary-button:hover img {
+    right: -0.5em;
+    color: #221EE0;
+    filter: brightness(1);
+    transition-duration: 0.5s;
+}
+
+/* had to do the same thing here to get rid of the underline when hovered over */
+.tertiary-button:hover p {
+    color: #221EE0;
+    filter: brightness(1);
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
 p.tertiary-button-text {
     font-family: 'Anonymous Pro', monospace;
     font-size: 1.25em;
@@ -256,23 +296,11 @@ p.tertiary-button-text {
     display: inline;
 }
 
-.tertiary-button {
-    font-style: normal;
-    font-weight: bold;
-    text-decoration: none;
-}
+/*.tertiary-button:hover img {
+    right: -0.5em;
+    transition-duration: 0.5s;
+}*/
 
-img.arrow-right {
-    position: relative;
-    padding-left: 1em;
-    top: 0.1em;
-    filter: brightness(0);
-}
-
-.tertiary-button:hover img, .tertiary-button:hover p {
-    color: #221EE0;
-    filter: brightness(1);
-}
 
 .filter-button {
     font-family: 'Karla', sans-serif;
@@ -418,4 +446,42 @@ button.project-button {
   }
 
 
-  
+
+/* CONTAINERS */
+
+div.container-all {
+    padding: 30px 80px 30px 80px;
+}
+
+/* FOOTER */
+footer {
+    padding: 2.5em 0.7em 0.7em 0.7em;
+    background-color: gray;
+}
+
+p.copyright {
+    font-size: 0.8em;
+}
+
+.material-icons {
+    transform: translate(0px, 5px);
+    margin-right: .5em;
+}
+
+.material-icons.md-1 {
+    font-size: 1.2em;
+}
+
+.fa {
+    color: #221EE0;
+    margin-right: 10px;
+}
+
+.fa:hover {
+    color: #13117D;
+}
+
+div.footer-container-item {
+    margin-bottom: 2em;
+}
+
