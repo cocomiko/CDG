@@ -64,27 +64,55 @@
             </nav>
 		</header>
 
-		<h1>Contact Us</h1>
+    <div class="contain-items">
+      <div class="row">
+        <div class="col-md-3"></div>
 
-		<p>Lorem ipsum dolor sit amet, send us a message elit, sed do eiusmod tempor incididunt ut labore et <a href="#placeholder-link">apply now.</a></p>
+        <div class="col-md-8">
+          <section>
+            <h1>Contact Us</h1>
+            <p>If you have any questions or would like to learn more about us, feel free to fill in the form below. If you’re interested in joining our team, <a href="#placeholder-link" class="in-text-link">apply now!</a></p>
+          </section>
+          <section>
+              <!-- Code by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit -->
+              <form action="/action_page.php">
+                <div class="row">
+                <div class="col-md-4">
+                  <label for="name">Name</label><br>
+                  <input class="text-input" type="text" id="fname" name="name">
+                </div>
+                <div class="col-md-4">
+                  <label for="email">Email</label><br>
+                  <input class="text-input" type="text" id="lname" email="email">
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <label for="message">Message</label><br>
+                    <input class="text-input" type="text" id="message" message="message"><br><br>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-1">
+                    <button class="primary-button" onclick='location.href="#"' type"submit">Submit</button>
+                  </div>
+                </div>
+              </form> 
+          </section>
 
-		<!-- Code by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit -->
-		<form action="/action_page.php">
-  			<label for="name">Name</label><br>
-  			<input type="text" id="fname" name="name"><br>
-  			<label for="email">Email</label><br>
-  			<input type="text" id="lname" email="email"><br>
-  			<label for="message">Message</label><br>
-  			<input type="text" id="message" message="message"><br><br>
-  			<input type="submit" value="Submit">
-		</form> 
+          <section>
+            <div>
+              <a href="mailto:someone@eexample.com" class="in-text-link">email@sfu.ca</a>
+              <a href="www.sfu.ca/siat" class="in-text-link" target="blank">www.sfu.ca/siat</a>
+              <p>Simon Fraser University - Surrey Campus</p>
+              <p>250-13450 102 Ave Surrey, BC V3T 0A3</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      
 
-		<div>
-			<a href="mailto:someone@eexample.com">email@sfu.ca</a>
-			<a href="www.sfu.ca/siat" target="blank">www.sfu.ca/siat</a>
-			<p>Simon Fraser University - Surrey Campus</p>
-			<p>250-13450 102 Ave Surrey, BC V3T 0A3</p>
-		</div>
+		
 
 		<h2>Lab Location Details</h2>
 
@@ -106,17 +134,24 @@
         
 		<!-- END OF GOOGLE MAP -->
 
-		<h2>How to Apply</h2>
-		<h3>Step 1</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<h3>Step 2</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<h3>Step 3</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-4">
+        <h2>How to Apply</h2>
+        <h3>Step 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Step 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Step 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
 
-		<img src="img/placeholder-image.png" alt="Image of SFU application link" width="100%">
-
-		<button>Apply Now</button>
+      <div class="col-md-3">
+        <img src="../IMG/placeholder-image.png" alt="Image of SFU application link" width="500px">
+        <button class="primary-button" onclick='location.href="#"'>Apply Now</button>
+      </div>
+    </div>
+  </div> <!-- End of Contain Items -->
 	</body>
 
   <footer>

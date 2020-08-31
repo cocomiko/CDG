@@ -147,6 +147,7 @@ body {
 }
 
 .in-text-link:hover {
+    color: #13117D;
     border-bottom: 3px solid #221EE0;
     text-decoration: none;
 }
@@ -160,9 +161,11 @@ body {
     color: #221EE0;
     position: relative;
     margin-right: 1em;
+    display: block;
 }
 
 .anchor-list-item:hover {
+    color: #13117D;
     border-bottom: 3px solid #221EE0;
     text-decoration: none;
     top: -0.3em;
@@ -338,6 +341,14 @@ p.tertiary-button-text {
 /* ------------------------------------------------------------ */
 /* FORM INPUT */
 
+form {
+    margin-left: -1em;
+}
+
+label {
+    display: inline-block;
+}
+
 .text-input {
     font-family: 'Karla', sans-serif;
     font-size: 1.25em;
@@ -352,6 +363,7 @@ p.tertiary-button-text {
     border: 0.14em solid #221EE0;
     box-sizing: border-box;
     border-radius: 0.625em;
+    display: inline-block;
 }
 
 .text-input:focus {
@@ -448,9 +460,13 @@ button.project-button {
 
 
 /* CONTAINERS */
-
+/* what did I make this for again?? */ /*styleguide container*/
 div.container-all {
     padding: 30px 80px 30px 80px;
+}
+
+div.contain-items {
+    padding: 5em 0px 5em 0px;
 }
 
 /* FOOTER */
