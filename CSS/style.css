@@ -93,7 +93,7 @@ a:hover {
 
 h1 {
     font-family: 'Karla', sans-serif;
-    font-size: 10em;
+    font-size: 8em;
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.05em;
@@ -115,6 +115,14 @@ h3 {
     font-style: normal;
     font-weight: bold;
     color: #000000;
+}
+
+h5 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: thin;
+    color: #838383;
 }
 
 p {
@@ -425,7 +433,7 @@ button.project-button {
   }
   
   .card-title {
-    text-align: center;
+    text-align: left;
   }
   
   .card-deck {
@@ -436,9 +444,11 @@ button.project-button {
   }
   
   .card {
+    margin-top: 0.5em;
+/*
     padding: 3% 1.5%;
     border: none;
-    max-width: 375px;
+    max-width: 375px;*/
     flex-grow: 1;
   }
 
@@ -460,7 +470,7 @@ button.project-button {
 
 
 /* CONTAINERS */
-/* what did I make this for again?? */ /*styleguide container*/
+/* what did I make this for again?? haha*/ /*styleguide container*/
 div.container-all {
     padding: 30px 80px 30px 80px;
 }
@@ -501,3 +511,19 @@ div.footer-container-item {
     margin-bottom: 2em;
 }
 
+/*Not Clickable Cards*/
+.card.noclick{
+    border: none;
+    background: none;
+}
+
+.card.noclick:hover {
+text-decoration: none;
+box-shadow: none;
+
+}
+
+/*
+@media (max-width: 767px) {
+   SIDE BAR ALIGN ITEMS HORIZONTALLY + scroll members page + make sticky
+}*/
