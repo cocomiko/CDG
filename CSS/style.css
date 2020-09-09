@@ -467,6 +467,41 @@ button.project-button {
     background-color: #005EB8;
   }
 
+  ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+    text-align: left;
+}
+
+  ul.filters > li{
+    list-style: none;
+    text-align: left;
+}
+
+  ul.filters > li > a{
+    display: block;
+    color: #434e5e;
+    text-decoration: none;
+    padding: 5px 20px;
+    text-align: left;
+}
+
+  ul.filters > li > a:hover{
+    background-color: #e6e9ed;
+    text-align: left;
+}
+
+  ul.filters > li.active > a{
+    color: #fff;
+    background-color: #28bea8;
+    text-align: left;
+}
+
+.projects {
+    padding-bottom: 10em;
+}
 
 
 /* CONTAINERS */
