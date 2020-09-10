@@ -1,11 +1,10 @@
     'use strict';
 
-    var $projects = $('.projects');
-    var qsRegex;
+    var $publications = $('.publications');
 
-    $projects.isotope({
+    $publications.isotope({
         itemSelector: '.item',
-        layoutMode: 'fitRows'
+        layoutMode: 'vertical'
     });
 
     $('ul.filters > li').on('click', function(e){
@@ -14,6 +13,6 @@
         var filter = $(this).attr('data-filter');
         $('ul.filters > li').removeClass('active');
         $(this).addClass('active');
-        $projects.isotope({filter: filter});
+        $publications.isotope({filter: filter});
 
     });
