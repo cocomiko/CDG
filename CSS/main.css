@@ -150,3 +150,102 @@ hr {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
   }
 }
+
+
+/*--------NEW CONTENT*/
+
+
+/*CUSTOM PADDING fro SPECIFIC ELEMENTS*/
+
+.p-7 {
+  padding: 7rem !important;
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 7rem !important;
+}
+
+.pr-6,
+.px-6 {
+  padding-right: 7rem !important;
+}
+
+.pb-7,
+.py-6 {
+  padding-bottom: 16.666667% !important;
+}
+
+.pl-6,
+.px-6 {
+  padding-left: 7rem !important;
+}
+
+
+/*CUSTOM PADDING fro SPECIFIC ELEMENTS*/
+
+@media (min-width: 768px) {
+   /*-40px padding*/ 
+  .p-md-4 {
+    padding: 2.77777767% !important;
+  }
+  .pt-md-4,
+  .py-md-4 {
+    padding-top: 2.77777767%  !important;
+  }
+  .pr-md-4,
+  .px-md-4 {
+    padding-right: 8.333333% !important;
+  }
+  .pb-md-4,
+  .py-md-4 {
+    padding-bottom: 8.333333% !important;
+  }
+  .pl-md-4,
+  .px-md-4 {
+    padding-left: 8.333333% !important;
+  }
+    
+/*-120px padding*/
+  .p-md-6 {
+    padding: 8.333333% !important;
+  }
+  .pt-md-6,
+  .py-md-6 {
+    padding-top: 8.333333% !important;
+  }
+  .pr-md-6,
+  .px-md-6 {
+    padding-right: 8.333333% !important;
+  }
+  .pb-md-6,
+  .py-md-6 {
+    padding-bottom: 8.333333% !important;
+  }
+  .pl-md-6,
+  .px-md-6 {
+    padding-left: 8.333333% !important;
+  }
+    
+/*-80px padding*/
+  .p-md-7 {
+    padding: 16.666667% !important;
+  }
+  .pt-md-7,
+  .py-md-7 {
+    padding-top: 16.666667% !important;
+  }
+  .pr-md-7,
+  .px-md-7 {
+    padding-right: 16.666667% !important;
+  }
+  .pb-md-7,
+  .py-md-7 {
+    padding-bottom: 16.666667% !important;
+  }
+  .pl-md-7,
+  .px-md-7 {
+    padding-left: 16.666667% !important;
+  }   
+    
+}

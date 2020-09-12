@@ -107,6 +107,7 @@ h2 {
     font-weight: bold;
     letter-spacing: -0.03em;
     color: #000000;
+     padding-bottom: 0.6em;
 }
 
 h3 {
@@ -228,14 +229,20 @@ img.back-to-top-arrow {
     font-weight: bold;
     color: #ffffff;
     background-color: #221EE0;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 4em;
+    padding-left: 4em;
+/*
     padding-top: 1em;
     padding-bottom: 1em;
     padding-right: 2.5em;
     padding-left: 2.5em;
+*/
     border: none;
     border-radius: 0.625em;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
-    margin-right: 1em;
+/*    margin-right: 1em;*/
 }
 
 .primary-button:hover {
@@ -562,3 +569,5 @@ box-shadow: none;
 @media (max-width: 767px) {
    SIDE BAR ALIGN ITEMS HORIZONTALLY + scroll members page + make sticky
 }*/
+
+
