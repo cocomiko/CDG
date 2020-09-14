@@ -16,11 +16,46 @@ body {
         overflow-x: hidden !important;
     }
 
+.vid{
+/* margin-left: 50%;*/
+top: -10em;
+}
+
+/*STAKING OF ITEMS <TABLET*/
+@media (max-width: 767px) {
+    
+    .vid{
+        top: -3em;
+        position: relative; !important;
+/*
+        z-index:3;
+        order: 1;
+*/
+    }
+    
+    iframe{
+        padding: 0.6em;
+    }
+      .haha{
+       position: relative; !important;
+/*          top: 24em;*/
+/*
+       z-index: 2;
+       order: 2;
+*/
+    }  
+/*
+    .haha{
+       margin-top: 30em;
+    }
+*/
+}
+
 #bannerimage{
   width: 100%;
-  background-image: url(https://via.placeholder.com/1400X600.png);
+  background-image: url(https://via.placeholder.com/1440X771.png);
   background-position: center;
-  height: 600px;
+  height: 771px;
 }
 
 #solidbg {

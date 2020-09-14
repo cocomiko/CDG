@@ -89,15 +89,15 @@ a:hover {
 /* ------------------------------------------------------------ */
 /* TEXT ELEMENTS */
 
-/* something is overriding the text element, can't increase/decrease size?? */
-
 h1 {
     font-family: 'Karla', sans-serif;
-    font-size: 8em;
+    font-size: 6.25em;
     font-style: normal;
     font-weight: normal;
     letter-spacing: -0.05em;
     color: #000000;
+    line-height: 1em;
+    padding-bottom: 0.3em;
 }
 
 h2 {
@@ -107,15 +107,16 @@ h2 {
     font-weight: bold;
     letter-spacing: -0.03em;
     color: #000000;
-     padding-bottom: 0.6em;
 }
 
+/*30px*/
 h3 {
     font-family: 'Karla', sans-serif;
-    font-size: 1.875em;
+    font-size: 1.875em;  
     font-style: normal;
     font-weight: bold;
     color: #000000;
+    padding-bottom: 0.6em;
 }
 
 h5 {
@@ -132,6 +133,12 @@ p {
     font-style: normal;
     font-weight: normal;
     color: #000000;
+}
+
+p.banner-para {
+   width:600px;
+   padding-top:0.8em;
+
 }
 
 body {
