@@ -287,4 +287,26 @@ hr {
     padding-left: 16.666667% !important;
   }   
     
+    
+    
+/* recent carousel*/
+    .col-md-10 {
+ 
+    /* flex: 0 0 83.333333%; */
+     max-width: 100%; !important;
+     padding-left: 0px; !important;
 }
+
+}
+
+/*recent pro cards*/
+    
+    .recentproj .card  {
+    
+    height: 404px;
+    }
+    
+    
+    .recentsection{
+      top: -100px;
+    }
