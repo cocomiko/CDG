@@ -413,12 +413,13 @@ label {
     position: relative;
     text-align: center;
     color: #000000;
+    padding-bottom: 5em;
 }
 
 .header-text {
     position: absolute;
-    bottom: 0em;
-    left: 2.5em;
+    padding-top: 1em;
+    padding-left: 10em;
 }
 
 .header-text2 {
@@ -533,6 +534,14 @@ button.project-button {
 }
 
 
+.sliders { padding: 15px 0 30px 0; }
+.filter-section .filter-label {
+  display: block;
+  font-weight: bold;
+}
+.bootstrap-slider .slider-selection { background: #2175b0; }
+
+
 /* CONTAINERS */
 /* what did I make this for again?? haha*/ /*styleguide container*/
 div.container-all {
@@ -597,6 +606,41 @@ box-shadow: none;
         height: 400px;
         background-color: grey;
       }
+
+.btn-group {
+    display: block;
+}
+
+.filter-min, .filter-max {
+    display: none;
+}
+
+.btn {
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    color: #221EE0;
+    background: #F5F3FF;
+    border: 0.15em solid #433FFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+}
+
+.btn:hover {
+    border-color: #13117D;
+    color: #13117D;
+}
+
+.btn:active, .btn.is-checked {
+  background-color: #13117D;;
+  color: #fff;
+}
+
+.bootstrap-slider {
+    padding-bottom: 2em;
+}
 
 /*
 @media (max-width: 767px) {
