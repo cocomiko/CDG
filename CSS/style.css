@@ -642,7 +642,15 @@ box-shadow: none;
     padding-bottom: 2em;
 }
 
+@media(max-width:882px)
+{
+  #map
+  {
+    flex:1 1 100%;
+  }
+}
 /*
+
 @media (max-width: 767px) {
    SIDE BAR ALIGN ITEMS HORIZONTALLY + scroll members page + make sticky
 }*/
