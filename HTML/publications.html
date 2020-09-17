@@ -13,6 +13,7 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+          
         
         <!-- SLICK carousel-->
         <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
@@ -21,6 +22,7 @@
         <!-- Native Stylesheets -->
         <link rel="stylesheet" href="../CSS/main.css">
         <link href="../CSS/style.css" rel="stylesheet">
+        <link href="../CSS/bootstrap-slider.css" rel="stylesheet">
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -67,25 +69,25 @@
       <!-- Page Title --> 
       <div class="contain-items"> 
 
-<!--         <div class="header-container">
-          <div class="header-text"><h2>Publications</h2></div>
-        </div> -->
-
-
-        
-
-        <div class="container">
-          <h1>Publications</h1> <!-- Testing something here, thoughts?? -->
+        <div class="container filters filter-section">
+          <h1>Publications</h1>
         
           <div class="row">
 
             <div class="col-md-2">
-              <ul class="filters text-center">
-                <li class="active" data-filter="*"><a href="#!">All</a></li>
-                <li data-filter=".designanalytics"><a href="#!">Design Analytics</a></li>
-                <li data-filter=".parametricdesign"><a href="#!">Parametric Design</a></li>
-                <li data-filter=".collaboration"><a href="#!">Collaboration</a></li>
-              </ul>
+
+              <div class="bootstrap-slider">
+                <span class="filter-label">Year Published: <span class="filter-selection"></span></span>
+                <b class="filter-min">2000</b><input id="filter-year" type="text" class="bootstrap-slider" value="" data-filter-group="year"><b class="filter-max">2020</b>
+              </div>
+
+              <span class="filter-label">Topics:</span>
+              <div class="btn-group" role="group" data-filter-group="year">
+                  <span class="btn btn-sm btn-default btn-filter is-checked" data-filter="">All</span>
+                  <span class="btn btn-sm btn-default btn-filter" data-filter=".designanalytics">Design Analytics</span>
+                  <span class="btn btn-sm btn-default btn-filter" data-filter=".parametricdesign">Parametric Design</span>
+                  <span class="btn btn-sm btn-default btn-filter" data-filter=".collaboration">Collaboration</span>
+              </div>
             </div>
                 
             
@@ -94,7 +96,7 @@
               <div class="publications">
               <!-- Publications List-->            
 
-                <div class="row item designanalytics">
+                <div class="row item designanalytics" data-year="2013">
 
                   <div class="card-no-click">
                     <div class="card-body">
@@ -122,7 +124,7 @@
                   </div>
                 </div>
                 
-                <div class="row item designanalytics">
+                <div class="row item designanalytics" data-year="2014">
                   <div class="card-no-click>
 
                   <div class="card">
@@ -151,7 +153,7 @@
                   </div>
                 </div>
 
-                <div class="row item collaboration">
+                <div class="row item collaboration" data-year="2014">
 
                   <div class="card-no-click">
                     <div class="card-body">
@@ -179,7 +181,7 @@
                   </div>
                 </div>
 
-                <div class="row item parametricdesign">
+                <div class="row item parametricdesign" data-year="2010">
 
                   <div class="card-no-click">
                     <div class="card-body">
@@ -214,8 +216,9 @@
 
             <!-- Filtering Scripts (Isotope)-->
             <script src="../SCRIPTS/isotope.min.js"></script>
-            <script src="../SCRIPTS/filterpublications.js"></script>
-
+            <script src="../SCRIPTS/filterpublicationsbyyear.js"></script>
+            <script src="../SCRIPTS/bootstrap-slider.js"></script>
+            
     </body>
 
     <footer>
