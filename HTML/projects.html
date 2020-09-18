@@ -69,22 +69,23 @@
       
       <div class="header-container">
           <img class="header-image image-fluid" src="https://via.placeholder.com/1400X300.png">
-          <div class="header-text"><h2>Projects</h2></div>
       </div>
         
         
       <div class="container">
+        <h1>Projects</h1>
 
         <div class="row">
 
           <div class="col-2">
-            
-            <ul class="filters text-center">
-              <li class="active" data-filter="*"><a href="#!">All</a></li>
-              <li data-filter=".designanalytics"><a href="#!">Design Analytics</a></li>
-              <li data-filter=".parametricdesign"><a href="#!">Parametric Design</a></li>
-              <li data-filter=".collaboration"><a href="#!">Collaboration</a></li>
-            </ul>
+
+            <span class="filter-label">Topics:</span>
+            <div class="btn-group filters-button-group">
+                <button class="btn btn-sm btn-default btn-filter is-checked" data-filter="*">All</button>
+                <button class="btn btn-sm btn-default btn-filter" data-filter=".designanalytics">Design Analytics</button>
+                <button class="btn btn-sm btn-default btn-filter" data-filter=".parametricdesign">Parametric Design</button>
+                <button class="btn btn-sm btn-default btn-filter" data-filter=".collaboration">Collaboration</button>
+            </div>
 
           </div>
           
@@ -173,7 +174,7 @@
       
       <!-- Filtering Scripts (Isotope)-->
       <script src="../SCRIPTS/isotope.min.js"></script>
-      <script src="../SCRIPTS/filterprojects.js"></script>
+      <script src="../SCRIPTS/filterprojectsbytopic.js"></script>
 
   </body>
 
