@@ -7,7 +7,7 @@ $(document).ready( function() {
   // Create new object for the range filters and set default values,
   // The default values should correspond to the default values from the slider
   var rangeFilters = {
-      'year': {'min':2000, 'max': 2020},
+      'year': {'min':1990, 'max': 2020},
     };
 
   // Initialise Isotope
@@ -31,7 +31,7 @@ $(document).ready( function() {
 
   // Initialise Sliders
   // Set min/max range on sliders as well as default values
-  var $yearSlider = $('#filter-year').slider({ tooltip_split: true, min: 2000,  max: 2020, range: true, value: [2000, 2020] });
+  var $yearSlider = $('#filter-year').slider({ tooltip_split: true, min: 1990,  max: 2020, range: true, value: [1990, 2020] });
 
 
   function updateRangeSlider(slider, slideEvt) {
