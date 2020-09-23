@@ -374,11 +374,16 @@ p.tertiary-button-text {
 
 form {
     margin-left: -1em;
+    width: 100%;
 }
 
-label {
-    display: inline-block;
+input {
+    width: 100%;
 }
+
+/*label {
+    display: inline-block;
+}*/
 
 .text-input {
     font-family: 'Karla', sans-serif;
@@ -402,6 +407,7 @@ label {
     background: rgba(0, 87, 255, 0.08);
     border: 0.14em solid #13117D;
     outline: 0;
+    display: inline-block;
 }
 
 
@@ -604,11 +610,13 @@ box-shadow: none;
     color: white;
 }
 
+/* MAP */
+
 #map {
-        width: 100%;
-        height: 400px;
-        background-color: grey;
-      }
+    width: 1020px;
+    height: 600px;
+    background-color: gray;
+}
 
 .btn-group {
     display: block;
@@ -657,4 +665,9 @@ box-shadow: none;
    SIDE BAR ALIGN ITEMS HORIZONTALLY + scroll members page + make sticky
 }*/
 
-
+  @media (min-width: 768px) {
+  .form-control {
+    width: 500px !important;
+    height: 50px;
+  }
+  }
