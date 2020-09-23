@@ -155,6 +155,10 @@ body {
     position: static;
 }
 
+section {
+    padding: 50px 0px 50px 0px;
+}
+
 
 /* ------------------------------------------------------------ */
 /* IN TEXT AND BACK TO TOP LINKS */
@@ -219,6 +223,11 @@ img.back-to-top-arrow {
     padding-right: 0.5em;
     top: -0.2em;
     transition-duration: 0.5s;
+}
+
+img.howtoapply-image {
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .back-to-top-link:hover img {
@@ -400,6 +409,10 @@ input {
     box-sizing: border-box;
     border-radius: 0.625em;
     display: inline-block;
+}
+
+.text-input-message {
+    height: 300px;
 }
 
 .text-input:focus {
@@ -613,9 +626,17 @@ box-shadow: none;
 /* MAP */
 
 #map {
-    width: 1020px;
-    height: 600px;
-    background-color: gray;
+    width: 100%;
+    padding-top: 42px;
+    background-color: none;
+    display: inline-block;
+}
+
+#map iframe {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 400px;
 }
 
 .btn-group {

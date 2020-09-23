@@ -64,11 +64,10 @@
             </nav>
 		</header>
 
-    <div class="contain-items">
 
     <section>
       <div class="row">
-          <div class="col-md-3"></div>
+          <div class="col-md-2"></div>
           <div class="col-md-6">
             <h1>Contact Us</h1>
             <p>If you have any questions or would like to learn more about us, feel free to fill in the form below. If you’re interested in joining our team, <a href="#placeholder-link" class="in-text-link">apply now!</a></p>
@@ -76,26 +75,26 @@
         </div> <!-- END OF ROW -->
 
         <div class="row">
-          <div class="col-md-3"></div>
+          <div class="col-md-2"></div>
 
-          <div class="col-md-9">
+          <div class="col-md-5">
             <!-- Code by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit -->
             <form action="/action_page.php">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-12">
                   <label for="name">Name</label><br>
                   <input class="text-input" type="text" id="fname" name="name">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12">
                   <label for="email">Email</label><br>
                   <input class="text-input" type="text" id="lname" email="email">
                 </div> <!-- END OF COL-MD- -->
               </div> <!-- END OF ROW -->
 
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                   <label for="message">Message</label><br>
-                  <input class="text-input" type="text" id="message" message="message"><br><br>
+                  <input class="text-input text-input-message" type="text" id="message" message="message"><br><br>
                 </div>
               </div> <!-- END OF ROW -->
 
@@ -105,65 +104,54 @@
                 </div> <!-- END OF COL-MD-1 -->
               </div> <!-- END OF ROW -->
             </form> 
-          </div>
+          </div> <!-- END OF COL -->
 
-        </div> <!-- END OF ROW -->
+        <!-- </div> END OF ROW -->
 
-        <div class="row">
-          <div class="col-md-3"></div>
+        <!-- <div class="row"> -->
+          <!-- <div class="col-md-3"></div> -->
 
-          <div class="col-md-9">
+          <div class="col-md-4">
             <a href="mailto:someone@eexample.com" class="in-text-link">email@sfu.ca</a>
             <a href="www.sfu.ca/siat" class="in-text-link" target="blank">www.sfu.ca/siat</a>
             <p>Simon Fraser University - Surrey Campus</p>
             <p>250-13450 102 Ave Surrey, BC V3T 0A3</p>
-          </div> <!-- END OF COL-MD-9 -->
-        </div> <!-- END OF ROW -->
 
-      </section> <!-- END OF FORM AND HEADER SECTION -->
-
-      <section>
-        <div class="row">
-          <div class="col-md-3"></div>
-
-          <div class="col-md-9">
-            <h3>Lab Location Details</h3>
-
-            <section  id="map">       
-              <!--The div element for the map  from https://www.embedgooglemap.net/-->
+            <!--The div element for the map  from https://www.embedgooglemap.net/-->
+            <section  id="map"> 
               <div class="mapouter">
                 <div class="gmap_canvas">
-                  <iframe width="1200px" height="600px" id="gmap_canvas" src="https://maps.google.com/maps?q=simon%20fraser%20surrey&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                  <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=simon%20fraser%20surrey&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                   <a href="https://www.embedgooglemap.net"></a>
                 </div>
               </div>
             </section>
           </div> <!-- END OF COL-MD-9 -->
         </div> <!-- END OF ROW -->
-      </section> <!-- END OF MAP SECTION -->
 
-      <section>
+      </section> <!-- END OF FORM AND HEADER SECTION -->
+
+
+      <section id="solidbg-blue">
         <div class="row">
-          <div class="col-md-3"></div>
+          <div class="col-md-2"></div>
 
           <div class="col-md-5">
-            <h2>How to Apply</h2>
-            <h3>Step 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3>Step 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3>Step 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2 class="white">How to Apply</h2>
+            <h3 class="white">Step 1</h3>
+            <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3 class="white">Step 2</h3>
+            <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3 class="white">Step 3</h3>
+            <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div> <!-- END OF COL-MD-9 -->
 
-          <div class="col-md-3">
-            <img src="../IMG/placeholder-image.png" alt="Image of SFU application link" width="400px">
-            <button class="primary-button" onclick='location.href="#"'>Apply Now</button>
+          <div class="col-md-4">
+            <img src="../IMG/placeholder-image.png" alt="Image of SFU application link" class="howtoapply-image">
+            <button class="secondary-button" onclick='location.href="#"'>Apply Now</button>
           </div> <!-- END OF COL-MD-3 -->
         </div> <!-- END OF ROW -->
       </section> <!-- END OF HOW TO APPLY SECTION -->
-
-    </div>
           
 	</body>
 
