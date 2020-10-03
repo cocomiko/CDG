@@ -18,9 +18,17 @@
         <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
         
+        <!--    https://github.com/josephschmitt/Clamp.js-->
+        <script src="../SCRIPTS/clamp.js"></script>
+        
+        
         <!-- Native Stylesheets -->
         <link rel="stylesheet" href="../CSS/main.css">
         <link href="../CSS/style.css" rel="stylesheet">
+        
+        <!-- Test Gallery-->
+        <link href="../CSS/gallery-test.css" rel="stylesheet">    
+            
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -97,41 +105,41 @@
             </div>
         </div>
 <!-- Recent projects -->  
-        <section class="recentsection offset-md-3 ">
+        <section class="recentsection offset-md-3">
             <h3>Recent projects</h3>
             <div class="col-md-10">
                 <div class="recentproj">
                       <div class="card">
                         <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png" alt="Project image" style="width:100%"></a>
-                        <div class="card-body">
+                        <div class="card-body module">
                           <h4 class="card-title">Shiro</h4>
-                          <p class="card-text">When people solve problems they explore a variety of different solutions. Parametric systems have been added to the interact...</p>
+                          <p class="card-text" id="clampjs">When people solve problems they explore a variety of different solutions. Parametric systems have been added to the interact</p>
                         </div>
                       </div>
                       <div class="card">
                         <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png" alt="Project image" style="width:100%"></a>
-                        <div class="card-body">
+                        <div class="card-body ellipses-text">
                           <h4 class="card-title">Alt. Text</h4>
-                          <p class="card-text">Designers devise and explore alternatives as they work. Current parametric modeling tools can work against this essential feature of...</p>
+                          <p class="card-text" id="clampp">Designers devise and explore alternatives as they work. Current parametric modeling tools can work against this essential feature of fjjgjgj</p>
                         </div>
                       </div>
                       <div class="card">
                         <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png" alt="Project image" style="width:100%"></a>
-                        <div class="card-body">
+                        <div class="card-body ellipses-text">
                           <h4 class="card-title">Cambria</h4>
-                          <p class="card-text">Computational design tools assist designers in their professional work, one key aspect of which is devising, evaluating, and choosin...</p>
+                          <p class="card-text" id="clampj">Computational design tools assist designers in their professional work, one key aspect of which is devising, evaluating, and choosin...</p>
                         </div>
                       </div>
                       <div class="card">
                         <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png" alt="Project image" style="width:100%"></a>
-                        <div class="card-body">
+                        <div class="card-body ellipses-text">
                           <h4 class="card-title">Project Title</h4>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
                         </div>
                       </div>
                       <div class="card">
                         <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png" alt="Project image" style="width:100%"></a>
-                        <div class="card-body">
+                        <div class="card-body ellipses-text">
                           <h4 class="card-title">Project Title</h4>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim...</p>
                         </div>
@@ -196,9 +204,7 @@
     </div>
 
   </div> <!-- End of Contain Items -->
-    
-        
-        
+
 <!--SLICK-->
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -206,7 +212,16 @@
         
 <!-- native script for carousells-->
         <script type="text/javascript" src="../SCRIPTS/main.js"></script>
-<!--      </div>  -->
+
+        <script> 
+            var module = document.getElementById("clampjs");
+            $clamp(module, {clamp: "120px"});
+            var module = document.getElementById("clampj");
+            $clamp(module, {clamp: "120px"});
+            var module = document.getElementById("clampp");
+            $clamp(module, {clamp: "120px"});
+
+</script>
     </body>
 
     <footer>

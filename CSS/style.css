@@ -144,7 +144,7 @@ p.banner-para {
 
 p.large-text {
     font-family: 'Karla', sans-serif;
-    font-size: 2.8em;
+    font-size: 1.25em;
     font-style: normal;
     font-weight: normal;
     line-height: 1.15em;
@@ -156,9 +156,62 @@ body {
 }
 
 section {
-    padding: 50px 0px 50px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
+@media (max-width: 768px) {
+ 
+    h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2.3125em;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    color: #000000;
+    line-height: 1em;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.625em;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    color: #000000;
+}
+
+/*30px*/
+h3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.375em;  
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 0.6em;
+}
+
+h5 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: thin;
+    color: #838383;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.0625em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+p.banner-para {
+   width:100%;
+   padding-top:0.8em;
+
+}
+  }
 
 /* ------------------------------------------------------------ */
 /* IN TEXT AND BACK TO TOP LINKS */
@@ -172,7 +225,7 @@ section {
     color: #221EE0;
     padding: 0.1em;
     margin-left: 0px; 
-    margin-right: 2.4em;
+    margin-right: 1.76em;
     display: inline-block;
 }
 
