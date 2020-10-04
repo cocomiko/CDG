@@ -443,10 +443,6 @@ input {
     width: 100%;
 }
 
-/*label {
-    display: inline-block;
-}*/
-
 .text-input {
     font-family: 'Karla', sans-serif;
     font-size: 1.25em;
@@ -633,6 +629,11 @@ footer {
     background-color: #EDEDED;
 }
 
+.footer-logo {
+    content: url(../IMG/SIAT-Logo-1.png);
+    width: 300px;
+}
+
 p.copyright {
     font-size: 0.8em;
 }
@@ -745,3 +746,36 @@ box-shadow: none;
     height: 50px;
   }
   }
+
+
+
+
+
+
+
+
+
+
+
+  /* FOOTER MEDIA QUERIES */
+ /* @media (min-width: 640px) {
+
+  }*/
+
+  @media (min-width: 768px) {
+    .footer-logo {
+        content: url(../IMG/SIAT-Logo-2.png);
+        width: 170px;
+    }
+  }
+
+  @media (min-width: 1350px) {
+    .footer-logo {
+        content: url(../IMG/SIAT-Logo-1.png);
+        width: 300px;
+    }
+  }
+
+  /*@media (min-width: 1200px) {
+
+  }*/
