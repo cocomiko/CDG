@@ -58,6 +58,8 @@ top: -10em;
   height: 771px;
 }
 
+/* ----------------------------------------------------------- */
+/* SECTION BACKGROUND COLOUR */
 #solidbg {
   background-color: gainsboro;
 }
@@ -70,6 +72,7 @@ top: -10em;
   background-color: gainsboro;
   width: 100%;
 }
+/* ----------------------------------------------------------- */
 
 /*slick carousel next, previous buttons override*/
 .slick-prev:before {
