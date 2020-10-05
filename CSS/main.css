@@ -61,7 +61,8 @@ top: -10em;
 }
 
 /* ----------------------------------------------------------- */
-/* SECTION BACKGROUND COLOUR */
+/* ------------------- SECTION BG COLOUR --------------------- */
+/* ----------------------------------------------------------- */
 #solidbg {
   background-color: gainsboro;
 }
@@ -75,6 +76,7 @@ top: -10em;
   width: 100%;
 }
 /* ----------------------------------------------------------- */
+
 
 /*slick carousel next, previous buttons override*/
 .slick-prev:before {
