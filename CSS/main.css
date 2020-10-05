@@ -18,7 +18,7 @@ body {
 
 .vid{
 /* margin-left: 50%;*/
-top: -10em;
+margin-top: -10em;
 }
 
 /*STAKING OF ITEMS <TABLET*/
@@ -26,6 +26,7 @@ top: -10em;
     
     .vid{
 /*        top: em;*/
+        top: 0em;
         position: relative; !important;
 /*
         z-index:3;
@@ -470,4 +471,35 @@ img.hover-shadow {
     height: 200px;
     }
 }
+/*
+@media (max-width: 767px) {
+ .pushup{
+ top: -150px;
+}
+}    */
+/*----------------PROJECT CARDS---------------*/
+
+.projcards .card{
+     width: 18rem;
+}
+
+@media (max-width: 634px){
+ 
+.projcards .card{
+     width:100%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+.projcards .card{
+     width:16rem;
+}
+    .projcards{
+     justify-content: center;
+     align-content: center;
     
+    }  
+}
+
+
