@@ -136,10 +136,14 @@ p {
     color: #000000;
 }
 
-p.banner-para {
+ .banner-para {
    width:600px;
    padding-top:0.8em;
+}
 
+ #aboutpara {
+   width:80%;
+   padding-top:0.8em;
 }
 
 p.large-text {
@@ -206,10 +210,15 @@ p {
     font-weight: normal;
     color: #000000;
 }
-p.banner-para {
+
+.banner-para {
    width:100%;
    padding-top:0.8em;
+}
 
+#aboutpara {
+   width:100%;
+   padding-top:0.8em;
 }
   }
 
