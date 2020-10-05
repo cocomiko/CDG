@@ -54,9 +54,13 @@ margin-top: -10em;
 
 #bannerimage{
   width: 100%;
+  height: 80vh;
+/*display: flex;*/
   background-image: url(https://via.placeholder.com/1440X771.png);
   background-position: center;
-  height:771px;
+    background-size: cover;
+    background-repeat: no-repeat;
+/*  height:771px;*/
 /*  object-fit:contain !important;*/
  
 }
@@ -303,7 +307,7 @@ SINGLE PROJ GALLERY
 
 }
 
-/*recent pro cards*/
+/*recent proj cards*/
     .recentproj .card  {
     height: 404px;
     }
@@ -319,23 +323,6 @@ SINGLE PROJ GALLERY
     /*  width: 250px;*/
       overflow: hidden;
     }
-
-
-/*map*/
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:500px;
-    width:800px;
-}
-
-.gmap_canvas{
-    overflow:hidden;
-    background:none!important;
-    height:500px;
-    width:800px;
-}
-
 
 /*---------------------------GALLERY STYLE FOR SINGLE PROJECT PAGE---------------------------------*/
 /* The Modal (bg) */
@@ -491,14 +478,15 @@ img.hover-shadow {
 
 @media (min-width: 768px) and (max-width: 1024px) {
  
-.projcards .card{
-     width:16rem;
+.projcards .card {
+   width:16rem;
 }
-    .projcards{
+    
+.projcards {
      justify-content: center;
      align-content: center;
+} 
     
-    }  
 }
 
 
