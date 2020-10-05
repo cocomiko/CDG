@@ -66,114 +66,115 @@
 
 
       </header>
-      
+        
       <div class="header-container">
           <img class="header-image image-fluid" src="https://via.placeholder.com/1400X300.png">
       </div>
         
         
-      <div class="container">
-        <h1>Projects</h1>
-
-        <div class="row">
-
-          <div class="col-2">
-
-            <span class="filter-label">Topics:</span>
+ <h1 class="offset-md-3">Projects</h1>  
+        
+<div class="row pl-md-6">
+    
+    <div class="col-md-2">
+        <button type="button" data-toggle="collapse" data-target="#filters" class="d-block d-md-none btn btn-primary btn-block mb-3">Filters &dtrif;</button>
+        <div id="filters" class="collapse d-md-block">
+	<!--Search filters-->
+        <span class="filter-label">Topics:</span>
             <div class="btn-group filters-button-group">
-                <button class="btn btn-sm btn-default btn-filter is-checked" data-filter="*">All</button>
-                <button class="btn btn-sm btn-default btn-filter" data-filter=".design-analytics">Design Analytics</button>
-                <button class="btn btn-sm btn-default btn-filter" data-filter=".d-star">D-Star</button>
-                <button class="btn btn-sm btn-default btn-filter" data-filter=".user-interfaces">User Interfaces</button>
-                <button class="btn btn-sm btn-default btn-filter" data-filter=".parametric-design">Parametric Design</button>
-                <button class="btn btn-sm btn-default btn-filter" data-filter=".collaboration">Collaboration</button>
-                <button class="btn btn-sm btn-default btn-filter" data-filter=".spatial-design">Spatial Design</button>
+                <button class="btn btn-sm btn-default btn-filter is-checked w-100 mb-2" data-filter="*">All</button>
+                <button class="btn btn-sm btn-default btn-filter w-100 mb-2" data-filter=".design-analytics">Design Analytics</button>
+                <button class="btn btn-sm btn-default btn-filter w-100 mb-2" data-filter=".d-star">D-Star</button>
+                <button class="btn btn-sm btn-default btn-filter w-100 mb-2" data-filter=".user-interfaces">User Interfaces</button>
+                <button class="btn btn-sm btn-default btn-filter w-100 mb-2" data-filter=".parametric-design">Parametric Design</button>
+                <button class="btn btn-sm btn-default btn-filter w-100 mb-2" data-filter=".collaboration">Collaboration</button>
+                <button class="btn btn-sm btn-default btn-filter w-100 mb-2" data-filter=".spatial-design">Spatial Design</button>
             </div>
-
-          </div>
-          
-          <div class="col">
-
-            <div class="projects">
-
-                <div class="col-lg-4 item design-analytics">
-
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4>Flow UI</h4>
-                      <p class="card-text">When people solve problems they explore a variety of different solutions. Parametric systems have been added to the interact...</p>
-                    </div>
-                  </div>
-
-                </div>
-
-
-                <div class="col-lg-4 item design-analytics">
-                
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4>Design Sense</h4>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="col-lg-4 item collaboration">
-
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4>Collab</h4>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
-                    </div>
-                  </div>
-
-                </div>
-
-
-                <div class="col-lg-4 item parametric-design">
-              
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4>Parametric Design</h4>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="col-lg-4 item parametric-design">
-
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4>Para</h4>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="col-lg-4 item parametric-design">
-
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
-                    <div class="card-body">
+            </div>
+	</div>
+    
+    <div class="col-md-9 px-0 d-flex" >  
+        <!-- Card ROW-->
+        <div class="row projcards justify-content-center w-100 p-0"> 
+  
+            <!-- Card COLUMN-->
+            <div class="col-auto mb-4 item design-analytics"> 
+                <div class="card h-100"> 
+                    <img class="card-img-top" src=  "../IMG/placeholder-image.png" alt="Card image cap"> 
+  
+                    <div class="card-body"> 
+                        <h4 class="card-title"> 
+                            Flow UI
+                        </h4> 
+                        <p class="card-text"> 
+                           When people solve problems they explore a variety of different solutions. Parametric systems have been added to the interact...
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+  
+            <!-- Another column for card -->
+            <div class="col-auto mb-4 item design-analytics"> 
+                <div class="card h-100"> 
+                    <img class="card-img-top" src= "../IMG/placeholder-image.png" alt="Card image cap"> 
+  
+                    <div class="card-body"> 
+                        <h4>Design Sense</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...
+                        </p>
+                    </div> 
+                </div> 
+            </div> 
+  
+            <!-- Another column for card -->
+            <div class="col-auto mb-4 item collaboration"> 
+                <div class="card h-100"> 
+                    <img class="card-img-top" src=  "../IMG/placeholder-image.png" alt="Card image cap"> 
+  
+                    <div class="card-body"> 
+                        <h4>Collab</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...
+                        </p>
+                    </div> 
+                </div> 
+            </div> 
+            
+            <div class="col-auto mb-4 item parametric-design"> 
+                <div class="card h-100"> 
+                    <img class="card-img-top" src=  "../IMG/placeholder-image.png" alt="Card image cap"> 
+  
+                    <div class="card-body"> 
+                        <h4>Parametric Design</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+                    </div> 
+                </div> 
+            </div> 
+            
+            <div class="col-auto mb-4 item parametric-design"> 
+                <div class="card h-100"> 
+                    <img class="card-img-top" src= "../IMG/placeholder-image.png" alt="Card image cap"> 
+  
+                    <div class="card-body"> 
+                        <h4>Para</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p> 
+                    </div> 
+                </div> 
+            </div>
+            
+            <div class="col-auto mb-2 item parametric-design"> 
+                <div class="card h-100"> 
+                    <img class="card-img-top" src= "../IMG/placeholder-image.png" alt="Card image cap"> 
+  
+                    <div class="card-body"> 
                       <h4>Metric</h4>
                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
-                    </div>
-                  </div>
-
-                </div>
-
+                    </div> 
+                </div> 
             </div>
-          </div>
-        </div>
-      </div>
+        </div> 
+    </div> 
+  
+  </div>
       
       <!-- Filtering Scripts (Isotope)-->
       <script src="../SCRIPTS/isotope.min.js"></script>
@@ -184,10 +185,11 @@
   <footer>
       <div class="row">
         <div class="col-md-3">
+          <!-- <a href="about.html"><img src="../IMG/SIAT-Logo.png-1" alt="The Computational Design Group Logo" width="300"></a> -->
           <a href="about.html"><div class="footer-logo"></div></a>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
           <p>Find Us</p>
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-instagram"></a>
@@ -195,7 +197,7 @@
           <a href="#" class="fa fa-youtube"></a>
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-6">
           <div class="footer-container-item">
             <p>Simon Fraser University - Surrey Campus</p>
             <p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
@@ -207,7 +209,7 @@
           <div class="footer-container-item">
             <button class="primary-button" onclick='location.href="#"'>Contact Now</button>
           </div>
-          <p class="copyright grey">Computational Design Group, SFU. COPYRIGHT 2020.</p>
+          <p class="copyright">Computational Design Group, SFU. COPYRIGHT 2020.</p>
         </div>  
       </div>
     </footer>
