@@ -34,7 +34,7 @@
 
 	<body class="container-fluid px-0">
 		<header>
-			<nav class="navbar navbar-expand-md">
+			<nav class="navbar navbar-expand-md fixed-top bg-light">
               <a class="navbar-brand" href="home.html">Home Page</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,89 +65,83 @@
 		</header>
 
 
-    <section>
+    <section class="pl-md-7 p-sm-5 py-6 py-md-7">
       <div class="row">
-          <div class="col-md-5">
-            <h1>Contact Us</h1>
-            <p>If you have any questions or would like to learn more about us, feel free to fill in the form below. If you’re interested in joining our team, <a href="#placeholder-link" class="in-text-link">apply now!</a></p>
+          <div class="col-md-8 col-lg-7">
+            <h2>Contact Us</h2>
+            <p class="pt-3">If you have any questions or would like to learn more about us, feel free to fill in the form below. If you’re interested in joining our team, <a href="#placeholder-link" class="in-text-link">apply now!</a></p>
           </div> <!-- END OF COLUMN -->
-        </div> <!-- END OF ROW -->
+        </div>  
+<!--        END OF ROW -->
 
-        <div class="row">
-          <div class="col-md-2"></div>
+        <div class="row pt-4">
 
-          <div class="col-md-5">
+          <div class="col-md-5 mr-md-5">
             <!-- Code by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit -->
             <form action="/action_page.php">
               <div class="row">
-                <div class="col-md-12">
+                <div class="w-100 pl-3 mb-3">
                   <label for="name">Name</label><br>
                   <input class="text-input" type="text" id="fname" name="name">
                 </div>
-                <div class="col-md-12">
+                <div class="w-100 pl-3 mb-3">
                   <label for="email">Email</label><br>
                   <input class="text-input" type="text" id="lname" email="email">
                 </div> <!-- END OF COL-MD- -->
               </div> <!-- END OF ROW -->
 
-              <div class="row">
-                <div class="col-md-12">
+                <div class="w-100 pl-3 mb-4">
                   <label for="message">Message</label><br>
-                  <input class="text-input text-input-message" type="text" id="message" message="message"><br><br>
+                  <input class="text-input text-input-message" type="text" id="message" message="message">
                 </div>
-              </div> <!-- END OF ROW -->
-
-              <div class="row">
+   
                 <div class="col-md-1">
                   <button class="primary-button" onclick='location.href="#"' type="submit">Submit</button>
                 </div> <!-- END OF COL-MD-1 -->
-              </div> <!-- END OF ROW -->
             </form> 
           </div> <!-- END OF COL -->
 
-        <!-- </div> END OF ROW -->
-
-        <!-- <div class="row"> -->
-          <!-- <div class="col-md-3"></div> -->
-
-          <div class="col-md-4">
-            <a href="mailto:someone@eexample.com" class="in-text-link">email@sfu.ca</a>
+<!--  MAP + contact info-->
+          <div class="col-md-6 pt-5 pl-md-3">
+              <div class="row">
+            <div class="col-lg-12 pl-md-0 pl-0">
+                <a href="mailto:someone@eexample.com" class="in-text-link">email@sfu.ca</a>
             <a href="www.sfu.ca/siat" class="in-text-link" target="blank">www.sfu.ca/siat</a>
-            <p>Simon Fraser University - Surrey Campus</p>
-            <p>250-13450 102 Ave Surrey, BC V3T 0A3</p>
-
-            <!--The div element for the map  from https://www.embedgooglemap.net/-->
-            <section  id="map"> 
-              <div class="mapouter">
-                <div class="gmap_canvas">
-                  <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=simon%20fraser%20surrey&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                  <a href="https://www.embedgooglemap.net"></a>
-                </div>
               </div>
-            </section>
-          </div> <!-- END OF COL-MD-9 -->
-        </div> <!-- END OF ROW -->
+              <div class="col-lg-12 pl-md-0 pl-0">
+            <p class="pt-4 ">Simon Fraser University - Surrey Campus</p>
+            <p>250-13450 102 Ave Surrey, BC V3T 0A3</p>
+            </div>
+            <div class="col-lg-12 pl-md-0 pl-0">  
+            <p class="pt-4">Specific location details, floor, ect.</p>
+              </div>
+            <!--The div element for the map  from https://www.embedgooglemap.net/-->
+              <div class="mapouter col-lg-12 pl-md-0 pl-0 mt-5">       <div class="gmap_canvas d-flex">
+                    <iframe width="530" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=sfu%20surrey&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe><a href="https://thevpndeal.com/private-internet-access-coupon/"></a>
+                  </div>
+              </div>
+          </div> <!-- END OF ROW -->
+          </div> <!-- END OF Map Col -->
+        </div> <!-- END OF ROW CONTACT US -->
 
       </section> <!-- END OF FORM AND HEADER SECTION -->
 
 
       <section id="solidbg-blue">
-        <div class="row">
-          <div class="col-md-2"></div>
-
-          <div class="col-md-5">
-            <h2 class="white">How to Apply</h2>
-            <h3 class="white">Step 1</h3>
-            <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3 class="white">Step 2</h3>
-            <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h3 class="white">Step 3</h3>
-            <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="row pl-md-7 pr-md-6 p-sm-5">
+          <div class="col-md-6 pr-md-4 white">
+            <h3>How to Apply</h3>
+            <h4>Step 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h4>Step 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h4>Step 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div> <!-- END OF COL-MD-9 -->
 
-          <div class="col-md-4">
-            <img src="../IMG/placeholder-image.png" alt="Image of SFU application link" class="howtoapply-image">
-            <button class="secondary-button" onclick='location.href="#"'>Apply Now</button>
+          <div class="col-md-6 mt-auto pl-md-3">
+            <img src="../IMG/placeholder-image.png" alt="Image of SFU application link" class="img-fluid mt-5">
+            <button class="vid secondary-button" onclick='location.href="#"'>Apply Now</button>
           </div> <!-- END OF COL-MD-3 -->
         </div> <!-- END OF ROW -->
       </section> <!-- END OF HOW TO APPLY SECTION -->

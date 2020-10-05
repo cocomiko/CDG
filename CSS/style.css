@@ -708,21 +708,31 @@ box-shadow: none;
 
 }
 
-/* MAP */
+/* -------------MAP---------------- */
 
-#map {
+@media (min-width: 768px){
+    
+    .mapouter {
+        position:relative;
+        text-align:center;
+        height:300px;
+        width:100%;     
+    }
+
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:300px;
+        width:100%;
+    }   
+}
+ 
+.gmap_canvas {
     width: 100%;
-    padding-top: 42px;
     background-color: none;
-    display: inline-block;
+    justify-content: center;
 }
-
-#map iframe {
-    position: absolute;
-    left: 0;
-    width: 60%;
-    height: 400px;
-}
+/* -------------END MAP---------------- */    
 
 .btn-group {
     display: block;
@@ -765,8 +775,21 @@ box-shadow: none;
 
 /* ----------------------------------------------------------- */
 /* COLOUR ALTERATIONS */
-.white {
+.white h3{
     color: white;
+}
+
+.white h2{
+    color: white;
+}
+
+.white p{
+    color: white;
+}
+
+.white h4{
+    color: white;
+    margin-top: 0.9em
 }
 
 .grey {
