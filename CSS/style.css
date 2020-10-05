@@ -253,6 +253,7 @@ p {
     color: #221EE0;
     position: relative;
     margin-right: 1em;
+    display: block;
 }
 
 .anchor-list-item:hover {
@@ -260,6 +261,7 @@ p {
     border-bottom: 3px solid #221EE0;
     text-decoration: none;
     top: -0.3em;
+    display: table-cell;
 }
 
 p.back-to-top-text {
@@ -285,6 +287,13 @@ img.back-to-top-arrow {
     padding-right: 0.5em;
     top: -0.2em;
     transition-duration: 0.5s;
+}
+
+div.members-landing-image {
+    content: url(../IMG/header-image-placeholder.png);
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
 }
 
 img.howtoapply-image {
@@ -570,9 +579,7 @@ button.project-button {
   }
   }
   
-  .bg-blue {
-    background-color: #005EB8;
-  }
+ 
 
   ul.filters{
     display: block;
@@ -669,6 +676,12 @@ div.footer-container-item {
     margin-bottom: 2em;
 }
 
+div.footer-container-item-2 {
+    margin-bottom: 2em;
+    display: inline-block;
+    width: 100%;
+}
+
 /*Not Clickable Cards*/
 .card.noclick{
     border: none;
@@ -679,11 +692,6 @@ div.footer-container-item {
 text-decoration: none;
 box-shadow: none;
 
-}
-
-/* COLOUR ALTERATIONS */
-.white {
-    color: white;
 }
 
 /* MAP */
@@ -741,6 +749,21 @@ box-shadow: none;
     padding: 1em;
 }
 
+/* ----------------------------------------------------------- */
+/* COLOUR ALTERATIONS */
+.white {
+    color: white;
+}
+
+.grey {
+    color: gray;
+}
+
+.bg-blue {
+    background-color: #005EB8;
+}
+/* ----------------------------------------------------------- */
+
 
 
 /*
@@ -760,21 +783,126 @@ box-shadow: none;
 
 
 
+/* ----------------------------------------------------------- */
+/* --------------------- MEDIA QUERIES ----------------------- */
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* MEMBERS PAGE MEDIA QUERIES */
+@media (min-width: 300px) {
+    .sticky-top {
+        background-color: #221EE0;
+        height: 5em;
+        width: calc(100% + 2em);
+        display: flex;
+        padding-bottom: 1.5em;
+        margin-bottom: 50px;
+        justify-content: space-between;
+        margin-top: -1em;
+        margin-left: -1em;
+    }
+
+    .sticky-top a {
+        color: white;
+        display: inline-block;
+        line-height: 80px;
+    }
+
+    .sticky-top a:hover {
+        color: white;
+        display: inline-block;
+        border-bottom: 3px solid white;
+    }
+
+    div.members-landing-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .members-heading {
+        position: absolute;
+        top: -2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .sticky-top {
+        background-color: white;
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    .sticky-top a {
+        color: #221EE0;
+        width: 100%;
+        display: block;
+        line-height: 2em;
+    }
+
+    .sticky-top a:hover {
+        color: #221EE0;
+        width: 100%;
+        display: table-cell;
+        border-bottom: 3px solid #221EE0;
+    }
+
+    div.members-landing-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .members-heading {
+        position: relative;
+        top: 0;
+    }
+}
+/* ----------------------------------------------------------- */
 
 
 
 
+/* ----------------------------------------------------------- */
+/* FOOTER MEDIA QUERIES */
+  @media (min-width: 300px) {
+    .footer-logo {
+        content: url(../IMG/SIAT-Logo-2.png);
+        width: 200px;
+        margin-bottom: 50px;
+    }
 
+    .fa {
+        font-size: 2.5em !important;
+        margin-right: .5em;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
 
-  /* FOOTER MEDIA QUERIES */
- /* @media (min-width: 640px) {
+    footer .col-md-3 {
+        width: 50%;
+    }
 
-  }*/
+    footer .col-md-4 {
+        width: 50%;
+    }
+
+    footer .col-md-5 {
+        width: 100%;
+    }
+  }
 
   @media (min-width: 768px) {
     .footer-logo {
         content: url(../IMG/SIAT-Logo-2.png);
         width: 170px;
+    }
+
+    .fa {
+        font-size: 1.5em !important;
+        margin-right: .5em;
+        margin-top: 10px;
+        margin-bottom: 40px;
     }
   }
 
@@ -784,7 +912,4 @@ box-shadow: none;
         width: 300px;
     }
   }
-
-  /*@media (min-width: 1200px) {
-
-  }*/
+  /* ----------------------------------------------------------- */
