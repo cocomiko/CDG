@@ -793,10 +793,13 @@ box-shadow: none;
     .sticky-top {
         background-color: #221EE0;
         height: 5em;
+        width: calc(100% + 2em);
         display: flex;
         padding-bottom: 1.5em;
         margin-bottom: 50px;
         justify-content: space-between;
+        margin-top: -1em;
+        margin-left: -1em;
     }
 
     .sticky-top a {
@@ -826,6 +829,9 @@ box-shadow: none;
     .sticky-top {
         background-color: white;
         display: block;
+        width: 100%;
+        margin-top: 1em;
+        margin-left: 1em;
     }
 
     .sticky-top a {
