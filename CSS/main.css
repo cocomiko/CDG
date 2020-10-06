@@ -39,28 +39,17 @@ margin-top: -10em;
     }
       .haha{
        position: relative; !important;
-/*          top: 24em;*/
-/*
-       z-index: 2;
-       order: 2;
-*/
-    }  
-/*
-    .haha{
-       margin-top: 30em;
-    }
-*/
 }
-
+}
 #bannerimage{
   width: 100%;
-  height: 80vh;
+/*  height: 85vh;*/
 /*display: flex;*/
   background-image: url(https://via.placeholder.com/1440X771.png);
   background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-/*  height:771px;*/
+  height:771px;
 /*  object-fit:contain !important;*/
  
 }
@@ -85,20 +74,20 @@ margin-top: -10em;
 
 /*slick carousel next, previous buttons override*/
 .slick-prev:before {
-  color: red;
-  font-size: 30px;
+  color: rgba(0, 0, 255, 0.81);
+  font-size: 35px;
 }
 
 .slick-next:before {
-  color: red;
-  font-size: 30px;
+  color: rgba(0, 0, 255, 0.81);
+  font-size: 35px;
 }
 
 
 .items {
     width: 90%;
     margin: 0px auto;
-    margin-top: 100px
+    margin-top: 100px;
 }
 
 .slick-slide {
@@ -111,7 +100,7 @@ margin-top: -10em;
 }
 
 .slick-prev{
- left: 15px; 
+ left: 0px; 
  z-index: 1;
 }
 
@@ -425,7 +414,7 @@ img.hover-shadow {
 /* Crop gallery images.*/
 #gallery img {
   width: 100% !important;
-  height: 100%; !important;
+  height: 100% !important;
   object-fit: cover !important;
 }
 
@@ -490,3 +479,22 @@ img.hover-shadow {
 }
 
 
+.recentproj .card{
+    width: 20rem;
+     justify-content: center;
+     align-content: center;
+    height:100%;
+
+}
+
+.reflection .card{
+    border: none;
+    box-shadow: none;
+    height: 100%;
+    
+}
+
+.reflection .card-body{
+    padding: 0 2em 2em 0em;
+    
+}
