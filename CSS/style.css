@@ -859,8 +859,6 @@ box-shadow: none;
         margin-top: 1em;
         margin-left: 1em;
     }
-  /* FOOTER MEDIA QUERIES */
- /* @media (min-width: 640px) {
 
     .sticky-top a {
         color: #221EE0;
@@ -885,7 +883,6 @@ box-shadow: none;
         position: relative;
         top: 0;
     }
-}
 /* ----------------------------------------------------------- */
 
 
