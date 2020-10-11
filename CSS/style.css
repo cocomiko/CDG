@@ -217,6 +217,18 @@ p {
     text-decoration: none;
 }
 
+.project-description .in-text-link {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.0em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 0px; 
+    margin-right: 0px;
+    color: #221EE0;
+    display: inline-block;
+}
+
 .anchor-list-item {
     font-family: 'Karla', sans-serif;
     font-size: 1.25em;

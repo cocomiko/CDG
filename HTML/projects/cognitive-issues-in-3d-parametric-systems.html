@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cognitive Issues in 3D Parametric Systems | Computational Design Group</title>
+        <meta name="description" content="Webpage for Computational Design Group at SFU">
+        
+        <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+          
+        <!-- SLICK carousel-->
+        <link rel="stylesheet" type="text/css" href="../../slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css"/>
+            
+        <!-- Native Stylesheets -->
+        <link rel="stylesheet" href="../../CSS/main.css">
+        <link href="../../CSS/style.css" rel="stylesheet">
+        
+        <!-- Modal Gallery script-->
+        <script src="../../SCRIPTS/main.js"></script>
+            
+            
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+
+
+    <body class="container-fluid px-0">
+
+        <header>
+			<nav class="navbar navbar-expand-md">
+              <a class="navbar-brand" href="../home.html">Home Page</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse mr-auto" id="navbarText">
+                <div class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../publications.html">Publications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../members.html">Members</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../blog.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                  </li>
+                </div>
+              </div>
+            </nav>
+		</header>
+        
+<!-- IMAGE GALLERY -->
+        <section>
+            <div class="container-fluid px-md-5 px-1" id="gallery">
+                <div class="row z-index-1 position-relative order-2">
+                <!-- Grid: 1st enlarged image + 4 smaller. In mobile: shows only 1st image -->
+                    <div class="col-md-6 col-lg-6">
+                        <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg" alt="Project image">
+                    </div>
+                    <div class="col-md-3 col-lg-3 d-none d-md-block force-height px-0">
+                        <div>
+                        <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
+                        </div>   
+                        <div>
+                        <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 d-none d-md-block force-height px-0">
+                        <div>
+                            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
+                        </div>
+                        <div>
+                            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" onclick="openModal();currentSlide(5)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
+                        </div>
+                    </div>           
+                  
+                    <!-- View All Gallery Button-->
+                    <div class="button-height offset-md-11 offset-9 pr-6">
+                         <button onclick="openModal();currentSlide(6)" type="button" class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
+                    </div>
+                    
+                </div>
+               </div>      
+            
+        <!-- The Modal Gallery/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 7</div>
+              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 7</div>
+              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 7</div>
+              <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 7</div>
+              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">5 / 7</div>
+              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+            </div>
+              
+              <div class="mySlides">
+              <div class="numbertext">6 / 7</div>
+              <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
+            </div>
+              
+              <div class="mySlides">
+              <div class="numbertext">7 / 7</div>
+              <img src="https://shop.animolaundry.com/wp-content/uploads/2014/04/img_placeholder-44.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+          </div>
+        </div>
+            
+    </section>
+        
+<!--   MAIN PAGE START -->
+      <div class="project-info px-2 px-md-6 pb-5">  
+        <div class="row">
+            <!--   Project Title -->
+            <div class="col-md-5">    
+                <h3>Cognitive Issues in 3D Parametric Systems</h3>
+                <!--   Project Specifcs-->
+                <div class="px-1">
+                <hr>
+                <div class="project-team">
+                    <p class="paragraph">Diliara Nasirova</p> 
+                    <p class="paragraph">Halil Erhan</p>   
+                    <p class="paragraph">Robert Woodbury</p>                
+                </div>
+                <hr>
+                <div class="project-tags">
+                    <p class="body">Parametric Design</p>
+                    <p class="body">User Interfaces</p>
+                </div>
+                <hr>
+                <div class="project-year">
+                    <p class="body">2011</p>
+                </div>
+                <hr>  
+
+                </div>
+            </div>
+            <!-- Project Summary -->
+            <div class="col-md-7 py-5 py-md-0">
+                <div class="project-description">
+                    <p class="body">In the current rapid development of parametric design tools the underlying computational-technology outpaces interface design. Interaction with these tools is becoming cognitively more demanding – for example, designers must switch between different views, manipulate views to adjust working context in relation to the model, select operations with complex parameters, and differentiate reference geometry from design geometry. The goal of this study is to understand users' cognitive capabilities and limitations in the context of parametric design so that more natural interfaces can be developed.</p>
+                    <br>
+                    <p class="body">We bring attention particularly to the importance of change control and detection in 3D parametric design. The term “change detection” refers to the visual processes involved in noticing, identifying, and localizing a change in a given visuospatial context. Failure to properly detect changes may easily lead to frustration with modeling in 3D parametric systems and decrease designers’ productivity and motivation regardless of powerful features provided. Moreover, such perceptual issue may lead to design failures. Novel interfaces are required to reduce if not eliminate these effects. To enhance designers' performance we propose using various techniques to visualize changes such as peripheral interface and visual dataflow programming.</p>
+                </div>
+        </div>
+      </div>
+    </div>
+        
+<!--   PUBLICATIONS SECTION  -->
+        <section class="related-publications" id="solidbgblock">
+        <div class="row px-2 py-5 px-md-6">
+            <div class="col-md-5">
+                <h3>Related Publications</h3>
+            </div>
+             <!-- Publications List-->            
+            <div class="col-md-7 py-2 py-md-0">
+                <div class="row">
+                    
+                  <!-- Publications 1-->  
+                  <div class="card-no-click">
+                    <div class="card-body px-0 pt-0">
+                      <p>Diliara Nasirova, Andy T. Huang, Halil Erhan, Robert Woodbury, and Bernhard E. Riecke. Change detection in 3D parametric systems: Human-centered interfaces for change visualization. In CAADFutures 2011, pages 751–764, July 2011.</p>
+                      
+                      <!--  links  --> 
+                      <ul class="row justify-content-start ml-0">
+                        <li class ="dropdown">
+                          <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
+                          <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
+                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </ul>         
+                        </li> 
+                        <li>
+                          <a class="in-text-link" href="#">read full</a>
+                        </li>
+                        <li>
+                          <a class="in-text-link" href="#">download pdf</a>
+                        </li>
+                        <li>
+                          <a class="in-text-link" href="#">cite</a>
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
+
+                </div>
+               </div>
+    
+        </div>
+        </section>
+        <!--   PUBLICATIONS SECTION END-->
+        
+<!--
+        <script>
+            // Open the Modal
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            //
+            //// Close the Modal
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+-->
+        
+    </body>
+
+    <footer>
+      <div class="row">
+        <div class="col-md-3">
+          <a href="about.html"><div class="footer-logo"></div></a>
+        </div>
+
+        <div class="col-md-4">
+          <p>Find Us</p>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+
+        <div class="col-md-5">
+          <div class="footer-container-item">
+            <p>Simon Fraser University - Surrey Campus</p>
+            <p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
+          </div>
+          <div class="footer-container-item">
+            <p><a href="mailto:someone@eample.com"><i class="material-icons md-1">&#xe0be;</i>email@sfu.ca</a></p>
+            <p><i class="material-icons md-1">&#xe0cd;</i>778.876.3456</p>
+          </div>
+          <div class="footer-container-item">
+            <button class="primary-button" onclick='location.href="#"'>Contact Now</button>
+          </div>
+          <p class="copyright grey">Computational Design Group, SFU. COPYRIGHT 2020.</p>
+        </div>  
+      </div>
+    </footer>
+
+</html>
