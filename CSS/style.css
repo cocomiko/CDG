@@ -944,6 +944,10 @@ box-shadow: none;
         margin-left: 1em;
     }
 
+    .d-md-block {
+        margin-top: 2em
+    }
+
     .sticky-top a {
         color: #221EE0;
         width: 100%;
