@@ -69,7 +69,7 @@ $(document).ready( function() {
 
 
   // Look inside element with .filters class for any clicks on elements with .btn
-  $('.filters').on( 'click', '.btn', function() {
+  $('.btn-group').on( 'click', '.btn', function() {
     var $this = $(this);
     // Get group key from parent btn-group (e.g. data-filter-group="color")
     var $buttonGroup = $this.parents('.btn-group');

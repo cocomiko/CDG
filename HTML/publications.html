@@ -33,8 +33,7 @@
     </head>
     
     <body class="container-fluid px-0">
-
-      <!-- Navigation Bar -->          
+ 
       <header>
         <nav class="navbar navbar-expand-md fixed-top">
           <a class="navbar-brand" href="home.html">Home Page</a>
@@ -58,38 +57,45 @@
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">News</a>
               </li>
-                <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </div>
           </div>
-          </nav>
+        </nav> 
+
+        
       </header>
 
       <!-- Page Title --> 
       <div class="contain-items pt-6 pt-md-7"> 
         <h1 class="offset-md-3">Publications</h1>
 
-        <div class="container filters filter-section">
+        <div class="container filter-section">
         
           <div class="row">
 
-            <div class="col-md-2">
+            <div class="col-md-2 side-filters sticky-top">
+              <button type="button" data-toggle="collapse" data-target="#filters" class="d-block mt-1 d-md-none btn btn-primary btn-block mb-4">Filters &dtrif;</button>
+              
+              <div id="filters" class="collapse d-md-block">
+                
+                <div class="bootstrap-slider">
+                  <span class="filter-label">Year Published: <span class="filter-selection"></span></span>
+                  <b class="filter-min">1990</b><input id="filter-year" type="text" class="bootstrap-slider" value="" data-filter-group="year"><b class="filter-max">2020</b>
+                </div>
 
-              <div class="bootstrap-slider">
-                <span class="filter-label">Year Published: <span class="filter-selection"></span></span>
-                <b class="filter-min">1990</b><input id="filter-year" type="text" class="bootstrap-slider" value="" data-filter-group="year"><b class="filter-max">2020</b>
-              </div>
-
-              <span class="filter-label">Topics:</span>
-              <div class="btn-group" role="group" data-filter-group="year">
-                  <button class="btn btn-sm btn-default btn-filter is-checked" data-filter="*">All</button>
-                  <button class="btn btn-sm btn-default btn-filter" data-filter=".design-analytics">Design Analytics</button>
-                  <button class="btn btn-sm btn-default btn-filter" data-filter=".d-star">D-Star</button>
-                  <button class="btn btn-sm btn-default btn-filter" data-filter=".user-interfaces">User Interfaces</button>
-                  <button class="btn btn-sm btn-default btn-filter" data-filter=".parametric-design">Parametric Design</button>
-                  <button class="btn btn-sm btn-default btn-filter" data-filter=".collaboration">Collaboration</button>
-                  <button class="btn btn-sm btn-default btn-filter" data-filter=".spatial-design">Spatial Design</button>
+                <span class="filter-label">Topics:</span>
+                <div class="btn-group" role="group" data-filter-group="year">
+                    <button class="btn btn-sm btn-default btn-filter is-checked" data-filter="*">All</button>
+                    <button class="btn btn-sm btn-default btn-filter" data-filter=".design-analytics">Design Analytics</button>
+                    <button class="btn btn-sm btn-default btn-filter" data-filter=".d-star">D-Star</button>
+                    <button class="btn btn-sm btn-default btn-filter" data-filter=".user-interfaces">User Interfaces</button>
+                    <button class="btn btn-sm btn-default btn-filter" data-filter=".parametric-design">Parametric Design</button>
+                    <button class="btn btn-sm btn-default btn-filter" data-filter=".collaboration">Collaboration</button>
+                    <button class="btn btn-sm btn-default btn-filter" data-filter=".spatial-design">Spatial Design</button>
+                </div>
+                
               </div>
             </div>
                 
