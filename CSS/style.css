@@ -892,6 +892,24 @@ section.members {
     margin-top: 50px;
 }
 
+.members-sticky-menu{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 5em;
+}
+
+.projects-sticky-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+}
+
+.publications-sticky-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+}
+
 
 /*.member-contact .tertiary-button-text {
     font-size: 1em;
