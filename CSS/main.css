@@ -65,6 +65,10 @@ margin-top: -10em;
   background-color: #221EE0;
 }
 
+#solidbg-lightblue {
+  background-color: #EDEDFD;
+}
+
 #solidbgblock {
   background-color: gainsboro;
   width: 100%;

@@ -734,11 +734,15 @@ div.contain-items {
 /* FOOTER */
 footer {
     padding: 2.5em 0.7em 0.7em 0.7em;
-    background-color: #EDEDED;
+    background-color: #221EE0;
+}
+
+footer a:hover {
+    color: #9593F0;
 }
 
 .footer-logo {
-    content: url(../IMG/SIAT-Logo-1.png);
+    content: url(../IMG/SIAT-Logo-1-White.png);
     width: 300px;
 }
 
@@ -761,7 +765,7 @@ p.copyright {
 }
 
 .fa:hover {
-    color: #13117D;
+    color: #9593F0;
 }
 
 div.footer-container-item {
@@ -870,12 +874,20 @@ box-shadow: none;
     margin-top: 0.9em
 }
 
+.white {
+    color: white;
+}
+
 .grey {
     color: gray;
 }
 
 .blue {
     color: #005EB8;
+}
+
+.light-blue {
+    color: #9593F0;
 }
 
 .bg-blue {
@@ -1022,7 +1034,7 @@ section.members {
 /* FOOTER MEDIA QUERIES */
   @media (min-width: 300px) {
     .footer-logo {
-        content: url(../IMG/SIAT-Logo-2.png);
+        content: url(../IMG/SIAT-Logo-2-White.png);
         width: 200px;
         margin-bottom: 50px;
     }
@@ -1049,7 +1061,7 @@ section.members {
 
   @media (min-width: 768px) {
     .footer-logo {
-        content: url(../IMG/SIAT-Logo-2.png);
+        content: url(../IMG/SIAT-Logo-2-White.png);
         width: 170px;
     }
 
@@ -1071,7 +1083,7 @@ section.members {
 
   @media (min-width: 1350px) {
     .footer-logo {
-        content: url(../IMG/SIAT-Logo-1.png);
+        content: url(../IMG/SIAT-Logo-1-White.png);
         width: 300px;
     }
   }
