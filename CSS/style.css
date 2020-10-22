@@ -1,6 +1,6 @@
-
-/* ------------------------------------------------------------ */
-/* STYLE GUIDE NAVIGATION */
+/* ----------------------------------------------------------- */
+/* -------------------- STYLEGUIDE NAV ----------------------- */
+/* ----------------------------------------------------------- */
 
 .navbar {
     padding: 0.7em !important;
@@ -59,11 +59,13 @@ a:hover {
     color: #13117D;
     text-decoration: none;
 }
+/* ---------------------- END STYLEGUIDE NAV ------------------ */
 
 
-/* ------------------------------------------------------------ */
-/* TEXT ELEMENTS */
 
+/* ----------------------------------------------------------- */
+/* --------------------- TEXT ELEMENTS ----------------------- */
+/* ----------------------------------------------------------- */
 h1 {
     font-family: 'Karla', sans-serif;
     font-size: 5.25em;
@@ -268,9 +270,13 @@ section {
     }
 }
 
+/* ------------------- END TEXT ELEMENTS --------------------- */
 
-/* ------------------------------------------------------------ */
-/* IN TEXT AND BACK TO TOP LINKS */
+
+
+/* ----------------------------------------------------------- */
+/* --------------- IN TEXT + BACK TO TOP LINKS --------------- */
+/* ----------------------------------------------------------- */
 
 .in-text-link {
     font-family: 'Karla', sans-serif;
@@ -371,12 +377,15 @@ img.howtoapply-image {
     text-decoration: underline;
     text-decoration-color: white;
 }
+/* --------------- END IN TEXT AND LINKS --------------------- */
 
 
 
 
-/* ------------------------------------------------------------ */
-/* BUTTONS */
+
+/* ----------------------------------------------------------- */
+/* ------------------------ BUTTONS -------------------------- */
+/* ----------------------------------------------------------- */
 
 .primary-button {
     font-family: 'Karla', sans-serif;
@@ -497,9 +506,18 @@ p.tertiary-button-text {
     overflow: hidden;
 }
 
+button.project-button {  
+    background-image: url('img/project-image-placeholder.png') 10px 10px no-repeat;
+    width: 200em;
+}
 
-/* ------------------------------------------------------------ */
-/* FORM INPUT */
+/* ---------------------- END BUTTONS ------------------------ */
+
+
+
+/* ----------------------------------------------------------- */
+/* ------------------------ FORM ----------------------------- */
+/* ----------------------------------------------------------- */
 
 form {
     margin-left: -1em;
@@ -507,6 +525,10 @@ form {
 }
 
 input {
+    width: 100%;
+}
+
+textarea {
     width: 100%;
 }
 
@@ -538,11 +560,14 @@ input {
     outline: 0;
     display: inline-block;
 }
+/* ----------------------- END FORM -------------------------- */
 
 
 
-/* ------------------------------------------------------------ */
-/* HEADERS */
+
+/* ----------------------------------------------------------- */
+/* ------------------------ HEADERS -------------------------- */
+/* ----------------------------------------------------------- */
 
 .header-container {
     position: relative;
@@ -569,23 +594,13 @@ input {
 .project-image {
     width: 33%;
 }
+/* --------------------- END HEADERS ------------------------ */
 
 
 
-/* ------------------------------------------------------------ */
-/* HEADERS */
-
-button.project-button {  
-    background-image: url('img/project-image-placeholder.png') 10px 10px no-repeat;
-    width: 200em;
-}
-
-
-
-
-/*!
-  Projects Page Tests
- */
+/* ----------------------------------------------------------- */
+/* ------------------- PROJECTS PAGE SPECIFICS --------------- */
+/* ----------------------------------------------------------- */
 
   .layout-margin-8 {
     margin: 3% 8%;
@@ -644,8 +659,6 @@ button.project-button {
   }
   }
   
- 
-
   ul.filters{
     display: block;
     width: 100%;
@@ -682,13 +695,14 @@ button.project-button {
     padding-bottom: 10em;
 }
 
+/* ------------- END PROJECTS PAGE SPECIFICS ----------------- */
 
 
-/*!
-  Blog Page
- */
 
 
+/* ----------------------------------------------------------- */
+/* ------------------- BLOG PAGE SPECIFICS ------------------- */
+/* ----------------------------------------------------------- */
 .blog-post{
     margin-top: 6em;
     margin-bottom: 6em;
@@ -706,10 +720,14 @@ button.project-button {
     font-weight: bold;
     padding-bottom: 1em;
 }
+/* ------------------ END NEWS PAGE SPECIFICS ---------------- */
 
 
-/* CONTAINERS */
-/* what did I make this for again?? haha*/ /*styleguide container*/
+
+/* ----------------------------------------------------------- */
+/* ------------------------ CONTAINERS ----------------------- */
+/* ----------------------------------------------------------- */
+/* STYLEGUIDE CONTAINER*/
 div.container-all {
     padding: 30px 80px 30px 80px;
 }
@@ -718,25 +736,24 @@ div.contain-items {
     padding: 5em 0px 5em 0px;
 }
 
-/* FOOTER */
-footer {
-    padding: 2.5em 0.7em 0.7em 0.7em;
-    background-color: #221EE0;
+/*Not Clickable Cards*/
+.card.noclick{
+    border: none;
+    background: none;
 }
 
-footer a:hover {
-    color: #9593F0;
+.card.noclick:hover {
+text-decoration: none;
+box-shadow: none;
 }
+/* ------------------- END CONTAINERS ------------------------ */
 
-.footer-logo {
-    content: url(../IMG/Logos/SIAT-Logo-1-White.png);
-    width: 300px;
-}
 
-p.copyright {
-    font-size: 0.8em;
-}
 
+
+/* ----------------------------------------------------------- */
+/* ------------------------- ICONS --------------------------- */
+/* ----------------------------------------------------------- */
 .material-icons {
     transform: translate(0px, 5px);
     margin-right: .5em;
@@ -754,6 +771,28 @@ p.copyright {
 .fa:hover {
     color: #9593F0;
 }
+/* ------------------------ END ICONS ------------------------ */
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* --------------------------- FOOTER ------------------------ */
+/* ----------------------------------------------------------- */
+footer {
+    padding: 2.5em 0.7em 0.7em 0.7em;
+    background-color: #221EE0;
+}
+
+footer a:hover {
+    color: #9593F0;
+}
+
+.footer-logo {
+    content: url(../IMG/Logos/SIAT-Logo-1-White.png);
+    width: 300px;
+}
 
 div.footer-container-item {
     margin-bottom: 2em;
@@ -765,20 +804,16 @@ div.footer-container-item-2 {
     width: 100%;
 }
 
-/*Not Clickable Cards*/
-.card.noclick{
-    border: none;
-    background: none;
+p.copyright {
+    font-size: 0.8em;
 }
+/* ----------------------- END FOOTER ------------------------ */
 
-.card.noclick:hover {
-text-decoration: none;
-box-shadow: none;
 
-}
 
-/* -------------MAP---------------- */
-
+/* ----------------------------------------------------------- */
+/* ------------------------- MAP ----------------------------- */
+/* ----------------------------------------------------------- */
 @media (min-width: 768px){
     
     .mapouter {
@@ -801,7 +836,8 @@ box-shadow: none;
     background-color: none;
     justify-content: center;
 }
-/* -------------END MAP---------------- */    
+/* ------------------------ END MAP ------------------------- */
+
 
 .btn-group {
     display: grid;
@@ -843,7 +879,8 @@ box-shadow: none;
 }
 
 /* ----------------------------------------------------------- */
-/* COLOUR ALTERATIONS */
+/* ------------------- COLOUR ALTERATIONS -------------------- */
+/* ----------------------------------------------------------- */
 .white h3{
     color: white;
 }
@@ -880,8 +917,15 @@ box-shadow: none;
 .bg-blue {
     background-color: #005EB8;
 }
-/* ----------------------------------------------------------- */
+/* ----------------- END COLOUR ALTERATIONS ----------------- */
 
+
+
+
+
+/* ----------------------------------------------------------- */
+/* ---------------- MEMBERS PAGE SPECIFICS ------------------- */
+/* ----------------------------------------------------------- */
 .member-contact p {
     display: inline-block;
     color: #221EE0;
@@ -896,13 +940,29 @@ section.members {
     position: sticky;
     top: 5em;
 }
+/* --------------- END MEMBERS PAGE SPECIFICS ---------------- */
 
+
+
+
+
+/* ----------------------------------------------------------- */
+/* ---------------- PROJECTS PAGE SPECIFICS ------------------ */
+/* ----------------------------------------------------------- */
 .projects-sticky-menu {
     position: -webkit-sticky;
     position: sticky;
     top: 2em;
 }
+/* ---------------- END PROJECT PAGE SPECIFICS --------------- */
 
+
+
+
+
+/* ----------------------------------------------------------- */
+/* -------------- PUBLICATIONS PAGE SPECIFICS ---------------- */
+/* ----------------------------------------------------------- */
 .publications-sticky-menu {
     position: -webkit-sticky;
     position: sticky;
@@ -913,15 +973,7 @@ section.members {
 .offset-md-2 {
     margin-left: 2.5em;
 }
-
-
-
-  @media (min-width: 768px) {
-  .form-control {
-    width: 500px !important;
-    height: 50px;
-  }
-  }
+/* ------------ END PUBLICATIONS PAGE SPECIFICS -------------- */
 
 
 
@@ -930,9 +982,6 @@ section.members {
 /* ----------------------------------------------------------- */
 /* --------------------- MEDIA QUERIES ----------------------- */
 /* ----------------------------------------------------------- */
-
-/* ----------------------------------------------------------- */
-/* MEMBERS PAGE MEDIA QUERIES */
 @media (min-width: 300px) {
     .sticky-top {
         background-color: #221EE0;
@@ -1004,6 +1053,12 @@ section.members {
     .members-heading {
         position: relative;
         top: 0;
+        left: -0.1em;
+    }
+
+    .form-control {
+        width: 500px !important;
+        height: 50px;
     }
 }
 /* ----------------------------------------------------------- */
@@ -1072,17 +1127,20 @@ section.members {
     }
 
     .offset-md-2 {
+        /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
         margin-left: 1.7em;
     }
   }
 
-  @media (min-width: 995px) {
+  @media (min-width: 991px) {
+    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
     .offset-md-2 {
         margin-left: 2.2em;
     }
   }
 
   @media (min-width: 1200px) {
+    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
     .offset-md-2 {
         margin-left: 2.5em;
     }
