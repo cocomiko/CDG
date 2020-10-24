@@ -329,6 +329,7 @@ section {
     display: table-cell;
 }
 
+
 p.back-to-top-text {
     font-family: 'Karla', sans-serif;
     font-size: 1.1em;
@@ -428,6 +429,41 @@ img.howtoapply-image {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
+
+@media (max-width: 425px){
+    
+    
+    .primary-button {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #221EE0;
+    padding: 0.8em 2em 0.8em 2em;
+            margin-right: 0;
+/*    width: 100%;*/
+    border: none;
+    border-radius: 0.625em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
+}
+    
+.secondary-button{
+   font-family: 'Karla', sans-serif;
+    font-size: 1.15em;
+    font-style: normal;
+    font-weight: bold;
+    color: #221EE0;
+    background-color: #ffffff;
+    padding: 0.8em 2em 0.8em 2em;
+    border: 0.125em solid #221EE0;
+    border-radius: 0.625em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
+    margin-right: 0;
+/*    width: 100%;*/
+    }
+}
+
 
 .tertiary-button {
     font-style: normal;
@@ -851,23 +887,55 @@ p.copyright {
     font-family: 'Karla', sans-serif;
     font-size: 1em;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     color: #221EE0;
-    background: #F5F3FF;
-    border: 0.15em solid #433FFF;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    background: rgb(244, 241, 255);
+    border: 1.9px solid #433FFF;
+    border-radius: 5px 5px !important;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     text-align: left;
+    display: inline-block;
+    margin: 3px !important;  
 }
 
 .btn:hover {
     border-color: #13117D;
-    color: #13117D;
+    color: #221EE0;
+    border: 2px solid #433FFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    background: rgb(251, 249, 255);
 }
 
 .btn:active, .btn.is-checked {
-  background-color: #13117D;;
-  color: #fff;
+  background: rgba(229, 223, 255, 0.15);
+/*  color: #fff;*/
+    border: 2.3px solid #433FFF;
+    font-weight: bold;
+     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+@media (max-width: 768px){
+
+.btn-group>.btn {
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    color: #221EE0;
+    background: rgb(244, 241, 255);
+    border: 1.9px solid #433FFF;
+    border-radius: 5px 5px !important;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+    top: 1em;
+    margin: 2px !important; 
+    display: block;
+}
+
 }
 
 .bootstrap-slider {
@@ -928,18 +996,30 @@ p.copyright {
 /* ----------------------------------------------------------- */
 .member-contact p {
     display: inline-block;
-    color: #221EE0;
 } 
 
-section.members {
-    margin-top: 50px;
+.member-contact{
+ padding-top: 15px;
+}
+
+.members {
+    margin-bottom: 5em;
+}
+
+.members .card-title{
+    color: black;
+}
+
+.partners .card-title{
+    margin-bottom: 0;
 }
 
 .members-sticky-menu{
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 5em;
+    top: 4em;
 }
+
 /* --------------- END MEMBERS PAGE SPECIFICS ---------------- */
 
 
@@ -982,23 +1062,80 @@ section.members {
 /* ----------------------------------------------------------- */
 /* --------------------- MEDIA QUERIES ----------------------- */
 /* ----------------------------------------------------------- */
-@media (min-width: 300px) {
-    .sticky-top {
+
+@media (max-width: 376px) {
+.sticky-top {
+        width: 100%;
+        text-align: center;
+        justify-content: space-between;
         background-color: #221EE0;
-        height: 5em;
+/*        height: 5em;*/
         width: calc(100% + 2em);
         display: flex;
-        padding-bottom: 1.5em;
-        margin-bottom: 50px;
-        justify-content: space-between;
+/*        padding-bottom: 1.5em;*/
+        margin-bottom: 4em;
+
         margin-top: -1em;
         margin-left: -1em;
     }
 
     .sticky-top a {
         color: white;
+        font-size: 0.9em;
+        padding-left: 13px;
         display: inline-block;
-        line-height: 80px;
+        margin: auto;
+        line-height: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;   
+    }
+    
+        .sticky-top a:hover {
+        color: white;
+        display: inline-block;
+        border-bottom: 3px solid white;
+    }
+    
+        div.members-landing-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    
+    .members-heading {
+        position: absolute;
+        top: -2em;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+    
+    .sticky-top {
+        width: 100%;
+        text-align: center;
+        justify-content: space-between;
+        background-color: #221EE0;
+        height: 5em;
+        width: calc(100% + 2em);
+        display: flex;
+/*        padding-bottom: 1.5em;*/
+        margin-bottom: 4em;
+        margin-top: -1em;
+        margin-left: -1em;
+    }
+
+    .sticky-top a {
+        color: white;
+        font-size: 1.15em;
+        display: inline-block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
     }
 
     .sticky-top a:hover {
@@ -1157,3 +1294,38 @@ section.members {
     }
   }
 
+
+
+
+/*-------------CARDS for MEMBERS PAGE------------------*/
+/*
+.card-img-left{ 
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    margin-right: 1em !important;
+    padding-left: 0 !important;
+}
+*/
+/* members no clip card-text*/
+.members .card-text {
+      overflow: hidden;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 20;
+      -webkit-box-orient: vertical;
+  }
+
+.img-square-wrapper {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+
+/*
+
+.btn-filter{
+  margin-bottom: 5em;
+
+}*/
