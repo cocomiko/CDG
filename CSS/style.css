@@ -89,7 +89,7 @@ h1 {
 
 
 h2 {
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Karla', sans-serif;
     /*font-size: 3.125em;*/
     font-size: 2.8em;
     font-style: normal;
@@ -631,6 +631,27 @@ textarea {
     width: 33%;
 }
 /* --------------------- END HEADERS ------------------------ */
+
+/* ----------------------------------------------------------- */
+/* ----------------- NEWS PAGE SPECIFICS --------------------- */
+/* ----------------------------------------------------------- */
+div.news-page-images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.news-page-images img {
+    width: 30%;
+    height: 100%;
+}
+
+
+div.news-page-side-image img {
+    width: 300px;
+}
+/* ---------------- END NEW PAGE SPECIFICS ------------------- */
+
 
 
 
@@ -1271,6 +1292,10 @@ p.copyright {
         /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
         margin-left: 1.7em;
     }
+
+    .news {
+        margin-left: 1.55em;
+    }
   }
 
   @media (min-width: 991px) {
@@ -1278,12 +1303,20 @@ p.copyright {
     .offset-md-2 {
         margin-left: 2.2em;
     }
+
+    .news {
+        margin-left: 1.9em;
+    }
   }
 
   @media (min-width: 1200px) {
     /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
     .offset-md-2 {
-        margin-left: 2.5em;
+        margin-left: 2.55em;
+    }
+
+    .news {
+        margin-left: 2.3em;
     }
   }
 
@@ -1293,8 +1326,13 @@ p.copyright {
         width: 300px;
     }
 
+    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
     .offset-md-2 {
-        margin-left: 2.5em;
+        margin-left: 2.55em;
+    }
+
+    .news {
+        margin-left: 2.3em;
     }
   }
 
