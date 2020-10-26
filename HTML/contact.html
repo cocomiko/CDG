@@ -14,6 +14,7 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+          <script src="../SCRIPTS/mail.js"></script>
         
         <!-- SLICK carousel-->
         <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
@@ -82,11 +83,11 @@
               <div class="row">
                 <div class="w-100 pl-3 mb-3">
                   <label for="name">Name</label><br>
-                  <input class="text-input" type="text" id="fname" name="name">
+                  <input class="text-input" type="text" id="name" name="name">
                 </div>
                 <div class="w-100 pl-3 mb-3">
                   <label for="email">Email</label><br>
-                  <input class="text-input" type="text" id="lname" email="email">
+                  <input class="text-input" type="text" id="email" email="email">
                 </div> <!-- END OF COL-MD- -->
               </div> <!-- END OF ROW -->
 
@@ -98,6 +99,15 @@
                 <div class="col-md-1">
                   <button class="primary-button" onclick='location.href="#"' type="submit">Submit</button>
                 </div> <!-- END OF COL-MD-1 -->
+              <div class="w-100 pl-3 mb-4">
+                <label for="message">Message</label><br>
+                <textarea class="text-input text-input-message" type="text" id="message" message="message"></textarea>
+              </div>
+  
+              <div class="col-md-1">
+                <!--<button class="btn btn-primary" onclick="validateForm();">Submit</button>-->
+                <a class="primary-button" onclick="document.getElementById('contact-form').submit();">Submit</a>
+              </div> <!-- END OF COL-MD-1 -->
             </form> 
           </div> <!-- END OF COL -->
 

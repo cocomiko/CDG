@@ -250,7 +250,31 @@ section {
         margin-top: -58px;
     }*/
 
+    a.anchor-top {
+        display: block;
+        position: relative;
+        top: -150px;
+        visibility: hidden;
+    }
 
+    .members-sticky-menu {
+        z-index: 100;
+    }
+
+    .members-all .sticky-top a {
+        line-height: 1em;
+        align-self: center;
+    }
+
+    .members-all .sticky-top {
+        padding-top: 2em;
+        justify-content: space-around;
+        padding-left: inherit;
+    }
+
+    .members-all .anchor-list-item {
+        font-size: 1.2em;
+    }
 }
 
 @media (min-width: 300px) {
@@ -329,6 +353,9 @@ section {
     display: table-cell;
 }
 
+.hidden-member-category {
+    display: none;
+}
 
 p.back-to-top-text {
     font-family: 'Karla', sans-serif;
@@ -597,6 +624,11 @@ textarea {
     display: inline-block;
 }
 /* ----------------------- END FORM -------------------------- */
+
+textarea {
+    width: 100%;
+    resize: none;
+}
 
 
 
@@ -891,7 +923,7 @@ p.copyright {
 .gmap_canvas {
     width: 100%;
     background-color: none;
-    justify-content: center;
+    justify-content: left;
 }
 /* ------------------------ END MAP ------------------------- */
 
@@ -1057,6 +1089,16 @@ p.copyright {
     top: 4em;
 }
 
+@media (min-width: 768px) {
+    a.anchor-top {
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
+    }
+}
+
+
 /* --------------- END MEMBERS PAGE SPECIFICS ---------------- */
 
 
@@ -1071,6 +1113,14 @@ p.copyright {
     position: sticky;
     top: 2em;
 }
+
+
+.gallery .row .col-md-6,.col-lg-6 {
+    margin-top: 4em;
+}
+
+
+
 /* ---------------- END PROJECT PAGE SPECIFICS --------------- */
 
 
