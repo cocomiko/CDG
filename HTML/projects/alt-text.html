@@ -21,9 +21,11 @@
         <!-- Native Stylesheets -->
         <link rel="stylesheet" href="../../CSS/main.css">
         <link href="../../CSS/style.css" rel="stylesheet">
+    
         
         <!-- Modal Gallery script-->
         <script src="../../SCRIPTS/main.js"></script>
+        
             
             
         <!-- Fonts -->
@@ -71,7 +73,7 @@
         
 <!-- IMAGE GALLERY -->
         <section>
-            <div class="container-fluid px-md-5 px-1" id="gallery">
+            <div class="container-fluid px-md-5 px-1 pt-md-3" id="gallery">
                 <div class="row z-index-1 position-relative order-2">
                 <!-- Grid: 1st enlarged image + 4 smaller. In mobile: shows only 1st image -->
                     <div class="col-md-6 col-lg-6">
@@ -120,6 +122,7 @@
             <div class="mySlides">
               <div class="numbertext">3 / 7</div>
               <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
+            
             </div>
 
             <div class="mySlides">
@@ -266,65 +269,8 @@
                 </a>
             </div>
         </div>
-        
-        <script src="../SCRIPTS/jquery.collapser.js"></script>
-        <script>
-            $(document).ready(function(){
-
-                $('.truncate').collapser({
-                    mode: 'lines',
-                    truncate: 4
-                });
-            });
-        </script>
-
 
         <!--   PUBLICATIONS SECTION END-->
-        
-<!--
-        <script>
-            // Open the Modal
-            function openModal() {
-              document.getElementById("myModal").style.display = "block";
-            }
-            //
-            //// Close the Modal
-            function closeModal() {
-              document.getElementById("myModal").style.display = "none";
-            }
-
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("demo");
-              var captionText = document.getElementById("caption");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";
-              dots[slideIndex-1].className += " active";
-              captionText.innerHTML = dots[slideIndex-1].alt;
-            }
-        </script>
--->
         
     </body>
 

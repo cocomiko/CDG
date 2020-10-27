@@ -1137,9 +1137,11 @@ p.copyright {
 }
 
 
+/*
 .gallery .row .col-md-6,.col-lg-6 {
     margin-top: 4em;
 }
+*/
 
 
 
@@ -1224,9 +1226,11 @@ p.copyright {
         margin-left: 1em;
     }
 
+/*
     .d-md-block {
         margin-top: 4em
     }
+*/
 
     .sticky-top a {
         position: -webkit-sticky;
@@ -1265,9 +1269,11 @@ p.copyright {
         margin-left: 1em;
     }
 
+/*
     .d-md-block {
         margin-top: 4em
     }
+*/
 
     .sticky-top a {
         position: -webkit-sticky;
