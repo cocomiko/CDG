@@ -669,39 +669,26 @@ textarea {
 /* ----------------------------------------------------------- */
 /* ----------------- NEWS PAGE SPECIFICS --------------------- */
 /* ----------------------------------------------------------- */
-div.news-page-images {
+div.three-image-news-layout {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-div.news-page-images img {
+div.three-image-news-layout img {
     width: 32%;
     height: 100%;
 }
 
-div.news-page-side-image {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 div.news-page-side-image img {
+    width: 100%;
+    height: 100%;
     margin-bottom: 10px;
-    width: 300px;
 }
 
-.one-col {
-    display: inline-block;
-}
-
-img {
-    display: inline-block;
-}
-
-p {
-    display: inline-block;
+.negative-row {
+    margin-left: -1em;
 }
 
 /* ---------------- END NEW PAGE SPECIFICS ------------------- */
@@ -1171,11 +1158,6 @@ p.copyright {
 /* ----------------------------------------------------------- */
 /* --------------------- MEDIA QUERIES ----------------------- */
 /* ----------------------------------------------------------- */
-
-
-
-
-
 @media (min-width: 300px) {
     .sticky-top {
         position: -webkit-sticky;
@@ -1211,6 +1193,34 @@ p.copyright {
     .members-heading {
         position: absolute;
         top: -2em;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: block;
+    }
+
+    div.three-image-news-layout img {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.news-page-side-image {
+        margin-top: 50px;
+    }
+
+    div.news-page-side-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .negative-row {
+        margin-left: .2em;
     }
 }
 
@@ -1251,6 +1261,25 @@ p.copyright {
     .members-heading {
         position: relative;
         top: 0;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: block;
+    }
+
+    div.three-image-news-layout img {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .negative-row {
+        margin-left: -1em;
     }
 }
 /* ----------------------------------------------------------- */
@@ -1373,6 +1402,30 @@ p.copyright {
     .news {
         margin-left: 1.55em;
     }
+
+        div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: block;
+    }
+
+    div.three-image-news-layout img {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.news-page-side-image {
+        margin-top: 0px;
+    }
+
+    div.news-page-side-image img {
+        width: 100%;
+        height: 100%;
+    }
   }
 
   @media (min-width: 991px) {
@@ -1384,6 +1437,18 @@ p.copyright {
     .news {
         margin-left: 1.9em;
     }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.three-image-news-layout img {
+        width: 32%;
+        height: 100%;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -1394,6 +1459,18 @@ p.copyright {
 
     .news {
         margin-left: 2.3em;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.three-image-news-layout img {
+        width: 32%;
+        height: 100%;
     }
   }
 
@@ -1410,6 +1487,18 @@ p.copyright {
 
     .news {
         margin-left: 2.3em;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.three-image-news-layout img {
+        width: 32%;
+        height: 100%;
     }
   }
 
