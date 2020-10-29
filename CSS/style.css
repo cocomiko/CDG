@@ -1161,6 +1161,7 @@ p.copyright {
 @media (min-width: 300px) {
     .sticky-top {
         position: -webkit-sticky;
+        position: sticky;
         background-color: #221EE0;
         height: 5em;
         width: calc(100% + 2em);
