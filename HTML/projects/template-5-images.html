@@ -71,9 +71,9 @@
         
 <!-- IMAGE GALLERY -->
         <section>
-            <div class="container-fluid px-md-5 px-1" id="gallery">
-                <div class="row z-index-1 position-relative order-2">
-                <!-- Grid: 1st enlarged image + 4 smaller. In mobile: shows only 1st image -->
+            <div class="container-fluid px-md-5 px-1 edited-margin" id="gallery">
+                <div class="single-5-images row z-index-1 position-relative order-2">
+
                     <div class="col-md-6 col-lg-6">
                         <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg" alt="Project image">
                     </div>
@@ -96,58 +96,58 @@
                   
                     <!-- View All Gallery Button-->
                     <div class="button-height offset-md-11 offset-9 pr-6">
-                         <button onclick="openModal();currentSlide(6)" type="button" class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
+                         <button onclick="openModal();currentSlide(1)" type="button" class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
                     </div>
                     
                 </div>
                </div>      
             
-        <!-- The Modal Gallery/Lightbox -->
-        <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
+              <!-- The Modal Gallery/Lightbox -->
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
 
-            <div class="mySlides">
-              <div class="numbertext">1 / 7</div>
-              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
-            </div>
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
+                  </div>
 
-            <div class="mySlides">
-              <div class="numbertext">2 / 7</div>
-              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
-            </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
+                  </div>
 
-            <div class="mySlides">
-              <div class="numbertext">3 / 7</div>
-              <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
-            </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
+                  </div>
 
-            <div class="mySlides">
-              <div class="numbertext">4 / 7</div>
-              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-            </div>
-              
-            <div class="mySlides">
-              <div class="numbertext">5 / 7</div>
-              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-            </div>
-              
-              <div class="mySlides">
-              <div class="numbertext">6 / 7</div>
-              <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
-            </div>
-              
-              <div class="mySlides">
-              <div class="numbertext">7 / 7</div>
-              <img src="https://shop.animolaundry.com/wp-content/uploads/2014/04/img_placeholder-44.jpg" style="width:100%">
-            </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+                  </div>
+                    
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+                  </div>
+                    
+                    <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
+                  </div>
+                    
+                    <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+                  </div>
 
-            <!-- Next/previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
-          </div>
-        </div>
+                  <!-- Next/previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+              </div>
             
     </section>
         
@@ -210,11 +210,11 @@
                       
                       <!--  links  --> 
                       <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
+                        <li class ="dropdown">
+                          <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
+                          <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
+                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </ul>         
                         </li> 
                         <li>
                           <a class="in-text-link" href="#">read full</a>
@@ -236,11 +236,11 @@
                       
                       <!--  links  --> 
                       <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
+                        <li class ="dropdown">
+                          <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
+                          <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
+                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </ul>         
                         </li> 
                         <li>
                           <a class="in-text-link" href="#">read full</a>
@@ -262,11 +262,11 @@
                       
                       <!--  links  --> 
                       <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
+                        <li class ="dropdown">
+                          <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
+                          <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
+                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </ul>         
                         </li> 
                         <li>
                           <a class="in-text-link" href="#">read full</a>
@@ -288,11 +288,11 @@
                       
                       <!--  links  --> 
                       <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
+                        <li class ="dropdown">
+                          <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
+                          <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
+                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </ul>         
                         </li> 
                         <li>
                           <a class="in-text-link" href="#">read full</a>
@@ -311,18 +311,75 @@
                </div>
     
         </div>
-            <!-- BACK TO PROJECTS PAGE BUTTON -->
+        </section>
+
+        <!-- BACK TO PROJECTS PAGE BUTTON -->
         <div class="row">
-            <div class="col-md-5 ml-3 pl-md-6">
-                <a id='acrBack' onclick='javascript:history.back();' class="back-to-projects-link">
-                    <p class="back-to-top-text"><img class="back-to-top-arrow" src="../../IMG/arrow-left.png">back to projects</p>
+            <div class="col-md-7"></div>
+
+            <div class="col-md-5">
+                <a href="../projects.html" class="back-to-top-link">
+                    <p class="back-to-top-text"><img class="back-to-top-arrow" src="../../IMG/arrow-back-to-top.png">back to projects</p>
                 </a>
             </div>
         </div>
-        </section>
         
-        <!-- Drop Down Abstract-->
-        <script src="../../SCRIPTS/dropdown.js"></script>
+        <script src="../../SCRIPTS/jquery.collapser.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $('.truncate').collapser({
+                    mode: 'lines',
+                    truncate: 4
+                });
+            });
+        </script>
+        <!--   PUBLICATIONS SECTION END-->
+        
+<!--
+        <script>
+            // Open the Modal
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            //
+            //// Close the Modal
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+-->
         
     </body>
 
