@@ -272,15 +272,14 @@ section {
         position: relative;
         top: -150px;
         visibility: hidden;
+        
     }
     
     
     .members-sticky-menu {
         position: -webkit-sticky;
         position: sticky;
-        z-index: 100;
-                margin-top:-1em;
-        
+        z-index: 100;   
     }
 
     .members-all .sticky-top {
