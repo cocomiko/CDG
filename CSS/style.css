@@ -316,7 +316,7 @@ section {
         width: 100%;
     }
     
-        .members-all .anchor-list-item {
+    .members-all .anchor-list-item {
         font-size: 1.25em;
     }
 
@@ -341,7 +341,8 @@ section {
             margin: 10px;
             padding:0;
             align-items: center;
-            text-align: center;   
+            text-align: center;  
+            align-self: center;
     }
 
     .members-all .sticky-top {
