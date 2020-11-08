@@ -225,6 +225,22 @@ section {
         display: block;
         margin: 0px;
         justify-content: space-between;
+        
+    }
+    
+    
+    .publications-sticky-menu > .btn:focus{
+        background-color:#ecebff;
+        color:#221EE0;
+        border-width: 3px;  
+    }
+  
+    .bootstrap-slider {
+        width: 100%;
+        margin-top: 3em !important;
+        justify-content:center;
+        top:100px;
+        padding-left: 1em;
     }
 
     .side-filters.sticky-top {
@@ -234,6 +250,7 @@ section {
         justify-content: space-between;
         margin: 0px;
         top: 62px;
+        background-color: white;
     }
 
     .filter-label {
@@ -255,8 +272,32 @@ section {
         position: relative;
         top: -150px;
         visibility: hidden;
+        
+    }
+    
+    
+    .members-sticky-menu {
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 100;   
     }
 
+    .members-all .sticky-top {
+        padding-top:1.5em;
+        justify-content: space-around;
+        
+    }
+
+    .members-all .anchor-list-item {
+        font-size: 1.05em;
+        line-height: 1em;
+        margin:auto;
+    }
+
+}
+
+
+@media (min-width:768px){
     .members-sticky-menu {
         position: -webkit-sticky;
         position: sticky;
@@ -264,22 +305,64 @@ section {
     }
 
     .members-all .sticky-top a {
-        line-height: 1em;
+        line-height: 2em;
         align-self: center;
+        margin:auto;
     }
 
     .members-all .sticky-top {
-        padding-top: 2em;
+        padding-top:2em;
         justify-content: space-around;
-        padding-left: inherit;
+        width: 100%;
+    }
+    
+        .members-all .anchor-list-item {
+        font-size: 1.25em;
     }
 
-    .members-all .anchor-list-item {
-        font-size: 1.2em;
+}
+
+
+
+@media (max-width:425px){
+    .members-sticky-menu {
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 100;
+    }
+
+    .members-all .sticky-top a {
+
+    }
+
+        .members-all .sticky-top >.anchor-list-item {
+
+            display:block;
+            margin: 10px;
+            padding:0;
+            align-items: center;
+            text-align: center;   
+    }
+
+    .members-all .sticky-top {
+        
+        padding: 9px;
+/*        padding-top:2em;*/
+        justify-content: space-around;
+/*        margin-top:0px;*/
+
+/*
+        padding-top: 1em;
+        padding-bottom: 1em;
+*/
+        
     }
 }
 
-@media (min-width: 300px) {
+
+
+@media (min-width: 870px) {
+
     .side-filters.sticky-top {
         background-color: transparent;
         width: 100%;
@@ -289,12 +372,14 @@ section {
     }
 
     .side-filters.sticky-top button {
-        width: 100%;
+        width: 80%;
         display: block;
         justify-content: space-between;
         margin: 0px;
     }
 }
+
+
 
 /* ------------------- END TEXT ELEMENTS --------------------- */
 
@@ -368,7 +453,7 @@ p.back-to-top-text {
     color: #221EE0;
 }
 
-.back-to-top-link {
+.back-to-top-link, .back-to-projects-link {
     font-family: 'Karla', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -404,6 +489,16 @@ img.howtoapply-image {
 
 /* my hack job of trying to solve this issue - underline still showing up even when I write 'none'*/
 .back-to-top-link:hover p {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/*Back to projects btn for single proj page*/
+.back-to-projects-link:hover img {
+    left: -0.5em;
+    transition-duration: 0.5s;
+}
+.back-to-projects-link:hover p {
     text-decoration: underline;
     text-decoration-color: white;
 }
@@ -925,7 +1020,9 @@ p.copyright {
         overflow:hidden;
         background:none!important;
         height:300px;
-        width:100%;
+        width:100% !important;
+        padding: 0px;
+        margin:0px;
     }   
 }
  
@@ -970,7 +1067,7 @@ p.copyright {
 }
 
 .btn:active, .btn.is-checked {
-  background: rgba(229, 223, 255, 0.15);
+  background: rgb(246, 244, 255);
 /*  color: #fff;*/
     border: 2.3px solid #433FFF;
     font-weight: bold;
@@ -987,7 +1084,7 @@ p.copyright {
     font-style: normal;
     font-weight: normal;
     color: #221EE0;
-    background: rgb(244, 241, 255);
+    background-color: #f9f8ff;
     border: 1.9px solid #433FFF;
     border-radius: 5px 5px !important;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
@@ -1006,7 +1103,7 @@ p.copyright {
 }
 
 .btn:active, .btn.is-checked {
-  background: rgba(229, 223, 255, 0.15);
+  background-color: rgb(255, 255, 255);
 /*  color: #fff;*/
     border: 2.3px solid #433FFF;
     font-weight: bold;
@@ -1532,9 +1629,9 @@ p.copyright {
 }
 
 
-/*
+
 
 .btn-filter{
   margin-bottom: 5em;
-
-}*/
+    background-color: #f9f8ff;
+}

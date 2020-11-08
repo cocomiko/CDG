@@ -206,12 +206,12 @@
                       
                       <!--  links  --> 
                       <ul class="row justify-content-start ml-0">
-                        <li class ="dropdown">
-                          <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
-                          <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
+                        <li class ="dropdownn">
+                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
+                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
                           <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </ul>         
-                        </li> 
+                        </li>
                         <li>
                           <a class="in-text-link" href="#">read full</a>
                         </li>
@@ -229,75 +229,19 @@
                </div>
     
         </div>
-        </section>
-
+        
         <!-- BACK TO PROJECTS PAGE BUTTON -->
         <div class="row">
-            <div class="col-md-7"></div>
-
-            <div class="col-md-5">
-                <a href="../projects.html" class="back-to-top-link">
-                    <p class="back-to-top-text"><img class="back-to-top-arrow" src="../IMG/arrow-back-to-top.png">back to projects</p>
+            <div class="col-md-5 ml-3 pl-md-6">
+                <a id='acrBack' onclick='javascript:history.back();' class="back-to-projects-link">
+                    <p class="back-to-top-text"><img class="back-to-top-arrow" src="../../IMG/arrow-left.png">back to projects</p>
                 </a>
             </div>
         </div>
+        </section>
         
-        <script src="../SCRIPTS/jquery.collapser.js"></script>
-        <script>
-            $(document).ready(function(){
-
-                $('.truncate').collapser({
-                    mode: 'lines',
-                    truncate: 4
-                });
-            });
-        </script>
-        <!--   PUBLICATIONS SECTION END-->
-        
-<!--
-        <script>
-            // Open the Modal
-            function openModal() {
-              document.getElementById("myModal").style.display = "block";
-            }
-            //
-            //// Close the Modal
-            function closeModal() {
-              document.getElementById("myModal").style.display = "none";
-            }
-
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("demo");
-              var captionText = document.getElementById("caption");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";
-              dots[slideIndex-1].className += " active";
-              captionText.innerHTML = dots[slideIndex-1].alt;
-            }
-        </script>
--->
+        <!-- Drop Down Abstract-->
+        <script src="../../SCRIPTS/dropdown.js"></script>
         
     </body>
 
