@@ -162,7 +162,7 @@ section {
     padding: 30px 0px 30px 0px;
 }
 
-/*IN references links for publications cards ADD TO STYLEGUIDE*/
+/*IN references links for publications cards ADD TO STYLEGUIDE From: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
 .dont-break {
   /* These are technically the same, but use both */
   overflow-wrap: break-word;
