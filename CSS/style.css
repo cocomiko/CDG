@@ -976,6 +976,9 @@ box-shadow: none;
 footer {
     padding: 2.5em 0.7em 0.7em 0.7em;
     background-color: #221EE0;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
 }
 
 footer a:hover {
