@@ -162,6 +162,25 @@ section {
     padding: 30px 0px 30px 0px;
 }
 
+/*IN references links for publications cards ADD TO STYLEGUIDE From: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+.dont-break {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 @media (max-width: 768px) {
  
     h1 {
@@ -237,14 +256,14 @@ section {
   
     .bootstrap-slider {
         width: 100%;
-        margin-top: 3em !important;
+        margin-top: 2.5em !important;
         justify-content:center;
         top:100px;
         padding-left: 1em;
     }
 
     .side-filters.sticky-top {
-        background-color: white;
+
         width: 100%;
         display: block;
         justify-content: space-between;
@@ -310,13 +329,15 @@ section {
         margin:auto;
     }
 
+/*
     .members-all .sticky-top {
         padding-top:2em;
         justify-content: space-around;
         width: 100%;
     }
+*/
     
-        .members-all .anchor-list-item {
+    .members-all .anchor-list-item {
         font-size: 1.25em;
     }
 
@@ -341,7 +362,8 @@ section {
             margin: 10px;
             padding:0;
             align-items: center;
-            text-align: center;   
+            text-align: center;  
+            align-self: center;
     }
 
     .members-all .sticky-top {
@@ -362,14 +384,6 @@ section {
 
 
 @media (min-width: 870px) {
-
-    .side-filters.sticky-top {
-        background-color: transparent;
-        width: 100%;
-        display: block;
-        justify-content: space-between;
-        margin: 0px;
-    }
 
     .side-filters.sticky-top button {
         width: 80%;
@@ -517,7 +531,7 @@ img.howtoapply-image {
     font-size: 1.25em;
     font-style: normal;
     font-weight: bold;
-    color: #ffffff;
+    color: #ffffff !important;
     background-color: #221EE0;
     padding: 0.8em 2em 0.8em 2em;
     width: 290px;
@@ -531,6 +545,7 @@ img.howtoapply-image {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
+
 
 .secondary-button {
     font-family: 'Karla', sans-serif;
@@ -1061,6 +1076,42 @@ p.copyright {
     margin: 3px !important;  
 }
 
+#gallery .single-5-images .btn {
+    margin: -8px !important;
+    margin-left: -20px !important;
+}
+
+#gallery .single-4-images .btn {
+    margin: -15px !important;
+}
+
+#gallery .single-3-images .btn {
+    margin: -15px !important;
+}
+
+#gallery .single-2-images .btn {
+    margin: -20px !important;
+}
+
+#gallery .single-1-image .btn {
+    margin: -20px !important;
+}
+
+@media (max-width: 426px) {
+    #gallery .single-2-images .btn {
+        margin: -15px !important;
+    }
+
+    #gallery .single-2-images img {
+        height: 200px !important;
+    }
+
+    #gallery .single-1-image img {
+        height: 200px !important;
+    }
+}
+
+
 .btn:hover {
     border-color: #13117D;
     color: #221EE0;
@@ -1223,10 +1274,14 @@ p.copyright {
     top: 2em;
 }
 
-
 .gallery .row .col-md-6,.col-lg-6 {
     margin-top: 4em;
 }
+
+.single-4-images .d-md-block {
+    margin-top: 0px;
+}
+
 
 
 
@@ -1249,6 +1304,7 @@ p.copyright {
 .offset-md-2 {
     margin-left: 2.5em;
 }
+
 /* ------------ END PUBLICATIONS PAGE SPECIFICS -------------- */
 
 
@@ -1328,16 +1384,31 @@ p.copyright {
 @media (min-width: 768px) {
     .sticky-top {
         position: -webkit-sticky;
-        background-color: white;
+        background-color: transparent;
         display: block;
         width: 100%;
+        top:7em !important;
         margin-top: 1em;
-        margin-left: 1em;
+        margin-left: 2em;
     }
 
+/*
+    
+    .side-filters.sticky-top {
+        background-color: transparent;
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        margin: 0px;
+        top:7em !important;
+    }
+*/
+
+/*
     .d-md-block {
         margin-top: 4em
     }
+*/
 
     .sticky-top a {
         position: -webkit-sticky;
@@ -1357,6 +1428,7 @@ p.copyright {
     div.members-landing-image {
         width: 100%;
         height: 400px;
+        margin-bottom: 3em;
     }
 
     .members-heading {
@@ -1395,9 +1467,11 @@ p.copyright {
         margin-left: 1em;
     }
 
+/*
     .d-md-block {
         margin-top: 4em
     }
+*/
 
     .sticky-top a {
         position: -webkit-sticky;
@@ -1638,3 +1712,14 @@ p.copyright {
   margin-bottom: 5em;
     background-color: #f9f8ff;
 }
+
+/*
+@media (min-width:768){
+.col-auto{
+   padding-right: 0 !important;
+}
+}
+
+.col-auto{
+   margin-bottom: 1em !important;
+}*/

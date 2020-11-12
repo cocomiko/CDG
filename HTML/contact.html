@@ -79,7 +79,10 @@
 
           <div class=" col-lg-6 ">
             <!-- Code by https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit -->
-            <form action="/action_page.php">
+
+            <!--<form id="contact-form" name="contact-form" action="http://www.sfu.ca/~bsolanki/cgi-bin/" method="POST">-->
+            <form id="contact-form" name="contact-form" action="../SCRIPTS/mail.php" method="POST">
+
               <div class="row">
                 <div class="w-100 pl-3 mb-3">
                   <label for="name">Name</label><br>
@@ -95,9 +98,19 @@
                   <label for="message">Message</label><br>
                   <textarea class="text-input text-input-message" type="text" id="message" message="message"></textarea>
                 </div>
-   
+
+                <input type="hidden" name="recipient" value="bhavin_solanki@sfu.ca">
+
                 <div class="col-md-1">
+                  <a class="primary-button" onclick="document.getElementById('contact-form').submit();">Submit</a>
+                </div>
+
+                <input type="hidden" name="redirect_url" value="<a href=http://www.sfu.ca/acs&gt; the IT Services Home Page</a&gt;">
+   
+                <!--<div class="col-md-1">
                   <button class="primary-button" onclick='location.href="#"' type="submit">Submit</button>
+                </div>-->
+  
                 </div> <!-- END OF COL-MD-1 -->
             </form> 
           </div> <!-- END OF COL -->

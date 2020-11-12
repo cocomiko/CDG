@@ -445,9 +445,80 @@ img.hover-shadow {
   object-fit: cover !important;
 }
 
-/*Gallery 1st Img heigh*/
-#gallery .row >div {
-    height: 360px;
+#gallery .single-3-images img {
+  width: 98% !important;
+}
+
+#gallery .single-2-images img {
+  width: 98% !important;
+  height: 375px !important;
+}
+
+#gallery .single-1-image img {
+  width: 98% !important;
+  height: 375px !important;
+}
+
+.middle-smaller-height {
+  margin-top: -8px !important;
+}
+
+.single-2-images .mainimg {
+  margin-top: 0px !important;
+}
+
+@media (min-width: 1273px) {
+  /*Gallery 1st Img heigh*/
+  #gallery .single-5-images >div {
+    height: 369px;
+  }
+
+  #gallery .single-5-images .single-5-images >div {
+    height: 369px;
+  }
+
+  #gallery .single-4-images .force-height > div {
+    height: 176px;
+  }
+}
+
+.edited-margin {
+  margin-top: -65px;
+}
+
+.single-3-images .d-md-block {
+  margin-top: 0px;
+}
+
+.single-2-images .d-md-block {
+  margin-top: 0px;
+}
+
+.single-1-image .d-md-block {
+  margin-top: 0px;
+}
+
+@media (max-width: 1273px) {
+  /*Gallery 1st Img height*/
+  #gallery .single-5-images >div {
+      height: 373px;
+  }
+
+  #gallery .single-5-images >div {
+    height: 373px;
+  }
+}
+
+.single-4-images .col-md-4, .col-lg-4 {
+  height: 378px;
+}
+
+.single-4-images .d-md-block {
+  height: 385px;
+}
+
+.single-4-images .col-md-4,.col-lg-4 {
+  padding-right: 0px;
 }
 
 #gallery .mainimg {
@@ -457,8 +528,14 @@ img.hover-shadow {
 
 /*Gallery rest Img heigh*/
 #gallery .row .force-height>div {
-    height: 180px;
-    margin: 0.5em;
+  height: 180px;
+  margin: 0.5em;
+}
+
+
+.single-4-images .d-md-block {
+  margin-top: 0px;
+  padding-top: 5px;
 }
 
 

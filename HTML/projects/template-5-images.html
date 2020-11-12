@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Cambria | Computational Design Group</title>
+        <title>Single Project | Computational Design Group</title>
         <meta name="description" content="Webpage for Computational Design Group at SFU">
         
         <!-- Bootstrap CSS -->
@@ -71,9 +71,9 @@
         
 <!-- IMAGE GALLERY -->
         <section>
-            <div class="container-fluid px-md-5 px-1" id="gallery">
-                <div class="row z-index-1 position-relative order-2">
-                <!-- Grid: 1st enlarged image + 4 smaller. In mobile: shows only 1st image -->
+            <div class="container-fluid px-md-5 px-1 edited-margin" id="gallery">
+                <div class="single-5-images row z-index-1 position-relative order-2">
+
                     <div class="col-md-6 col-lg-6">
                         <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg" alt="Project image">
                     </div>
@@ -96,58 +96,58 @@
                   
                     <!-- View All Gallery Button-->
                     <div class="button-height offset-md-11 offset-9 pr-6">
-                         <button onclick="openModal();currentSlide(6)" type="button" class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
+                         <button onclick="openModal();currentSlide(1)" type="button" class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
                     </div>
                     
                 </div>
                </div>      
             
-        <!-- The Modal Gallery/Lightbox -->
-        <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
+              <!-- The Modal Gallery/Lightbox -->
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
 
-            <div class="mySlides">
-              <div class="numbertext">1 / 7</div>
-              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
-            </div>
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
+                  </div>
 
-            <div class="mySlides">
-              <div class="numbertext">2 / 7</div>
-              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
-            </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
+                  </div>
 
-            <div class="mySlides">
-              <div class="numbertext">3 / 7</div>
-              <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
-            </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
+                  </div>
 
-            <div class="mySlides">
-              <div class="numbertext">4 / 7</div>
-              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-            </div>
-              
-            <div class="mySlides">
-              <div class="numbertext">5 / 7</div>
-              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-            </div>
-              
-              <div class="mySlides">
-              <div class="numbertext">6 / 7</div>
-              <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
-            </div>
-              
-              <div class="mySlides">
-              <div class="numbertext">7 / 7</div>
-              <img src="https://shop.animolaundry.com/wp-content/uploads/2014/04/img_placeholder-44.jpg" style="width:100%">
-            </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+                  </div>
+                    
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+                  </div>
+                    
+                    <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
+                  </div>
+                    
+                    <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+                  </div>
 
-            <!-- Next/previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
-          </div>
-        </div>
+                  <!-- Next/previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+              </div>
             
     </section>
         
@@ -156,14 +156,14 @@
         <div class="row">
             <!--   Project Title -->
             <div class="col-md-5">    
-                <h1>Cambria</h1>
+                <h1>Collaboration Workflow Simplified: Reduction of Device Overhead for Integrated Design Collaboration</h1>
                 <!--   Project Specifcs-->
                 <div class="px-1">
                 <hr>
                 <div class="project-team">
-                    <p class="paragraph">Sinisa Kolaric</p>
+                    <p class="paragraph">Andy Huang</p>
+                    <p class="paragraph">Halil Erhan</p>
                     <p class="paragraph">Robert Woodbury</p>
-                    <p class="paragraph">Halil Erhan</p>                 
                 </div>
                 <hr>
                 <div class="project-tags">
@@ -173,16 +173,21 @@
                 </div>
                 <hr>
                 <div class="project-year">
-                    <p class="body"></p>
+                    <p class="body">2020</p>
                 </div>
                 <hr>  
-
+                <div class="project-partners">
+                    <img src="https://via.placeholder.com/80X80.png" alt="project partner 1">
+                    <img src="https://via.placeholder.com/80X80.png" alt="project partner 1">
+                </div>
                 </div>
             </div>
             <!-- Project Summary -->
             <div class="col-md-7 py-5 py-md-0">
                 <div class="project-description">
-                    <p class="body">Computational design tools assist designers in their professional work, one key aspect of which is devising, evaluating, and choosing among multiple design alternatives. Yet, with few and limited exceptions, current tools handle just a single design model at a time, forcing users to adopt various ad-hoc strategies for dealing with multiple design alternatives. We describe CAMBRIA, a multi-state prototype tool for simultaneously managing multiple 2D vector graphics models. Based on analysis of expert feedback, we propose an initial set of system design guidelines for building graphics editing systems capable of managing multiple, simultaneously available design solutions. We believe that these guidelines can be successfully applied in other areas of work in which people consider multiple alternatives.</p>
+                    <p class="body">Design collaboration relies on cognitive tools such as analog media and digital peripheral devices, and shows the characteristics of distributed cognition (Hutchins, 1995). It is a social and complex activity involving multiple agents communicating and using external cognitive tools to encode, decode, and share information in the process of collaborative task completion. The systems supporting this activity should meet the 'principle of least collaboration effort' (Clark and Wilkes-Gibbs, 1986) that proposes that agents in collaboration minimize their effort in presentation and acceptance of arguments (information). They should also adapt the minimal interference principle to ensure task completion to be as simple as possible. We have yet to see a design-collaboration support system that adapts these views. Currently, collaboration uses dispersed mixed media that is often overloaded with representations and functionality, thus preventing seamless information sharing. Designers are required to spend extra effort collecting information using peripheral devices and in system management when sharing information. This hinders design collaborations, as the system becomes a bottleneck in information exchange. Such systems go against Clark's principle (1986) by imposing overheads that potentially lead to designers neglecting to both add and retrieve information. The overheads are also observed when associating information within a design process because existing information is effectively inaccessible.</p>
+                    <br>
+                    <p class="body">The goal of this study is to understand these overheads in information collection and sharing using peripheral devices, and to provide designers with a supportive platform to enhance collaboration using both analog and digital media. The platform is envisioned to improve productivity and reduce redundant work by integrating peripheral devices into the collaboration workflow. Information acquired using these devices should flow into the collaboration knowledge base as effortlessly as possible, without forcing them to perform extra tasks. More-over, designers should be able to choose quickly which information is to be shared with other collaborators.</p>
                 </div>
         </div>
       </div>
@@ -201,111 +206,7 @@
                   <!-- Publications 1-->  
                   <div class="card-no-click">
                     <div class="card-body px-0 pt-0">
-                      <p>Robert Woodbury Siniša Kolarić, Halil Erhan. CAMBRIA: a tool for managing multiple design alternatives. In Proceedings of the 2014 companion publication on Designing Interactive Systems, pages 81–84, New York, NY, USA, 2014. ACM.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-                  
-                  <!-- Publications 2-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                        <p>Robert Woodbury, Siniša Kolarić, Halil Erhan, and Jeffrey Guenther. Design exploration, configuration management: Two sides of the same coin? Presented at Maieutic Parataxis, Congress on the Future of Engineering Software, April 2013. Accessed at <span class="dont-break"> http://cofes.com/Video/COFES-2013</span> on 27 April 2013.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-                    
-                  <!-- Publications 3--> 
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Robert Woodbury, Siniša Kolarić, Halil Erhan, and Jeffrey Guenther. Design exploration, configuration management: Two sides of the same coin? Poster at Maieutic Parataxis, Congress on the Future of Engineering Software, April 2013.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-                    
-                  <!-- Publications 4-->
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Robert Woodbury, Siniša Kolarić, Halil Erhan, and Jeffrey Guenther. Unconventional Computing, chapter Exploring for Designs: Five Basic Elements, pages 210–215. Riverside Architectural Press, 2013.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 5-->
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Siniša Kolarić, Halil Erhan, and Robert Woodbury. CAMBRIA: supporting sets of alternatives in parametric design. Poster at 3rd Annual GRAND Conference, Montreal, 2-4 May 2012.</p>
+                      <p>Robert F. Woodbury. An introduction to shape schema grammars. Environment and Planning B, 2015. to appear.</p>
                       
                       <!--  links  --> 
                       <ul class="row justify-content-start ml-0">
@@ -327,11 +228,63 @@
                         </ul>
                     </div>
                   </div>
-
-                  <!-- Publications 6-->
+                  
+                  <!-- Publications 2-->  
                   <div class="card-no-click">
                     <div class="card-body px-0">
-                      <p>Siniša Kolarić, Halil Erhan, Robert Woodbury, and Bernhard E. Riecke. Comprehending Parametric CAD Models: an Evaluation of Two Graphical User Interfaces. In Proceedings of the 6th Nordic Conference on Human-Computer Interaction: Extending Boundaries, NordiCHI '10, pages 707–710. ACM, 2010.</p>
+                      <p>Robert F. Woodbury. An introduction to shape schema grammars. Environment and Planning B, 2015. to appear.</p>
+                      
+                      <!--  links  --> 
+                      <ul class="row justify-content-start ml-0">
+                        <li class ="dropdown">
+                          <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
+                          <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
+                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </ul>         
+                        </li> 
+                        <li>
+                          <a class="in-text-link" href="#">read full</a>
+                        </li>
+                        <li>
+                          <a class="in-text-link" href="#">download pdf</a>
+                        </li>
+                        <li>
+                          <a class="in-text-link" href="#">cite</a>
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
+                    
+                  <!-- Publications 3--> 
+                  <div class="card-no-click">
+                    <div class="card-body px-0">
+                      <p>Robert F. Woodbury. An introduction to shape schema grammars. Environment and Planning B, 2015. to appear.</p>
+                      
+                      <!--  links  --> 
+                      <ul class="row justify-content-start ml-0">
+                        <li class ="dropdown">
+                          <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
+                          <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
+                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </ul>         
+                        </li> 
+                        <li>
+                          <a class="in-text-link" href="#">read full</a>
+                        </li>
+                        <li>
+                          <a class="in-text-link" href="#">download pdf</a>
+                        </li>
+                        <li>
+                          <a class="in-text-link" href="#">cite</a>
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
+                    
+                  <!-- Publications 4-->
+                  <div class="card-no-click">
+                    <div class="card-body px-0">
+                      <p>Robert F. Woodbury. An introduction to shape schema grammars. Environment and Planning B, 2015. to appear.</p>
                       
                       <!--  links  --> 
                       <ul class="row justify-content-start ml-0">
@@ -370,79 +323,8 @@
         </section>
         
         <!-- Drop Down Abstract-->
-        <script src="../../SCRIPTS/dropdown.js"></script>
-<!--
-        
-        </section>
+        <script src="../../SCRIPTS/dropdown.js"></script>  
 
-         BACK TO PROJECTS PAGE BUTTON 
-        <div class="row">
-            <div class="col-md-7"></div>
-
-            <div class="col-md-5">
-                <a href="../projects.html" class="back-to-top-link">
-                    <p class="back-to-top-text"><img class="back-to-top-arrow" src="../IMG/arrow-back-to-top.png">back to projects</p>
-                </a>
-            </div>
-        </div>
-        
-        <script src="../SCRIPTS/jquery.collapser.js"></script>
-        <script>
-            $(document).ready(function(){
-
-                $('.truncate').collapser({
-                    mode: 'lines',
-                    truncate: 4
-                });
-            });
-        </script>
--->
-        <!--   PUBLICATIONS SECTION END-->
-        
-<!--
-        <script>
-            // Open the Modal
-            function openModal() {
-              document.getElementById("myModal").style.display = "block";
-            }
-            //
-            //// Close the Modal
-            function closeModal() {
-              document.getElementById("myModal").style.display = "none";
-            }
-
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("demo");
-              var captionText = document.getElementById("caption");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";
-              dots[slideIndex-1].className += " active";
-              captionText.innerHTML = dots[slideIndex-1].alt;
-            }
-        </script>
--->
         
     </body>
 
