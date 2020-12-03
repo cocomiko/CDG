@@ -32,111 +32,110 @@
         <!-- Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-    </head>
+      </head>
 
 
     <body class="container-fluid px-0">
 
-        <header>
-			<nav class="navbar navbar-expand-md">
-              <a class="navbar-brand" href="../home.html">Home Page</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse mr-auto" id="navbarText">
-                <div class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../publications.html">Publications</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../members.html">Members</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../news.html">News</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../contact.html">Contact</a>
-                  </li>
-                </div>
-              </div>
-            </nav>
-		</header>
+      <header>
+        <nav class="navbar navbar-expand-md">
+          <a class="navbar-brand" href="../home.html">Home Page</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mr-auto" id="navbarText">
+            <div class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../publications.html">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../members.html">Members</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact</a>
+              </li>
+            </div>
+          </div>
+        </nav>
+      </header>
         
 <!-- IMAGE GALLERY -->
-        <section>
-            <div class="container-fluid px-md-5 px-1" id="gallery">
-                <div class="single-2-images row z-index-1 position-relative order-2">
-                    
-                    <div class="col-md-6 col-lg-6 d-md-block force-height px-0 image-higher">
-                        <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg" alt="Project image">
-                    </div>
-                    <div class="col-md-6 col-lg-6 d-none d-md-block force-height px-0">
-                      <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
-                    </div>    
-                  
-                    <!-- View All Gallery Button-->
-                    <div class="button-height offset-md-11 offset-9 pr-6">
-                         <button onclick="openModal();currentSlide(1)" type="button" class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
-                    </div>
-                    
-                </div>
-               </div>      
-            
-              <!-- The Modal Gallery/Lightbox -->
-              <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-
-                  <div class="mySlides">
-                    <div class="numbertext">1 / 7</div>
-                    <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
-                  </div>
-
-                  <div class="mySlides">
-                    <div class="numbertext">2 / 7</div>
-                    <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
-                  </div>
-
-                  <div class="mySlides">
-                    <div class="numbertext">3 / 7</div>
-                    <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
-                  </div>
-
-                  <div class="mySlides">
-                    <div class="numbertext">4 / 7</div>
-                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-                  </div>
-                    
-                  <div class="mySlides">
-                    <div class="numbertext">5 / 7</div>
-                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-                  </div>
-                    
-                    <div class="mySlides">
-                    <div class="numbertext">6 / 7</div>
-                    <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
-                  </div>
-                    
-                    <div class="mySlides">
-                    <div class="numbertext">7 / 7</div>
-                    <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-                  </div>
-
-                  <!-- Next/previous buttons -->
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    
-                </div>
+      <section>
+        <div class="container-fluid px-md-5 px-1" id="gallery">
+          <div class="single-2-images row z-index-1 position-relative order-2">
+              
+              <div class="col-md-6 col-lg-6 d-md-block force-height px-0 image-higher">
+                  <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg" alt="Project image">
               </div>
+              <div class="col-md-6 col-lg-6 d-none d-md-block force-height px-0">
+                <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
+              </div>    
             
-    </section>
+              <!-- View All Gallery Button-->
+              <div class="button-height offset-md-11 offset-9 pr-6">
+                    <button onclick="openModal();currentSlide(1)" type="button" class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
+              </div>
+              
+          </div>
+        </div>      
+        
+        <!-- The Modal Gallery/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 7</div>
+              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 7</div>
+              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 7</div>
+              <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 7</div>
+              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">5 / 7</div>
+              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+            </div>
+              
+              <div class="mySlides">
+              <div class="numbertext">6 / 7</div>
+              <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
+            </div>
+              
+              <div class="mySlides">
+              <div class="numbertext">7 / 7</div>
+              <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+            </div>
+
+            <!-- Next/previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+          </div>
+        </div>
+            
+      </section>
         
 <!--   MAIN PAGE START -->
       <div class="project-info px-2 px-md-6 pb-5">  

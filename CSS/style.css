@@ -145,6 +145,14 @@ p {
    padding-top:0.8em;
 }
 
+.img-about {
+    height: 402px;
+    width: auto;
+    background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
 p.large-text {
     font-family: 'Karla', sans-serif;
     font-size: 1.25em;
@@ -1280,6 +1288,10 @@ p.copyright {
 
 .single-4-images .d-md-block {
     margin-top: 0px;
+}
+
+.single-5-images .col-md-6, .col-lg-6 {
+    margin-top: 0em;
 }
 
 
