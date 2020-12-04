@@ -509,9 +509,13 @@ img.howtoapply-image {
     transition-duration: 0.5s;
 }
 
-/* my hack job of trying to solve this issue - underline still showing up even when I write 'none'*/
 .back-to-top-link:hover p {
     text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.back-to-top-text:hover {
+    text-decoration: none;
     text-decoration-color: white;
 }
 
@@ -520,10 +524,13 @@ img.howtoapply-image {
     left: -0.5em;
     transition-duration: 0.5s;
 }
+
+/*
 .back-to-projects-link:hover p {
     text-decoration: underline;
     text-decoration-color: white;
 }
+*/
 /* --------------- END IN TEXT AND LINKS --------------------- */
 
 

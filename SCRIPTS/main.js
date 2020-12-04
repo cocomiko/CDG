@@ -127,7 +127,41 @@ $('.works-slideshow .team-item').each(function() {
 
               });  
 
+//news page gallery
+    $(window).on('load resize orientationchange', function() {
+        $('.newscarousel').each(function(){
+            var $newscarousel = $(this);
+            /* Initializes a slick carousel only on mobile screens */
+            // slick on mobile
+            if ($(window).width() > 768) {
+                if ($newscarousel.hasClass('slick-initialized')) {
+                    $newscarousel.slick('unslick');
+                }
+            }
+            else{
+                if (!$newscarousel.hasClass('slick-initialized')) {
+                    $newscarousel.slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        mobileFirst: true,
+                    });
+                }
+            }
+        });
+    });
 
+
+//$('.newscarousel').slick({
+//                    slidesToShow: 2,
+//                    slidesToScroll: 1,
+//                    mobileFirst: true,
+//                    responsive: [
+//                          {
+//                                  breakpoint: 768,
+//                                  settings: 'unslick'
+//                          }
+//                    ]
+//                  });
 // modal image gallery for single project page
 
             function openModal() {
