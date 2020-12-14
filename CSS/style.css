@@ -149,8 +149,8 @@ p {
     height: 402px;
     width: auto;
     background-position: center center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 p.large-text {
