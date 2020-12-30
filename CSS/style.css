@@ -1530,7 +1530,78 @@ p.copyright {
 
 /* ----------------------------------------------------------- */
 /* FOOTER MEDIA QUERIES */
-  @media (min-width: 300px) {
+
+@media (max-width: 450px) {
+    .footer-logo {
+        content: url(../IMG/Logos/SIAT-Logo-1-White.png);
+        width: 210%;
+        margin-bottom: 50px;
+    }
+
+    .fa {
+        font-size: 2.5em !important;
+        margin-right: .5em;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    footer .col-md-3 {
+        width: 50%;
+    }
+
+    footer .col-md-4 {
+        width: 100%;
+    }
+
+    footer .col-md-5 {
+        width: 100%;
+    }
+
+    .offset-md-2 {
+        margin-left: 0.5em;
+    }
+
+    .secondary-button {
+        width: 100%;
+    }
+  }
+
+@media (min-width: 450px) {
+    .footer-logo {
+        content: url(../IMG/Logos/SIAT-Logo-1-White.png);
+        width: 210%;
+        margin-bottom: 50px;
+    }
+
+    .fa {
+        font-size: 2.5em !important;
+        margin-right: .5em;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    footer .col-md-3 {
+        width: 50%;
+    }
+
+    footer .col-md-4 {
+        width: 100%;
+    }
+
+    footer .col-md-5 {
+        width: 100%;
+    }
+
+    .offset-md-2 {
+        margin-left: 0.5em;
+    }
+
+    .secondary-button {
+        width: 100%;
+    }
+  }
+
+  @media (min-width: 600px) {
     .footer-logo {
         content: url(../IMG/Logos/SIAT-Logo-2-White.png);
         width: 200px;
@@ -1619,6 +1690,10 @@ p.copyright {
     div.news-page-side-image img {
         width: 100%;
         height: 100%;
+    }
+
+    .secondary-button {
+        width: 290px;
     }
   }
 
