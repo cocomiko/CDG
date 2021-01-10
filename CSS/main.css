@@ -14,7 +14,7 @@ body {
 .container-fluid{
         max-width: 100% !important;
         overflow-x: hidden !important;
-    }
+}
 
 .vid{
 /* margin-left: 50%;*/
@@ -27,7 +27,7 @@ margin-top: -10em;
     .vid{
 /*        top: em;*/
         top: 0em;
-        position: relative; !important;
+        position: relative !important;
 /*
         z-index:3;
         order: 1;
@@ -38,7 +38,7 @@ margin-top: -10em;
         padding: 0.6em;
     }
       .haha{
-       position: relative; !important;
+       position: relative !important;
 }
 }
 #bannerimage{
@@ -303,8 +303,8 @@ SINGLE PROJ GALLERY
     .col-md-10 {
  
     /* flex: 0 0 83.333333%; */
-     max-width: 100%; !important;
-     padding-left: 0px; !important;
+     max-width: 100% !important;
+     padding-left: 0px !important;
 }
 
 }

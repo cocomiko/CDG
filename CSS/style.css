@@ -64,6 +64,30 @@ a:hover {
 
 
 /* ----------------------------------------------------------- */
+/* ------------------ OVERLAY on HOME + ABOUT ---------------- */
+/* ----------------------------------------------------------- */
+
+
+.overlay {
+    margin-top: -10em;
+    }
+    
+    /*Overlay of elements on sizes < tablet */
+    @media (max-width: 767px) {
+        
+        .overlay {
+            top: 0em;
+            position: relative !important;
+        }
+        
+        iframe {
+            padding: 0.6em;
+        }
+    }
+    
+
+
+/* ----------------------------------------------------------- */
 /* --------------------- TEXT ELEMENTS ----------------------- */
 /* ----------------------------------------------------------- */
 h1 {
@@ -109,7 +133,6 @@ h2 {
 }
 
 
-/*30px*/
 h3 {
     font-family: 'Karla', sans-serif;
     font-size: 1.875em;  
@@ -118,6 +141,17 @@ h3 {
     color: #000000;
     padding-bottom: 0.6em;
 }
+
+
+h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;  
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 0em;
+}
+
 
 h5 {
     font-family: 'Karla', sans-serif;
@@ -135,15 +169,11 @@ p {
     color: #000000;
 }
 
- .banner-para {
+.banner-para {
    width:600px;
    padding-top:0.8em;
 }
 
- #aboutpara {
-   width:80%;
-   padding-top:0.8em;
-}
 
 .img-about {
     height: 402px;
@@ -225,6 +255,15 @@ section.heading {
         padding-bottom: 0.6em;
     }
 
+    h4 {
+        font-family: 'Karla', sans-serif;
+        font-size: 1.3em;  
+        font-style: normal;
+        font-weight: bold;
+        color: #000000;
+        padding-bottom: 0em;
+    }
+
     h5 {
         font-family: 'Karla', sans-serif;
         font-size: 1.2em;
@@ -246,12 +285,6 @@ section.heading {
         padding-top:0.8em;
     }
 
-    #aboutpara {
-        width:100%;
-        padding-top:0.8em;
-    }
-
-
     .filter-label {
         display: none;
         visibility: hidden;
@@ -262,10 +295,6 @@ section.heading {
         margin: 0px!important;
     }
 
-    /*.d-md-block.collapse.show {
-        margin-top: -58px;
-    }*/
-
     a.anchor-top {
         display: block;
         position: relative;
@@ -273,7 +302,6 @@ section.heading {
         visibility: hidden;
         
     }
-    
     
     .members-sticky-menu {
         position: -webkit-sticky;
@@ -309,14 +337,6 @@ section.heading {
         margin:auto;
     }
 
-/*
-    .members-all .sticky-top {
-        padding-top:2em;
-        justify-content: space-around;
-        width: 100%;
-    }
-*/
-    
     .members-all .anchor-list-item {
         font-size: 1.25em;
     }
@@ -336,14 +356,14 @@ section.heading {
 
     }
 
-        .members-all .sticky-top >.anchor-list-item {
+    .members-all .sticky-top >.anchor-list-item {
 
-            display:block;
-            margin: 10px;
-            padding:0;
-            align-items: center;
-            text-align: center;  
-            align-self: center;
+        display:block;
+        margin: 10px;
+        padding:0;
+        align-items: center;
+        text-align: center;  
+        align-self: center;
     }
 
     .members-all .sticky-top {
@@ -611,8 +631,6 @@ p.tertiary-button-text {
     display: inline;
 }
 
-
-
 .filter-button {
     font-family: 'Karla', sans-serif;
     font-size: 1.25em;
@@ -654,59 +672,22 @@ button.project-button {
 
 
 
+
+
+
 /* ----------------------------------------------------------- */
-/* ------------------------ FORM ----------------------------- */
+/* ------------------ SIDE FILTER SPECIFICS ------------------ */
 /* ----------------------------------------------------------- */
 
-form {
-    margin-left: -1em;
-    width: 100%;
-}
-
-input {
-    width: 100%;
-}
-
-textarea {
-    width: 100%;
-}
 
 
-.text-input {
-    font-family: 'Karla', sans-serif;
-    font-size: 1.25em;
-    font-style: normal;
-    font-weight: normal;
-    color: rgba(34, 30, 244, 0.25);
-    background: #ffffff;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
-    padding-right: 0.8em;
-    padding-left: 0.8em;
-    border: 0.14em solid #221EE0;
-    box-sizing: border-box;
-    border-radius: 0.625em;
-    display: inline-block;
-    max-width: 585px;
-}
 
-.text-input-message {
-    height: 300px;
-}
 
-.text-input:focus {
-    color: #0B0402;
-    background: rgba(0, 87, 255, 0.08);
-    border: 0.14em solid #13117D;
-    outline: 0;
-    display: inline-block;
-}
-/* ----------------------- END FORM -------------------------- */
 
-textarea {
-    width: 100%;
-    resize: none;
-}
+
+
+/* ---------------- END SIDE FILTER SPECIFICS ---------------- */
+
 
 
 
@@ -742,9 +723,11 @@ textarea {
 }
 /* --------------------- END HEADERS ------------------------ */
 
+
 /* ----------------------------------------------------------- */
-/* ----------------- NEWS PAGE SPECIFICS --------------------- */
+/* ------------------- NEWS PAGE SPECIFICS ------------------- */
 /* ----------------------------------------------------------- */
+
 div.three-image-news-layout {
     margin-top: 50px;
     display: flex;
@@ -767,7 +750,243 @@ div.news-page-side-image img {
     margin-left: -1em;
 }
 
-/* ---------------- END NEW PAGE SPECIFICS ------------------- */
+.blog-post{
+    margin-top: 6em;
+    margin-bottom: 6em;
+    justify-content: center;
+}
+
+/* News Media Queries */
+  @media (min-width: 768px) {
+    .blog-post .col-md-2 {
+        max-width:100%;
+    }
+
+    .blog-post h5 {
+        padding-top:0.4em;
+    }
+
+    .news {
+        margin-left: 1.55em;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: block;
+    }
+
+    div.three-image-news-layout img {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.news-page-side-image {
+        margin-top: 0px;
+    }
+
+    div.news-page-side-image img {
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .blog-post .col-md-2 {
+        max-width:100%;
+    }
+
+    .blog-post h5 {
+        padding-top:0.4em;
+    }
+
+    .news {
+        margin-left: 1.55em;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: block;
+    }
+
+    div.three-image-news-layout img {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.news-page-side-image {
+        margin-top: 0px;
+    }
+
+    div.news-page-side-image img {
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+  @media (min-width: 991px) {
+
+    .news {
+        margin-left: 1.9em;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.three-image-news-layout img {
+        width: 32%;
+        height: 100%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    .news {
+        margin-left: 2.3em;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.three-image-news-layout img {
+        width: 32%;
+        height: 100%;
+    }
+  }
+
+  @media (min-width: 1350px) {
+    .news {
+        margin-left: 2.3em;
+    }
+
+    div.three-image-news-layout {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.three-image-news-layout img {
+        width: 32%;
+        height: 100%;
+    }
+  }
+
+    hr {
+      display: inline-block;
+      width:100%;
+      text-align:left;
+      margin-left:0;
+    }
+/* ------------------ END NEWS PAGE SPECIFICS ---------------- */
+
+
+
+/* ----------------------------------------------------------- */
+/* ------------------- CONTACT PAGE SPECIFICS ---------------- */
+/* ----------------------------------------------------------- */
+
+
+/* FORM */
+
+
+form {
+    margin-left: -1em;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.text-input {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(34, 30, 244, 0.25);
+    background: #ffffff;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+    border: 0.14em solid #221EE0;
+    box-sizing: border-box;
+    border-radius: 0.625em;
+    display: inline-block;
+    max-width: 585px;
+}
+
+.text-input-message {
+    height: 300px;
+}
+
+.text-input:focus {
+    color: #0B0402;
+    background: rgba(0, 87, 255, 0.08);
+    border: 0.14em solid #13117D;
+    outline: 0;
+    display: inline-block;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+
+/* MAP */
+
+@media (min-width: 768px){
+    
+    .mapouter {
+        position:relative;
+        text-align:center;
+        height:300px;
+        width:100%;     
+    }
+
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:300px;
+        width:100% !important;
+        padding: 0px;
+        margin:0px;
+    }   
+}
+ 
+.gmap_canvas {
+    width: 100%;
+    background-color: none;
+    justify-content: left;
+}
+
+
+
+
+/* ----------------- END CONTACT PAGE SPECIFICS -------------- */
 
 
 
@@ -994,75 +1213,6 @@ div.news-page-side-image img {
   }
 
 
-
-  /* --- DO WE NEED THESE? --- */
-
-  .reflection .card-title {
-    text-align: left;
-    font-size: 1.15em;
-    color: #363636;
-  }
-          
-  .layout-margin-8 {
-    margin: 3% 8%;
-  }
-    
-  .card-deck {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-items: stretch;
-  }
-
-  .card-img-top-custom {
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  ul.filters{
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 30px 0;
-    text-align: left;
-  }
-
-  ul.filters > li{
-    list-style: none;
-    text-align: left;
-  }
-
-  ul.filters > li > a{
-    display: block;
-    color: #434e5e;
-    text-decoration: none;
-    padding: 5px 20px;
-    text-align: left;
-  }
-  
-  ul.filters > li.active > a{
-    color: #fff;
-    background-color: #28bea8;
-    text-align: left;
-  }
-
-  ul.filters > li > a:hover{
-    background-color: #e6e9ed;
-    text-align: left;
-  }
-
-  .projects {
-    padding-bottom: 10em;
-  }
-    
-  @media (min-width: 768px) {
-    .form-control {
-        width: 500px !important;
-        height: 50px;
-    }
-  }
-  
-
 /* ------------- END PROJECTS PAGE SPECIFICS ----------------- */
 
 
@@ -1070,7 +1220,7 @@ div.news-page-side-image img {
 
 /* ----------------------------------------------------------- */
 /* -------------- PUBLICATIONS PAGE SPECIFICS ---------------- */
-/* ----- *see project page specifics to edit the filters* ---- */
+/* ----- *see SIDE FILTER SPECIFICS to edit the filters* ----- */
 /* ----------------------------------------------------------- */
 
 
@@ -1114,6 +1264,58 @@ div.news-page-side-image img {
         padding-left: 1em;
     }
 }
+
+
+@media (max-width: 450px) {
+    .offset-md-2 {
+        margin-left: 0.5em;
+    }
+}
+
+@media (min-width: 450px) {
+    .offset-md-2 {
+        margin-left: 0.5em;
+    }
+}
+
+@media (min-width: 600px) {
+    .offset-md-2 {
+        margin-left: 0.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    .offset-md-2 {
+        /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
+        margin-left: 1.7em;
+    }
+}
+
+
+@media (min-width: 991px) {
+    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
+    .offset-md-2 {
+        margin-left: 2.2em;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
+    .offset-md-2 {
+        margin-left: 2.55em;
+    }
+}
+
+
+@media (min-width: 1350px) {
+    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
+    .offset-md-2 {
+        margin-left: 2.55em;
+    }
+}
+
+
 
 /* ------------ END PUBLICATIONS PAGE SPECIFICS -------------- */
 
@@ -1407,22 +1609,7 @@ div.news-page-side-image img {
 }
 
 
-/* ------------- INDIVIDUAL PROJECT PAGE SPECIFICS ----------- */
-
-
-
-
-/* ----------------------------------------------------------- */
-/* ------------------- BLOG PAGE SPECIFICS ------------------- */
-/* ----------------------------------------------------------- */
-.blog-post{
-    margin-top: 6em;
-    margin-bottom: 6em;
-    justify-content: center;
-}
-
-
-/* ------------------ END NEWS PAGE SPECIFICS ---------------- */
+/* ------------- END OF INDIVIDUAL PROJECT PAGE SPECIFICS ----------- */
 
 
 
@@ -1479,71 +1666,9 @@ box-shadow: none;
 
 
 
-/* ----------------------------------------------------------- */
-/* --------------------------- FOOTER ------------------------ */
-/* ----------------------------------------------------------- */
-footer {
-    padding: 2.5em 0.7em 0.7em 0.7em;
-    background-color: #221EE0;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-}
-
-footer a:hover {
-    color: #9593F0;
-}
-
-.footer-logo {
-    content: url(../IMG/Logos/SIAT-Logo-1-White.png);
-    width: 300px;
-}
-
-div.footer-container-item {
-    margin-bottom: 2em;
-}
-
-div.footer-container-item-2 {
-    margin-bottom: 2em;
-    display: inline-block;
-    width: 100%;
-}
-
-p.copyright {
-    font-size: 0.8em;
-}
-/* ----------------------- END FOOTER ------------------------ */
 
 
 
-/* ----------------------------------------------------------- */
-/* ------------------------- MAP ----------------------------- */
-/* ----------------------------------------------------------- */
-@media (min-width: 768px){
-    
-    .mapouter {
-        position:relative;
-        text-align:center;
-        height:300px;
-        width:100%;     
-    }
-
-    .gmap_canvas {
-        overflow:hidden;
-        background:none!important;
-        height:300px;
-        width:100% !important;
-        padding: 0px;
-        margin:0px;
-    }   
-}
- 
-.gmap_canvas {
-    width: 100%;
-    background-color: none;
-    justify-content: left;
-}
-/* ------------------------ END MAP ------------------------- */
 
 
 
@@ -1551,6 +1676,12 @@ p.copyright {
 .filter-min, .filter-max {
     display: none;
 }
+
+
+
+
+
+
 
 
 
@@ -1851,263 +1982,9 @@ p.copyright {
 
 
 
-/* ----------------------------------------------------------- */
-/* FOOTER MEDIA QUERIES */
-
-@media (max-width: 450px) {
-    .footer-logo {
-        content: url(../IMG/Logos/SIAT-Logo-1-White.png);
-        width: 210%;
-        margin-bottom: 50px;
-    }
-
-    .fa {
-        font-size: 2.5em !important;
-        margin-right: .5em;
-        margin-top: 10px;
-        margin-bottom: 40px;
-    }
-
-    footer .col-md-3 {
-        width: 50%;
-    }
-
-    footer .col-md-4 {
-        width: 100%;
-    }
-
-    footer .col-md-5 {
-        width: 100%;
-    }
-
-    .offset-md-2 {
-        margin-left: 0.5em;
-    }
-
-    .secondary-button {
-        width: 100%;
-    }
-  }
-
-@media (min-width: 450px) {
-    .footer-logo {
-        content: url(../IMG/Logos/SIAT-Logo-1-White.png);
-        width: 210%;
-        margin-bottom: 50px;
-    }
-
-    .fa {
-        font-size: 2.5em !important;
-        margin-right: .5em;
-        margin-top: 10px;
-        margin-bottom: 40px;
-    }
-
-    footer .col-md-3 {
-        width: 50%;
-    }
-
-    footer .col-md-4 {
-        width: 100%;
-    }
-
-    footer .col-md-5 {
-        width: 100%;
-    }
-
-    .offset-md-2 {
-        margin-left: 0.5em;
-    }
-
-    .secondary-button {
-        width: 100%;
-    }
-  }
-
-  @media (min-width: 600px) {
-    .footer-logo {
-        content: url(../IMG/Logos/SIAT-Logo-2-White.png);
-        width: 200px;
-        margin-bottom: 50px;
-    }
-
-    .fa {
-        font-size: 2.5em !important;
-        margin-right: .5em;
-        margin-top: 10px;
-        margin-bottom: 40px;
-    }
-
-    footer .col-md-3 {
-        width: 50%;
-    }
-
-    footer .col-md-4 {
-        width: 50%;
-    }
-
-    footer .col-md-5 {
-        width: 100%;
-    }
-
-    .offset-md-2 {
-        margin-left: 0.5em;
-    }
-  }
-
-  @media (min-width: 700px) {
-    .offset-md-2 {
-        margin-left: 0.5em;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .footer-logo {
-        content: url(../IMG/Logos/SIAT-Logo-2-White.png);
-        width: 170px;
-    }
-
-    .fa {
-        font-size: 1.5em !important;
-        margin-right: .5em;
-        margin-top: 10px;
-        margin-bottom: 40px;
-    }
-
-    .blog-post .col-md-2 {
-        max-width:100%;
-    }
-
-    .blog-post h5 {
-        padding-top:0.4em;
-    }
-
-    .offset-md-2 {
-        /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-        margin-left: 1.7em;
-    }
-
-    .news {
-        margin-left: 1.55em;
-    }
-
-        div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        display: block;
-    }
-
-    div.three-image-news-layout img {
-        display: block;
-        margin-bottom: 10px;
-        width: 100%;
-        height: 100%;
-    }
-
-    div.news-page-side-image {
-        margin-top: 0px;
-    }
-
-    div.news-page-side-image img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .secondary-button {
-        width: 290px;
-    }
-  }
-
-  @media (min-width: 991px) {
-    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-    .offset-md-2 {
-        margin-left: 2.2em;
-    }
-
-    .news {
-        margin-left: 1.9em;
-    }
-
-    div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    div.three-image-news-layout img {
-        width: 32%;
-        height: 100%;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-    .offset-md-2 {
-        margin-left: 2.55em;
-    }
-
-    .news {
-        margin-left: 2.3em;
-    }
-
-    div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    div.three-image-news-layout img {
-        width: 32%;
-        height: 100%;
-    }
-  }
-
-  @media (min-width: 1350px) {
-    .footer-logo {
-        content: url(../IMG/Logos/SIAT-Logo-1-White.png);
-        width: 300px;
-    }
-
-    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-    .offset-md-2 {
-        margin-left: 2.55em;
-    }
-
-    .news {
-        margin-left: 2.3em;
-    }
-
-    div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    div.three-image-news-layout img {
-        width: 32%;
-        height: 100%;
-    }
-  }
-
-
-
 
 /*-------------CARDS for MEMBERS PAGE------------------*/
-/*
-.card-img-left{ 
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    margin-right: 1em !important;
-    padding-left: 0 !important;
-}
-*/
-/* members no clip card-text*/
+
 .members .card-text {
       overflow: hidden;
       display: -webkit-box;
@@ -2121,45 +1998,6 @@ p.copyright {
   width:100%;
   height:100%;
 }
-
-
-
-/*
-@media (min-width:768){
-.col-auto{
-   padding-right: 0 !important;
-}
-}
-
-.col-auto{
-   margin-bottom: 1em !important;
-}*/
-
-
-
-/* -------------------------------------------- COCO's ---------------------------------------------- */
-
-/* ----------------------------------------------------------- */
-/* ------------------------- ICONS --------------------------- */
-/* ----------------------------------------------------------- */
-.material-icons {
-    transform: translate(0px, 5px);
-    margin-right: .5em;
-}
-
-.material-icons.md-1 {
-    font-size: 1.2em;
-}
-
-.fa {
-    color: #221EE0;
-    margin-right: 10px;
-}
-
-.fa:hover {
-    color: #9593F0;
-}
-/* ------------------------ END ICONS ------------------------ */
 
 
 
@@ -2231,10 +2069,6 @@ p.copyright {
         width: 100%;
     }
 
-    .offset-md-2 {
-        margin-left: 0.5em;
-    }
-
     .secondary-button {
         width: 100%;
     }
@@ -2264,10 +2098,6 @@ p.copyright {
 
     footer .col-md-5 {
         width: 100%;
-    }
-
-    .offset-md-2 {
-        margin-left: 0.5em;
     }
 
     .secondary-button {
@@ -2300,10 +2130,6 @@ p.copyright {
     footer .col-md-5 {
         width: 100%;
     }
-
-    .offset-md-2 {
-        margin-left: 0.5em;
-    }
   }
 
   @media (min-width: 768px) {
@@ -2331,262 +2157,12 @@ p.copyright {
         content: url(../IMG/Logos/SIAT-Logo-1-White.png);
         width: 300px;
     }
-
-    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-    .offset-md-2 {
-        margin-left: 2.55em;
-    }
   }
 
 /* ----------------------- END FOOTER ------------------------ */
 
 
-/* ----------------------------------------------------------- */
-/* ------------------- NEWS PAGE SPECIFICS ------------------- */
-/* ----------------------------------------------------------- */
 
-div.three-image-news-layout {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-div.three-image-news-layout img {
-    width: 32%;
-    height: 100%;
-}
-
-div.news-page-side-image img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-}
-
-.negative-row {
-    margin-left: -1em;
-}
-
-.blog-post{
-    margin-top: 6em;
-    margin-bottom: 6em;
-    justify-content: center;
-}
-
-/* News Media Queries */
-  @media (min-width: 768px) {
-    .blog-post .col-md-2 {
-        max-width:100%;
-    }
-
-    .blog-post h5 {
-        padding-top:0.4em;
-    }
-
-    .offset-md-2 {
-        /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-        margin-left: 1.7em;
-    }
-
-    .news {
-        margin-left: 1.55em;
-    }
-
-    div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        display: block;
-    }
-
-    div.three-image-news-layout img {
-        display: block;
-        margin-bottom: 10px;
-        width: 100%;
-        height: 100%;
-    }
-
-    div.news-page-side-image {
-        margin-top: 0px;
-    }
-
-    div.news-page-side-image img {
-        width: 100%;
-        height: 100%;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .blog-post .col-md-2 {
-        max-width:100%;
-    }
-
-    .blog-post h5 {
-        padding-top:0.4em;
-    }
-
-    .offset-md-2 {
-        /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-        margin-left: 1.7em;
-    }
-
-    .news {
-        margin-left: 1.55em;
-    }
-
-    div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        display: block;
-    }
-
-    div.three-image-news-layout img {
-        display: block;
-        margin-bottom: 10px;
-        width: 100%;
-        height: 100%;
-    }
-
-    div.news-page-side-image {
-        margin-top: 0px;
-    }
-
-    div.news-page-side-image img {
-        width: 100%;
-        height: 100%;
-    }
-  }
-
-  @media (min-width: 991px) {
-    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-    .offset-md-2 {
-        margin-left: 2.2em;
-    }
-
-    .news {
-        margin-left: 1.9em;
-    }
-
-    div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    div.three-image-news-layout img {
-        width: 32%;
-        height: 100%;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    /* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-    .offset-md-2 {
-        margin-left: 2.55em;
-    }
-
-    .news {
-        margin-left: 2.3em;
-    }
-
-    div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    div.three-image-news-layout img {
-        width: 32%;
-        height: 100%;
-    }
-  }
-
-  @media (min-width: 1350px) {
-    .news {
-        margin-left: 2.3em;
-    }
-
-    div.three-image-news-layout {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    div.three-image-news-layout img {
-        width: 32%;
-        height: 100%;
-    }
-  }
-
-    hr {
-      display: inline-block;
-      width:100%;
-      text-align:left;
-      margin-left:0;
-    }
-/* ------------------ END NEWS PAGE SPECIFICS ---------------- */
-
-
-
-/* ----------------------------------------------------------- */
-/* ------------------------ FORM ----------------------------- */
-/* ----------------------------------------------------------- */
-
-form {
-    margin-left: -1em;
-    width: 100%;
-}
-
-input {
-    width: 100%;
-}
-
-textarea {
-    width: 100%;
-}
-
-.text-input {
-    font-family: 'Karla', sans-serif;
-    font-size: 1.25em;
-    font-style: normal;
-    font-weight: normal;
-    color: rgba(34, 30, 244, 0.25);
-    background: #ffffff;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
-    padding-right: 0.8em;
-    padding-left: 0.8em;
-    border: 0.14em solid #221EE0;
-    box-sizing: border-box;
-    border-radius: 0.625em;
-    display: inline-block;
-    max-width: 585px;
-}
-
-.text-input-message {
-    height: 300px;
-}
-
-.text-input:focus {
-    color: #0B0402;
-    background: rgba(0, 87, 255, 0.08);
-    border: 0.14em solid #13117D;
-    outline: 0;
-    display: inline-block;
-}
-
-textarea {
-    width: 100%;
-    resize: none;
-}
-
-/* ----------------------- END FORM -------------------------- */
 
 
 
@@ -2677,11 +2253,11 @@ textarea {
 /* recent carousel*/
     .col-md-10 {
     /* flex: 0 0 83.333333%; */
-     max-width: 100%; !important;
-     padding-left: 0px; !important;
+     max-width: 100% !important;
+     padding-left: 0px !important;
 }
 
-}
+
 
 /*recent proj cards*/
     .recentproj .card  {
@@ -2699,8 +2275,6 @@ textarea {
     /*  width: 250px;*/
       overflow: hidden;
     }
-
-
 
 
 /*--Recent ProjCard----*/
@@ -2727,30 +2301,9 @@ textarea {
 }
 
 
-/* ----------------------------------------------------------- */
-/* ------------------------- OVERLAY on HOME + ABOUT --------- */
-/* ----------------------------------------------------------- */
-
-
-.overlay{
-margin-top: -10em;
-}
-
-/*Overlay of elements on sizes < tablet */
-@media (max-width: 767px) {
-    
-    .overlay{
-        top: 0em;
-        position: relative; !important;
-    }
-    
-    iframe{
-        padding: 0.6em;
-    }
-}
-
 
 /*---------------CUSTOM PADDING for SPECIFIC ELEMENTS----------*/
+
 
 .p-7 {
   padding: 7rem !important;
@@ -2842,5 +2395,7 @@ margin-top: -10em;
   .px-md-7 {
     padding-left: 16.666667% !important;
   }   
-    
-/*--------END CUSTOM PADDING for SPECIFIC ELEMENTS----------*/
+}
+
+
+/* --------END CUSTOM PADDING for SPECIFIC ELEMENTS---------- */
