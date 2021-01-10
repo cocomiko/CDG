@@ -2373,16 +2373,6 @@ div.news-page-side-image img {
     justify-content: center;
 }
 
-.sliders { padding: 15px 0 30px 0; }
-
-.bootstrap-slider .slider-selection { background: #2175b0; }
-
-.filter-label {
-    display: block;
-    font-weight: bold;
-    padding-bottom: 1em;
-}
-
 /* News Media Queries */
   @media (min-width: 768px) {
     .blog-post .col-md-2 {
@@ -2534,6 +2524,12 @@ div.news-page-side-image img {
     }
   }
 
+    hr {
+      display: inline-block;
+      width:100%;
+      text-align:left;
+      margin-left:0;
+    }
 /* ------------------ END NEWS PAGE SPECIFICS ---------------- */
 
 
@@ -2591,3 +2587,262 @@ textarea {
 }
 
 /* ----------------------- END FORM -------------------------- */
+
+
+
+/* ----------------------------------------------------------- */
+/* ------------------------- ABOUT ------------------------- */
+/* ----------------------------------------------------------- */
+
+
+/*banner for mobile sizes*/
+#bannerimageaboutpage{
+  width: 100%;
+  background-image: url(../IMG/Website-Images/about-page-landing-image-blurred-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:671px;
+}
+
+/*banner for tablet size*/
+@media (min-width: 425px) {
+  #bannerimageaboutpage {
+    background-image: url(../IMG/Website-Images/about-page-landing-image-blurred-mobile.jpg);
+    height:571px;
+    
+  }
+}
+
+/*banner for descktop*/
+@media (min-width: 769px) {
+  #bannerimageaboutpage {
+    background-image: url(../IMG/Website-Images/about-page-landing-image-blurred.jpg);
+    height:771px;
+  }
+}
+
+
+ #aboutpara {
+   width:80%;
+   padding-top:0.8em;
+}
+
+
+@media (max-width: 768px) {
+    #aboutpara {
+        width:100%;
+        padding-top:0.8em;
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* ------------------------- END ABOUT ------------------------ */
+/* ----------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------- */
+/* ------------------------HOME PAGE SPECIFICS---------------- */
+/* ----------------------------------------------------------- */
+
+/*HOME PAGE BANNER*/
+/*banner for mobile sizes*/
+#bannerimage{
+  width: 100%;
+  background-image: url(https://via.placeholder.com/1440X671.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:671px;
+}
+
+/*banner for tablet size*/
+@media (min-width: 425px) {
+  #bannerimageaboutpage {
+    background-image: url(https://via.placeholder.com/1440X571.png);
+    height:571px;
+    
+  }
+}
+
+/*banner for descktop*/
+@media (min-width: 769px) {
+  #bannerimageaboutpage {
+    background-image: url(https://via.placeholder.com/1440X771.png);
+    height:771px;
+  }
+}
+
+    
+/* recent carousel*/
+    .col-md-10 {
+    /* flex: 0 0 83.333333%; */
+     max-width: 100%; !important;
+     padding-left: 0px; !important;
+}
+
+}
+
+/*recent proj cards*/
+    .recentproj .card  {
+    height: 404px;
+    }
+    
+    
+    .recentsection{
+      top: -100px;
+        max-height: 600px;
+    }
+
+/*TRUNKATE TEXT*/
+    .ellipses-text {
+    /*  width: 250px;*/
+      overflow: hidden;
+    }
+
+
+
+
+/*--Recent ProjCard----*/
+
+.recentproj .card{
+    width: 20rem;
+     justify-content: center;
+     align-content: center;
+    height:100%;
+
+}
+
+/*--Reflection Card---*/
+.reflection .card{
+    border: none;
+    box-shadow: none;
+    height: 100%;
+    
+}
+
+.reflection .card-body{
+    padding: 0 2em 2em 0em;
+    
+}
+
+
+
+/* ----------------------------------------------------------- */
+/* ------------------------- OVERLAY on HOME + ABOUT --------- */
+/* ----------------------------------------------------------- */
+
+
+.overlay{
+margin-top: -10em;
+}
+
+/*Overlay of elements on sizes < tablet */
+@media (max-width: 767px) {
+    
+    .overlay{
+        top: 0em;
+        position: relative; !important;
+    }
+    
+    iframe{
+        padding: 0.6em;
+    }
+}
+
+
+
+/*---------------CUSTOM PADDING for SPECIFIC ELEMENTS----------*/
+
+.p-7 {
+  padding: 7rem !important;
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 7rem !important;
+}
+
+.pr-6,
+.px-6 {
+  padding-right: 7rem !important;
+}
+
+.pb-7,
+.py-6 {
+  padding-bottom: 16.666667% !important;
+}
+
+.pl-6,
+.px-6 {
+  padding-left: 7rem !important;
+}
+
+
+/*CUSTOM PADDING fro SPECIFIC ELEMENTS*/
+
+@media (min-width: 769px) {
+   /*-40px padding*/ 
+  .p-md-4 {
+    padding: 2.77777767% !important;
+  }
+  .pt-md-4,
+  .py-md-4 {
+    padding-top: 2.77777767%  !important;
+  }
+  .pr-md-4,
+  .px-md-4 {
+    padding-right: 8.333333% !important;
+  }
+  .pb-md-4,
+  .py-md-4 {
+    padding-bottom: 8.333333% !important;
+  }
+  .pl-md-4,
+  .px-md-4 {
+    padding-left: 8.333333% !important;
+  }
+    
+/*-120px padding*/
+  .p-md-6 {
+    padding: 8.333333% !important;
+  }
+  .pt-md-6,
+  .py-md-6 {
+    padding-top: 8.333333% !important;
+  }
+  .pr-md-6,
+  .px-md-6 {
+    padding-right: 8.333333% !important;
+  }
+  .pb-md-6,
+  .py-md-6 {
+    padding-bottom: 8.333333% !important;
+  }
+  .pl-md-6,
+  .px-md-6 {
+    padding-left: 8.333333% !important;
+  }
+    
+/*-80px padding*/
+  .p-md-7 {
+    padding: 16.666667% !important;
+  }
+  .pt-md-7,
+  .py-md-7 {
+    padding-top: 16.666667% !important;
+  }
+  .pr-md-7,
+  .px-md-7 {
+    padding-right: 16.666667% !important;
+  }
+  .pb-md-7,
+  .py-md-7 {
+    padding-bottom: 16.666667% !important;
+  }
+  .pl-md-7,
+  .px-md-7 {
+    padding-left: 16.666667% !important;
+  }   
+    
+/*---------------END CUSTOM PADDING for SPECIFIC ELEMENTS----------*/
