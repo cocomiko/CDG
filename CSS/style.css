@@ -2658,7 +2658,7 @@ textarea {
 
 /*banner for tablet size*/
 @media (min-width: 425px) {
-  #bannerimageaboutpage {
+  #bannerimage {
     background-image: url(https://via.placeholder.com/1440X571.png);
     height:571px;
     
@@ -2667,7 +2667,7 @@ textarea {
 
 /*banner for descktop*/
 @media (min-width: 769px) {
-  #bannerimageaboutpage {
+  #bannerimage {
     background-image: url(https://via.placeholder.com/1440X771.png);
     height:771px;
   }
@@ -2727,7 +2727,6 @@ textarea {
 }
 
 
-
 /* ----------------------------------------------------------- */
 /* ------------------------- OVERLAY on HOME + ABOUT --------- */
 /* ----------------------------------------------------------- */
@@ -2749,7 +2748,6 @@ margin-top: -10em;
         padding: 0.6em;
     }
 }
-
 
 
 /*---------------CUSTOM PADDING for SPECIFIC ELEMENTS----------*/
@@ -2845,4 +2843,4 @@ margin-top: -10em;
     padding-left: 16.666667% !important;
   }   
     
-/*---------------END CUSTOM PADDING for SPECIFIC ELEMENTS----------*/
+/*--------END CUSTOM PADDING for SPECIFIC ELEMENTS----------*/
