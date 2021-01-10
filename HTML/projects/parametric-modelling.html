@@ -1,806 +1,919 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    	<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Parametric Modelling</title>
-        <meta name="description" content="Webpage for Computational Design Group at SFU">
-        
-        <!-- Bootstrap CSS -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-          
-        <!-- SLICK carousel-->
-        <link rel="stylesheet" type="text/css" href="../../slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css"/>
-            
-        <!-- Native Stylesheets -->
-        <link rel="stylesheet" href="../../CSS/main.css">
-        <link href="../../CSS/style.css" rel="stylesheet">
-        
-        <!-- Modal Gallery script-->
-        <script src="../../SCRIPTS/main.js"></script>
-            
-            
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parametric Modelling</title>
+  <meta name="description" content="Webpage for Computational Design Group at SFU">
 
-        <!-- Icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-    </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- SLICK carousel-->
+  <link rel="stylesheet" type="text/css" href="../../slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css" />
+
+  <!-- Native Stylesheets -->
+  <link rel="stylesheet" href="../../CSS/main.css">
+  <link href="../../CSS/style.css" rel="stylesheet">
+
+  <!-- Modal Gallery script-->
+  <script src="../../SCRIPTS/main.js"></script>
 
 
-    <body class="container-fluid px-0">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
-      <header>
-			<nav class="navbar navbar-expand-md">
-              <a class="navbar-brand" href="../home.html">Home Page</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse mr-auto" id="navbarText">
-                <div class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../publications.html">Publications</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../members.html">Members</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../news.html">News</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../contact.html">Contact</a>
-                  </li>
-                </div>
-              </div>
-            </nav>
-		</header>
-        
-<!-- IMAGE GALLERY -->
-    <section>
-      <div class="container-fluid px-md-5 px-1 edited-margin" id="gallery">
-        <div class="single-5-images row z-index-1 position-relative order-2">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-          <div class="col-md-6 col-lg-6">
-              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg" alt="Project image">
-          </div>
-          <div class="col-md-3 col-lg-3 d-none d-md-block force-height px-0">
-              <div>
-              <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
-              </div>   
-              <div>
-              <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
-              </div>
-          </div>
-          <div class="col-md-3 col-lg-3 d-none d-md-block force-height px-0">
-              <div>
-                  <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
-              </div>
-              <div>
-                  <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" onclick="openModal();currentSlide(5)" class="hover-shadow cursor img-fluid scale-on-hover" alt="Project image">
-              </div>
-          </div>           
-        
-          <!-- View All Gallery Button-->
-          <div class="button-height offset-md-11 offset-9 pr-6">
-                <button onclick="openModal();currentSlide(1)" type="button" class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
-          </div>
-            
-        </div>
-      </div>      
-      
-      <!-- The Modal Gallery/Lightbox -->
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
+</head>
 
-          <div class="mySlides">
-            <div class="numbertext">1 / 7</div>
-            <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
-          </div>
 
-          <div class="mySlides">
-            <div class="numbertext">2 / 7</div>
-            <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841" style="width:100%">
-          </div>
+<body class="container-fluid px-0">
 
-          <div class="mySlides">
-            <div class="numbertext">3 / 7</div>
-            <img src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">4 / 7</div>
-            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">5 / 7</div>
-            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-          </div>
-            
-            <div class="mySlides">
-            <div class="numbertext">6 / 7</div>
-            <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
-          </div>
-            
-            <div class="mySlides">
-            <div class="numbertext">7 / 7</div>
-            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
-          </div>
-
-          <!-- Next/previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
+  <header>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="../home.html">Home Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mr-auto" id="navbarText">
+        <div class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../members.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Contact</a>
+          </li>
         </div>
       </div>
-            
-    </section>
-        
-<!--   MAIN PAGE START -->
-      <div class="project-info px-2 px-md-6 pb-5">  
-        <div class="row">
-            <!--   Project Title -->
-            <div class="col-md-5">    
-                <h1>Parametric Modelling</h1>
-                <!--   Project Specifcs-->
-                <div class="px-1">
-                <hr>
-                <div class="project-team">
-                    <p class="paragraph">Robert Woodbury</p>
-                    <p class="paragraph">Victor Chen</p> 
-                    <p class="paragraph">Karine Kozlova</p> 
-                    <p class="paragraph">Maryam Maleki</p>   
-                    <p class="paragraph">Davis Marques</p>  
-                    <p class="paragraph">Cheryl Qian</p>  
-                    <p class="paragraph">Nahal Salmasi</p>  
-                    <p class="paragraph">Roham Sheikholeslami</p>          
-                </div>
-                <hr>
-                <div class="project-tags">
-                    <p class="body">Parametric Design</p>
-                    <p class="body">User Interfaces</p>
-                </div>
-                <hr>
-                <div class="project-year">
-                    <p class="body"></p>
-                </div>
-                <hr>  
+    </nav>
+  </header>
 
-                </div>
-            </div>
-            <!-- Project Summary -->
-            <div class="col-md-7 py-5 py-md-0">
-                <div class="project-description">
-                    <p class="body">Conventional CAD systems focus design attention on the representation of the artifact being designed. Currently industry attention is on systems in which a designed artifact is represented parametrically, that is, the representation admits rapid change of design dimensions and structure. Parametrization increases complexity of both designer task and interface as designers must model not only the artifact being designed, but a conceptual structure that guides variation. Parametrization has both positive and negative task, outcome and perceptual consequences for designers. Positively, parametrization can enhance search for designs better adapted to context, can facilitate discovery of new forms and kinds of form-making, can reduce the time and effort required for change and reuse, and can yield better understandings of the conceptual structure of the artifact being designed. Negatively, parametrization may require additional effort, may increase complexity of local design decisions and increases the number of items to which attention must be paid in task completion.</p>
-                    <br>
-                    <p class="body">While there is a general appreciation of the concepts and advantages of parametric modeling, application to projects at the scale and complexity of buildings raises important theoretical and practical issues. In a deep sense, parametric modeling is not new: building components have been adapted to context for centuries. What is new is the parallel development of fabrication technology that enables mass customization. Building components can be adapted to their context and parametric modeling can represent both context and adapted designs. In a design market partly driven by novelty, the resulting ability to envision and construct new architectural forms rewards firms having such expertise. There are relatively few such firms, most of which have had long experience and have built substantial reputations on distinctive form and construction. But many firms and students (future practitioners) are interested. The confluence of technology and interest appears as exploration in a new design space: architecture and its supporting technologies of parametric design and fabrication are experiencing both co-development and rapid change.</p>
-                    <br>
-                    <p class="body">We contribute to scholarly knowledge of parametric modeling in several ways. In 2005, Robert Aish of Bentley Systems and Robert Woodbury published a paper on technical features of GenerativeComponents that brought key ideas, such as replication, into the public research domain. We devise programming constructs, such as goal seeking, that show how parametric modeling can be used for advanced tasks. Using concepts from our design space exploration work, we seek better ways for parametric modeling to support discrete change.</p>
-                </div>
+  <section>
+
+
+    <!------------------------------------------- EDIT IMAGE GALLERY PREVIEWS --------------------------------------------->
+    <div class="container-fluid px-md-5 px-1 edited-margin" id="gallery">
+      <div class="single-5-images row z-index-1 position-relative order-2">
+
+        <div class="col-md-6 col-lg-6">
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg"
+            alt="Project image">
+        </div>
+        <div class="col-md-3 col-lg-3 d-none d-md-block force-height px-0">
+          <div>
+            <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+              onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-fluid scale-on-hover"
+              alt="Project image">
+          </div>
+          <div>
+            <img
+              src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg"
+              onclick="openModal();currentSlide(3)" class="hover-shadow cursor img-fluid scale-on-hover"
+              alt="Project image">
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 d-none d-md-block force-height px-0">
+          <div>
+            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png"
+              onclick="openModal();currentSlide(4)" class="hover-shadow cursor img-fluid scale-on-hover"
+              alt="Project image">
+          </div>
+          <div>
+            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png"
+              onclick="openModal();currentSlide(5)" class="hover-shadow cursor img-fluid scale-on-hover"
+              alt="Project image">
+          </div>
+        </div>
+
+        <!-- View All Gallery Button-->
+        <div class="button-height offset-md-11 offset-9 pr-6">
+          <button onclick="openModal();currentSlide(1)" type="button"
+            class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!------------------------------------------- EDIT IMAGE GALLERY PREVIEWS --------------------------------------------->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 7</div>
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 7</div>
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 7</div>
+          <img
+            src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 7</div>
+          <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <!-- Next/previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!------------------------------------------- EDIT PROJECT INFO --------------------------------------------->
+  <div class="project-info px-2 px-md-6 pb-5">
+    <div class="row">
+      <!--   Project Title -->
+      <div class="col-md-5">
+        <h1>Parametric Modelling</h1>
+        <!--   Project Specifcs-->
+        <div class="px-1">
+          <hr>
+          <div class="project-team">
+            <p class="paragraph">Robert Woodbury</p>
+            <p class="paragraph">Victor Chen</p>
+            <p class="paragraph">Karine Kozlova</p>
+            <p class="paragraph">Maryam Maleki</p>
+            <p class="paragraph">Davis Marques</p>
+            <p class="paragraph">Cheryl Qian</p>
+            <p class="paragraph">Nahal Salmasi</p>
+            <p class="paragraph">Roham Sheikholeslami</p>
+          </div>
+          <hr>
+          <div class="project-tags">
+            <p class="body">Parametric Design</p>
+            <p class="body">User Interfaces</p>
+          </div>
+          <hr>
+          <div class="project-year">
+            <p class="body"></p>
+          </div>
+          <hr>
+
+        </div>
+      </div>
+      <!-- Project Summary -->
+      <div class="col-md-7 py-5 py-md-0">
+        <div class="project-description">
+          <p class="body">Conventional CAD systems focus design attention on the representation of the artifact being
+            designed. Currently industry attention is on systems in which a designed artifact is represented
+            parametrically, that is, the representation admits rapid change of design dimensions and structure.
+            Parametrization increases complexity of both designer task and interface as designers must model not only
+            the artifact being designed, but a conceptual structure that guides variation. Parametrization has both
+            positive and negative task, outcome and perceptual consequences for designers. Positively, parametrization
+            can enhance search for designs better adapted to context, can facilitate discovery of new forms and kinds of
+            form-making, can reduce the time and effort required for change and reuse, and can yield better
+            understandings of the conceptual structure of the artifact being designed. Negatively, parametrization may
+            require additional effort, may increase complexity of local design decisions and increases the number of
+            items to which attention must be paid in task completion.</p>
+          <br>
+          <p class="body">While there is a general appreciation of the concepts and advantages of parametric modeling,
+            application to projects at the scale and complexity of buildings raises important theoretical and practical
+            issues. In a deep sense, parametric modeling is not new: building components have been adapted to context
+            for centuries. What is new is the parallel development of fabrication technology that enables mass
+            customization. Building components can be adapted to their context and parametric modeling can represent
+            both context and adapted designs. In a design market partly driven by novelty, the resulting ability to
+            envision and construct new architectural forms rewards firms having such expertise. There are relatively few
+            such firms, most of which have had long experience and have built substantial reputations on distinctive
+            form and construction. But many firms and students (future practitioners) are interested. The confluence of
+            technology and interest appears as exploration in a new design space: architecture and its supporting
+            technologies of parametric design and fabrication are experiencing both co-development and rapid change.</p>
+          <br>
+          <p class="body">We contribute to scholarly knowledge of parametric modeling in several ways. In 2005, Robert
+            Aish of Bentley Systems and Robert Woodbury published a paper on technical features of GenerativeComponents
+            that brought key ideas, such as replication, into the public research domain. We devise programming
+            constructs, such as goal seeking, that show how parametric modeling can be used for advanced tasks. Using
+            concepts from our design space exploration work, we seek better ways for parametric modeling to support
+            discrete change.</p>
         </div>
       </div>
     </div>
-        
-<!--   PUBLICATIONS SECTION  -->
-        <section class="related-publications" id="solidbgblock">
-        <div class="row px-2 py-5 px-md-6">
-            <div class="col-md-5">
-                <h2>Related Publications</h2>
-            </div>
-             <!-- Publications List-->            
-            <div class="col-md-7 py-2 py-md-0">
-                <div class="row">
-                    
-                  <!-- Publications 1-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0 pt-0">
-                      <p>Sambit Datta, Stuart Hanafin, and Robert F. Woodbury. Responsive envelope tessellation and stochastic rotation of 4-fold penttiles. Frontiers of Architectural Research, 3(2):192 – 198, 2014.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-                  
-                  <!-- Publications 2-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Robert Woodbury. Design flow and tool flux. In Brady Peters and Terri Peters, editors, Inside Smartgeometry, pages 102–111. John Wiley &amp; Sons, 2013.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
+  </div>
 
-                  <!-- Publications 3-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Robert Woodbury. Foreword. In Wassim Jabi, Parametric Design in Architecture. Laurence King Publishing, 2012.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
 
-                  <!-- Publications 4-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Diliara Nasirova, Andy T. Huang, Halil Erhan, Robert Woodbury, and Bernhard E. Riecke. Change detection in 3D parametric systems: Human-centered interfaces for change visualization. In CAADFutures 2011, pages 751–764, July 2011.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 5-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Halil Erhan, Nahal H. Salmasi, and Rob Woodbury. ViSA: A Parametric Design Modeling Method to Enhance Visual Sensitivity Control and Analysis. International Journal of Architectural Computing, 8(4):461–483, 2011.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 6-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Earl Mark and Robert Woodbury. Editorial. International Journal of Architectural Computing, 9(2):iii–iv, 2011.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 7-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Earl Mark and Robert Woodbury. Editorial. International Journal of Architectural Computing, 8(3):iii–iv, 2010. My name was omitted. This was corrected by errata in the next editorial.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 8-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Zhenyu Cheryl Qian, Yingjie Victor Chen, and Robert F. Woodbury. Design patterns to support collaborative parametric design. International Journal of Design Sciences and Technology, 17(1):57–75, 2010.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 9-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Robert Woodbury. Elements of Parametric Design. Taylor and Francis, 2010. With contributions from Brady Peters, Onur Yüce Gün and Mehdi Sheikholeslami.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 10-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Robert Woodbury. Elements of Parametric Design. Taylor and Francis, 2010. With contributions from Brady Peters, Onur Yüce Gün and Mehdi Sheikholeslami. Forthcoming Chinese translation.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 11-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Halil Erhan, Rob Woodbury, and Nahal H. Salmasi. Visual sensitivity analysis of parametric design models: Improving agility in design. In T. Tidafi and T. Dorta, editors, Joining Languages, Cultures and Visions: CAADFutures 2009, pages 815–829, Montreal, June 2009. CAADFutures.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 12-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Maryam Maleki and Robert Woodbury. Reinterpreting Rasmi domes with geometric constraints: a case of goal-seeking in parametric systems. International Journal of Architectural Computing, 6:375–395, 2008. Davis Marques and Robert Woodbury. Federation modeling: Interactions in parametric design. In Giovanni De Paoli, Khaldoun Zreik, and Reza Beheshti, editors, EuropIA 11: 11th International Conference on Design Sciences and Technology, pages 305–322, September 2007.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 13-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Davis Marques and Robert Woodbury. Federation modeling: Interactions in parametric design. In Giovanni De Paoli, Khaldoun Zreik, and Reza Beheshti, editors, EuropIA 11: 11th International Conference on Design Sciences and Technology, pages 305–322, September 2007.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 14-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Davis Marques and Robert Woodbury. Managing contingency in parametric models through implicit relational modeling. In CAADFutures 2007, pages 279–288. CAADFutures Foundation, July 2007.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 15-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Yingjie (Victor) Chen, Zhenyu (Cheryl) Qian, and Robert Woodbury. Local navigation can reveal implicit relations. In CAADFutures 2007, pages 403–416. CAADFutures Foundation, July 2007.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class ="dropdownn">
-                          <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span class="down-caret"></span></a>
-                          <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                          <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </ul>         
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 16-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Robert Woodbury, Axel Kilian, and Robert Aish. Some patterns for parametric modeling. In Expanding Bodies: Art Cities Environment: Proceedings of the 27th Annual Conference of the Association for Computer Aided Design in Architecture, pages 222–229, Halifax (Nova Scotia), 1-7 October 2007. Riverside Architectural Press and Tuns Press.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 17-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Zhenyu Qian, Yingjie Chen, and Robert Woodbury. Participant observation can discover design patterns in parametric modeling. In Expanding Bodies: Art Cities Environment: Proceedings of the 27th Annual Conference of the Association for Computer Aided Design in Architecture, pages 230–241, Halifax (Nova Scotia), 1-7 October 2007. Riverside Architectural Press and Tuns Press.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 18-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Davis Marques and Robert F. Woodbury. Using rule based selection to support change in parametric CAD systems. In A. Butz, B. Fisher, A. Krüger, and P. Oliver, editors, SmartGraphics, 6th Intl. Symp., SG2006, LNCS 4073, pages 230–235, Vancouver, Canada, 24-26 July 2006. Springer.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 19-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Robert Aish and Robert Woodbury. Multi-level interaction in parametric design. In A. Butz, B. Fisher, A. Krüger, and P. Oliver, editors, SmartGraphics, 5th Intl. Symp., SG2005, LNCS 3638, pages 151–162, Frauenwörth Cloister, Germany, August 2005. Springer.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 20-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                        <p>Zhenyu Qian and Robert F. Woodbury. Between reading and authoring: patterns of digital interpretation. International Journal of Design Computing, 7, 2004. Accessed at<span class="dont-break"> http://www.faculty.arch.usyd.edu.au/kcdc/ijdc/vol07/articles/woodbury/index.html</span> on 28 February 2010.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <!-- Publications 21-->  
-                  <div class="card-no-click">
-                    <div class="card-body px-0">
-                      <p>Wilson Chang and Robert F. Woodbury. Undo reinterpreted. In ACADIA 2003, pages 19–27, Indianapolis, October 2003.</p>
-                      
-                      <!--  links  --> 
-                      <ul class="row justify-content-start ml-0">
-                        <li class="dropdownn">
-                            <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span class="down-caret"></span></a>
-                            <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
-                              <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </ul>
-                        </li> 
-                        <li>
-                          <a class="in-text-link" href="#">read full</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">download pdf</a>
-                        </li>
-                        <li>
-                          <a class="in-text-link" href="#">cite</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-                                     
-                </div>
-               </div>
-    
-        </div>
-            
-        <!-- BACK TO PROJECTS PAGE BUTTON -->
-        <div class="row">
-            <div class="col-md-5 ml-3 pl-md-6">
-                <a id='acrBack' onclick='javascript:history.back();' class="back-to-projects-link">
-                    <p class="back-to-top-text"><img class="back-to-top-arrow" src="../../IMG/arrow-left.png">back to projects</p>
-                </a>
-            </div>
-        </div>
-        </section>
-        
-        <!-- Drop Down Abstract-->
-        <script src="../../SCRIPTS/dropdown.js"></script>
-        
-    </body>
-
-    <footer>
-      <div class="row">
-        <div class="col-md-3">
-          <a href="about.html"><div class="footer-logo"></div></a>
-        </div>
-
-        <div class="col-md-4 white">
-          <p>Find Us</p>
-          <a href="#" class="fa fa-facebook white"></a>
-          <a href="#" class="fa fa-instagram white"></a>
-          <a href="#" class="fa fa-linkedin white"></a>
-          <a href="#" class="fa fa-youtube white"></a>
-        </div>
-
-        <div class="col-md-5">
-          <div class="footer-container-item white">
-            <p>Simon Fraser University - Surrey Campus</p>
-            <p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
-          </div>
-          <div class="footer-container-item">
-            <p><a href="mailto:someone@eample.com" class="white"><i class="material-icons md-1">&#xe0be;</i>email@sfu.ca</a></p>
-            <p class="white"><a href="tel:778.876.3456" class="white"><i class="material-icons md-1">&#xe0cd;</i>778.876.3456</a></p>
-          </div>
-          <div class="footer-container-item">
-            <button class="secondary-button" onclick='location.href="#"'>Contact Now</button>
-          </div>
-          <p class="copyright light-blue">Computational Design Group, SFU. COPYRIGHT 2020.</p>
-        </div>  
+  <!------------------------------------------- EDIT PUBLICATIONS --------------------------------------------->
+  <section class="related-publications" id="solidbgblock">
+    <div class="row px-2 py-5 px-md-6">
+      <div class="col-md-5">
+        <h2>Related Publications</h2>
       </div>
-    </footer>
+
+      <div class="col-md-7 py-2 py-md-0">
+        <div class="row">
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0 pt-0">
+              <p>Sambit Datta, Stuart Hanafin, and Robert F. Woodbury. Responsive envelope tessellation and stochastic
+                rotation of 4-fold penttiles. Frontiers of Architectural Research, 3(2):192 – 198, 2014.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Robert Woodbury. Design flow and tool flux. In Brady Peters and Terri Peters, editors, Inside
+                Smartgeometry, pages 102–111. John Wiley &amp; Sons, 2013.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Robert Woodbury. Foreword. In Wassim Jabi, Parametric Design in Architecture. Laurence King Publishing,
+                2012.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Diliara Nasirova, Andy T. Huang, Halil Erhan, Robert Woodbury, and Bernhard E. Riecke. Change detection
+                in 3D parametric systems: Human-centered interfaces for change visualization. In CAADFutures 2011, pages
+                751–764, July 2011.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Halil Erhan, Nahal H. Salmasi, and Rob Woodbury. ViSA: A Parametric Design Modeling Method to Enhance
+                Visual Sensitivity Control and Analysis. International Journal of Architectural Computing, 8(4):461–483,
+                2011.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Earl Mark and Robert Woodbury. Editorial. International Journal of Architectural Computing,
+                9(2):iii–iv, 2011.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Earl Mark and Robert Woodbury. Editorial. International Journal of Architectural Computing,
+                8(3):iii–iv, 2010. My name was omitted. This was corrected by errata in the next editorial.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Zhenyu Cheryl Qian, Yingjie Victor Chen, and Robert F. Woodbury. Design patterns to support
+                collaborative parametric design. International Journal of Design Sciences and Technology, 17(1):57–75,
+                2010.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Robert Woodbury. Elements of Parametric Design. Taylor and Francis, 2010. With contributions from Brady
+                Peters, Onur Yüce Gün and Mehdi Sheikholeslami.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Robert Woodbury. Elements of Parametric Design. Taylor and Francis, 2010. With contributions from Brady
+                Peters, Onur Yüce Gün and Mehdi Sheikholeslami. Forthcoming Chinese translation.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Halil Erhan, Rob Woodbury, and Nahal H. Salmasi. Visual sensitivity analysis of parametric design
+                models: Improving agility in design. In T. Tidafi and T. Dorta, editors, Joining Languages, Cultures and
+                Visions: CAADFutures 2009, pages 815–829, Montreal, June 2009. CAADFutures.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Maryam Maleki and Robert Woodbury. Reinterpreting Rasmi domes with geometric constraints: a case of
+                goal-seeking in parametric systems. International Journal of Architectural Computing, 6:375–395, 2008.
+                Davis Marques and Robert Woodbury. Federation modeling: Interactions in parametric design. In Giovanni
+                De Paoli, Khaldoun Zreik, and Reza Beheshti, editors, EuropIA 11: 11th International Conference on
+                Design Sciences and Technology, pages 305–322, September 2007.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Davis Marques and Robert Woodbury. Federation modeling: Interactions in parametric design. In Giovanni
+                De Paoli, Khaldoun Zreik, and Reza Beheshti, editors, EuropIA 11: 11th International Conference on
+                Design Sciences and Technology, pages 305–322, September 2007.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Davis Marques and Robert Woodbury. Managing contingency in parametric models through implicit
+                relational modeling. In CAADFutures 2007, pages 279–288. CAADFutures Foundation, July 2007.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Yingjie (Victor) Chen, Zhenyu (Cheryl) Qian, and Robert Woodbury. Local navigation can reveal implicit
+                relations. In CAADFutures 2007, pages 403–416. CAADFutures Foundation, July 2007.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Robert Woodbury, Axel Kilian, and Robert Aish. Some patterns for parametric modeling. In Expanding
+                Bodies: Art Cities Environment: Proceedings of the 27th Annual Conference of the Association for
+                Computer Aided Design in Architecture, pages 222–229, Halifax (Nova Scotia), 1-7 October 2007. Riverside
+                Architectural Press and Tuns Press.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Zhenyu Qian, Yingjie Chen, and Robert Woodbury. Participant observation can discover design patterns in
+                parametric modeling. In Expanding Bodies: Art Cities Environment: Proceedings of the 27th Annual
+                Conference of the Association for Computer Aided Design in Architecture, pages 230–241, Halifax (Nova
+                Scotia), 1-7 October 2007. Riverside Architectural Press and Tuns Press.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Davis Marques and Robert F. Woodbury. Using rule based selection to support change in parametric CAD
+                systems. In A. Butz, B. Fisher, A. Krüger, and P. Oliver, editors, SmartGraphics, 6th Intl. Symp.,
+                SG2006, LNCS 4073, pages 230–235, Vancouver, Canada, 24-26 July 2006. Springer.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Robert Aish and Robert Woodbury. Multi-level interaction in parametric design. In A. Butz, B. Fisher,
+                A. Krüger, and P. Oliver, editors, SmartGraphics, 5th Intl. Symp., SG2005, LNCS 3638, pages 151–162,
+                Frauenwörth Cloister, Germany, August 2005. Springer.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Zhenyu Qian and Robert F. Woodbury. Between reading and authoring: patterns of digital interpretation.
+                International Journal of Design Computing, 7, 2004. Accessed at<span class="dont-break">
+                  http://www.faculty.arch.usyd.edu.au/kcdc/ijdc/vol07/articles/woodbury/index.html</span> on 28 February
+                2010.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Wilson Chang and Robert F. Woodbury. Undo reinterpreted. In ACADIA 2003, pages 19–27, Indianapolis,
+                October 2003.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BACK TO PROJECTS PAGE BUTTON -->
+    <div class="row">
+      <div class="col-md-5 ml-3 pl-md-6">
+        <a id='acrBack' onclick='javascript:history.back();' class="back-to-projects-link">
+          <p class="back-to-top-text"><img class="back-to-top-arrow" src="../../IMG/arrow-left.png">back to projects</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drop Down Abstract-->
+  <script src="../../SCRIPTS/dropdown.js"></script>
+
+</body>
+
+
+<!--------------------------------------------- EDIT FOOTER ---------------------------------------------->
+<footer>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="about.html">
+        <div class="footer-logo"></div>
+      </a>
+    </div>
+
+    <div class="col-md-4 white">
+      <p>Find Us</p>
+      <a href="#" class="fa fa-facebook white"></a>
+      <a href="#" class="fa fa-instagram white"></a>
+      <a href="#" class="fa fa-linkedin white"></a>
+      <a href="#" class="fa fa-youtube white"></a>
+    </div>
+
+    <div class="col-md-5">
+      <div class="footer-container-item white">
+        <p>Simon Fraser University - Surrey Campus</p>
+        <p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
+      </div>
+      <div class="footer-container-item">
+        <p><a href="mailto:someone@eample.com" class="white"><i class="material-icons md-1">&#xe0be;</i>email@sfu.ca</a>
+        </p>
+        <p class="white"><a href="tel:778.876.3456" class="white"><i
+              class="material-icons md-1">&#xe0cd;</i>778.876.3456</a></p>
+      </div>
+      <div class="footer-container-item">
+        <button class="secondary-button" onclick='location.href="#"'>Contact Now</button>
+      </div>
+      <p class="copyright light-blue">Computational Design Group, SFU. COPYRIGHT 2020.</p>
+    </div>
+  </div>
+</footer>
 
 </html>
