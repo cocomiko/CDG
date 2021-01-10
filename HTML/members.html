@@ -9,40 +9,40 @@
     <title>Members | Computational Design Group</title>
     <meta name="description" content="Webpage for Computational Design Group at SFU">
 
-    <!-- Bootstrap CSS -->
+    <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="../SCRIPTS/mail.js"></script>
 
-    <!-- SLICK carousel-->
+    <!-- SLICK CAROUSEL -->
     <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
 
-    <!-- Native Stylesheets -->
+    <!-- NATIVE STYLESHEETS -->
     <link rel="stylesheet" href="../CSS/main.css">
     <link href="../CSS/style.css" rel="stylesheet">
 
-    <!-- Fonts -->
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body class="container-fluid px-0">
 
     <!-- NAVIGATION BAR -->
     <header>
-       <nav class="navbar navbar-expand-md fixed-top">
-        <a class="navbar-brand" href="home.html">Home Page</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a class="navbar-brand" href="home.html">Home Page</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mr-auto" id="navbarText">
-            <div class="navbar-nav ml-auto">
+            </button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarText">
+                <div class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
@@ -61,552 +61,577 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
+                </div>
             </div>
+        </nav>
+    </header>
+
+    <!-- LANDING PAGE IMAGE -->
+    <section>
+        <div class="members-landing-image"></div>
+    </section>
+
+    <!-- PAGE TITLE -->
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-8">
+            <h1 class="members-heading"><a id="top"></a>Members</h1>
         </div>
-    </nav>
-</header>
-
-
-<!-- LANDING PAGE IMAGE -->
-<div class="members-landing-image pt-5"></div>
-
-
-<!-- PAGE TITLE -->
-<div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-8">
-        <h1 class="members-heading"><a id="top"></a>Members</h1>
     </div>
-</div>
 
-<div class="row py-3 members-all">
+    
+    <div class="row py-3 members-all">
 
-    <!-- SIDE NAVIGATION -->
-    <div class="col-md-3 members-sticky-menu">
-     <div class="sticky-top members-sticky-menu"> 
-        <a href="#directors" class="anchor-list-item">Directors</a>
-        <a href="#associate-members" class="anchor-list-item">Associate Members</a>
-        <a href="#current-students" class="anchor-list-item">Current Students</a>
-        <a href="#alumni" class="anchor-list-item">Alumni</a>
-        <a href="#industry-partners" class="anchor-list-item">Industry Partners</a>
-    </div>   
-</div>
-<!-- END OF SIDE NAVIGATION -->
-
-<!-- MAIN CONTENT AREA -->
-<div class="col-md-9">
-
-    <!-- DIRECTOR MEMBERS -->
-    <a class="anchor-top" id="directors"></a>
-    <h2 class="mb-4">Directors</h2> 
-
-    <div class="members"> 
-
-        <!-- Robert Woodbury--> 
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/robert-woodbury.jpg" alt="Photo of Robert Woodbury">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Robert Woodbury</h4>
-                        <h5 class="card-subtitle">Education: PhD Carnegie Mellon University; Title: University Professor</h5>
-                        <br>
-                        <p class="card-text ">Robert Woodbury is a University Professor at Simon Fraser University. He is a Director of Smartgeometry. His research is in computational design, visual analytics, and human-centered systems for sustainable living. He holds a PhD and MSc from Carnegie Mellon, and a BArch from Carleton. </p>
-
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:robw@sfu.ca">robw@sfu.ca</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        </div> <!-- END OF ROBERT'S CARD -->
-
-        <!-- Halil Erhan--> 
-        <div class="card noclick pb-2">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/halil-erhan.jpeg" alt="Photo of Halil Erhan">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Halil Erhan</h4>
-                        <h5 class="card-subtitle">Associate Professor BArch (METU); MSc (Clemson U.); PhD (Carnegie Mellon)</h5>
-                        <br>
-                        <p class="card-text ">Halil Erhan is an assistant professor at SFU’s School of Interactive Arts and Technology. His research focuses on generative aspects of systems that support design activities and visual analytics of latent dependencies in design information space. He has a BArch degree from Middle East Technical University, an MSc from Clemson and a PhD from Carnegie Mellon.</p>
-
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:herhan@sfu.ca">herhan@sfu.ca</a></p>
-                            <p>/</p>
-                            <p><a href="tel:778 782 7423">778 782 7423</a></p>
-                        </div>
-                    </div>
-                </div>
+        <!-- SIDE NAVIGATION -->
+        <div class="col-md-3 members-sticky-menu">
+            <div class="sticky-top members-sticky-menu"> 
+                <a href="#directors" class="anchor-list-item">Directors</a>
+                <a href="#associate-members" class="anchor-list-item">Associate Members</a>
+                <a href="#current-students" class="anchor-list-item">Current Students</a>
+                <a href="#alumni" class="anchor-list-item">Alumni</a>
+                <a href="#industry-partners" class="anchor-list-item">Industry Partners</a>
             </div>   
-        </div> <!-- END OF HALIL'S CARD -->
+        </div>
+        <!-- END OF SIDE NAVIGATION -->
 
-    </div>
-    <!-- END OF DIRECTOR -->
+        <!-- MAIN CONTENT AREA -->
+        <div class="col-md-9">
 
-    <!-- ASSOCIATE MEMBERS -->
-    <a class="anchor-top" id="associate-members"></a>
-    <h2 class="mb-4">Associate Members</h2> 
+            <!-- DIRECTORS -->
+            <a class="anchor-top" id="directors"></a>
+            <h2 class="mb-4">Directors</h2> 
 
-    <div class="members"> 
+            <div class="members"> 
 
-        <!-- Çetin Tüker -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/cetin-tuker.jpg" alt="Photo of Çetin Tüker">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Çetin Tüker</h4>
-                        <h5 class="card-subtitle">DFA (Doctor of Fine Arts)</h5>
-                        <br>
-                        <p class="card-text truncate">Cetin Tuker received his undergraduate and graduate degrees from the Middle East Technical University Department of Architecture and received his doctor of fine arts degree from Mimar Sinan Fine Arts University Graphic Design department. His specialties include video game, VR and XR design, development, and research.</p>
-
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:cetintuker@gmail.com">cetintuker@gmail.com</a></p>
-                            <p>/</p>
-                            <p><a href="www.cetintuker.net" target="_blank">www.cetintuker.net</a></p>
+                <!-- ROBERT WOODBURY --> 
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/robert-woodbury.jpg" alt="Photo of Robert Woodbury">
                         </div>
-                    </div>
-                </div>        
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Robert Woodbury</h4>
+                                <h5 class="card-subtitle">Education: PhD Carnegie Mellon University; Title: University Professor</h5>
+                                <br>
+                                <p class="card-text ">Robert Woodbury is a University Professor at Simon Fraser University. He is a Director of Smartgeometry. His research is in computational design, visual analytics, and human-centered systems for sustainable living. He holds a PhD and MSc from Carnegie Mellon, and a BArch from Carleton. </p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:robw@sfu.ca">robw@sfu.ca</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+                <!-- END OF ROBERT WOODBURY -->
+
+                <!-- HALIL ERHAN --> 
+                <div class="card noclick pb-2">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/halil-erhan.jpeg" alt="Photo of Halil Erhan">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Halil Erhan</h4>
+                                <h5 class="card-subtitle">Associate Professor BArch (METU); MSc (Clemson U.); PhD (Carnegie Mellon)</h5>
+                                <br>
+                                <p class="card-text ">Halil Erhan is an assistant professor at SFU’s School of Interactive Arts and Technology. His research focuses on generative aspects of systems that support design activities and visual analytics of latent dependencies in design information space. He has a BArch degree from Middle East Technical University, an MSc from Clemson and a PhD from Carnegie Mellon.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:herhan@sfu.ca">herhan@sfu.ca</a></p>
+                                    <p>/</p>
+                                    <p><a href="tel:778 782 7423">778 782 7423</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <!-- END OF HALIL ERHAN -->
+
             </div>
-        </div> <!-- END OF CETIN'S CARD -->
+            <!-- END OF DIRECTORS -->
 
-        <!-- John Dill -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/cetin-tuker.jpg" alt="Photo of Çetin Tüker">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">John Dill</h4>
-                        <h5 class="card-subtitle">DFA (Doctor of Fine Arts)</h5>
-                        <br>
-                        <p class="card-text truncate">Cetin Tuker received his undergraduate and graduate degrees from the Middle East Technical University Department of Architecture and received his doctor of fine arts degree from Mimar Sinan Fine Arts University Graphic Design department. His specialties include video game, VR and XR design, development, and research.</p>
+            <!-- ASSOCIATE MEMBERS -->
+            <a class="anchor-top" id="associate-members"></a>
+            <h2 class="mb-4">Associate Members</h2> 
 
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:cetintuker@gmail.com">cetintuker@gmail.com</a></p>
-                            <p>/</p>
-                            <p><a href="www.cetintuker.net" target="_blank">www.cetintuker.net</a></p>
+            <div class="members"> 
+
+                <!-- ÇETIN TUKER -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/cetin-tuker.jpg" alt="Photo of Çetin Tüker">
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Çetin Tüker</h4>
+                                <h5 class="card-subtitle">Associate Professor, Mimar Sinan University</h5>
+                                <br>
+                                <p class="card-text truncate">Cetin Tuker received his undergraduate and graduate degrees from the Middle East Technical University Department of Architecture and received his doctor of fine arts degree from Mimar Sinan Fine Arts University Graphic Design department. His specialties include video game, VR and XR design, development, and research.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:cetintuker@gmail.com">cetintuker@gmail.com</a></p>
+                                    <p>/</p>
+                                    <p><a href="www.cetintuker.net" target="_blank">www.cetintuker.net</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                </div>        
+                </div> 
+                <!-- END OF CETIN TUKER -->
+
+                <!-- JOHN DILL -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/cetin-tuker.jpg" alt="Photo of Çetin Tüker">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">John Dill</h4>
+                                <h5 class="card-subtitle">DFA (Doctor of Fine Arts)</h5>
+                                <br>
+                                <p class="card-text truncate">Cetin Tuker received his undergraduate and graduate degrees from the Middle East Technical University Department of Architecture and received his doctor of fine arts degree from Mimar Sinan Fine Arts University Graphic Design department. His specialties include video game, VR and XR design, development, and research.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:cetintuker@gmail.com">cetintuker@gmail.com</a></p>
+                                    <p>/</p>
+                                    <p><a href="www.cetintuker.net" target="_blank">www.cetintuker.net</a></p>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div> 
+                <!-- END OF JOHN DILL -->
+
             </div>
-        </div> <!-- END OF JON'S CARD -->
-
-    </div>
-    <!-- END OF ASSOCIATE MEMBERS -->
+            <!-- END OF ASSOCIATE MEMBERS -->
 
 
-    <!-- CURRENT STUDENTS -->
-    <a class="anchor-top" id="current-students"></a>
-    <h2 class="mb-4">Current Students</h2>
+            <!-- CURRENT STUDENTS -->
+            <a class="anchor-top" id="current-students"></a>
+            <h2 class="mb-4">Current Students</h2>
 
-    <div class="members">
+            <div class="members">
 
-        <!-- Osama Alsalman -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/osama-alsalman.jpg" alt="Photo of Osama Alsalman">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Osama Alsalman</h4>
-                        <h5 class="card-subtitle">Master of Science Student</h5>
-                        <br>
-                        <p class="card-text ">Through the previous years of his life, Osama spent his time learning the craft of software, games, and narratives. He graduated with honors in Software Engineering, and currently, he is working with the Computational Design Lab to research tools that assist design, creativity, and collaboration.</p>
-
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:osamaialsalman@gmail.com">osamaialsalman@gmail.com</a></p>
-                            <p>/</p>
-                            <p><a href="https://osama.online/" target="_blank">osama.online</a></p>
+                <!-- OSAMA ALSALMAN -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/osama-alsalman.jpg" alt="Photo of Osama Alsalman">
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Osama Alsalman</h4>
+                                <h5 class="card-subtitle">Master of Science Student</h5>
+                                <br>
+                                <p class="card-text ">Through the previous years of his life, Osama spent his time learning the craft of software, games, and narratives. He graduated with honors in Software Engineering, and currently, he is working with the Computational Design Lab to research tools that assist design, creativity, and collaboration.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:osamaialsalman@gmail.com">osamaialsalman@gmail.com</a></p>
+                                    <p>/</p>
+                                    <p><a href="https://osama.online/" target="_blank">osama.online</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div> 
+                <!-- END OF OSAMA ALSALMAN -->
+
+                <!-- AHMED ABU ZURAIQ -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/ahmed-abuzuraiq.jpg" alt="Photo of Ahmed Abu Zuraiq">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Ahmed Abu Zuraiq</h4>
+                                <h5 class="card-subtitle">MSc. Candidate</h5>
+                                <br>
+                                <p class="card-text ">Ahmed is a computer scientist and game developer who realized his passion for research and design at SIAT. He is interested in the potential of computational generation for augmenting our creativity and problem-solving capabilities, whether this is applied to games or architectural design or other fields.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:abuzreq@hotmail.com">abuzreq@hotmail.com</a></p>
+                                    <p>/</p>
+                                    <p><a href="https://abuzreq.netlify.app/" target="_blank">abuzreq.netlify.app</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+                <!-- END OF AHMED ABU ZURAIQ -->
+
+            </div>
+            <!-- END OF CURRENT STUDENTS -->
+
+            <!-- ALUMNI -->
+            <a class="anchor-top" id="alumni"></a>
+            <h2 class="mb-4">Alumni</h2>
+
+            <div class="members">
+
+                <!-- CHERYL ZHENYU GIAN -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/cheryl-zhenyu-qian.jpg" alt="Photo of Cheryl Zhenyu Qian">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Cheryl Zhenyu Qian</h4>
+                                <h5 class="card-subtitle">Associate Professor of Interaction Design and Industrial Design</h5>
+                                <br>
+                                <p class="card-text ">Qian's research is focused on 1) the harmonious integration of physical and virtual interactions in the user experience design, 2) adopting interaction design theories, tools, and evaluation methods to review, compare, guide, and enhance product design outcomes, and 3) employing innovative design thinking into the domain of visual analytics.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:qianz@purdue.edu">qianz@purdue.edu</a></p>
+                                    <p>/</p>
+                                    <p><a href="tel:765 494 3069">765 494 3069</a></p>
+                                    <p>/</p>
+                                    <p><a href="https://cla.purdue.edu/directory/profiles/cheryl-zhenyu-qian.html" target="_blank">cla.purdue.edu</a></p>
+                                </div>
+                            </div>
+                        </div>        
+                    </div> 
+                </div>
+                <!-- END OF CHERYL ZHENYU QIAN -->
+
+                <!-- VICTOR YINGJIE CHEN -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/yingjie-chen.jpg" alt="Photo of Yingjie Chen">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Victor Yingjie Chen</h4>
+                                <h5 class="card-subtitle">Associate Professor</h5>
+                                <br>
+                                <p class="card-text ">Chen’s research covers interdisciplinary domains of Information Visualization, Visual Analytics, Digital Media, and Human Computer Interaction. He seeks to design, model, and construct new forms of interaction in visualization and system design, by which the system can minimize its influence on design and analysis, and become a true free extension of human’s brain and hand.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:victorchen@purdue.edu">victorchen@purdue.edu</a></p>
+                                    <p>/</p>
+                                    <p><a href="tel:765 494 1454">765 494 1454</a></p>
+                                    <p>/</p>
+                                    <p><a href="https://polytechnic.purdue.edu/profile/chen489" target="_blank">polytechnic.purdue.edu</a></p>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div> 
+                <!-- END OF VICTOR YINGJIE CHEN'S CARD -->
+
+
+                <!-- DAVID BOTTA -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/david-botta.jpg" alt="Photo of David Botta">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">David Botta</h4>
+                                <h5 class="card-subtitle">University Professor BArch (Carleton); MSc, PhD (Carnegie Mellon)</h5>
+                                <br>
+                                <p class="card-text ">David has meandered from traditional Canadian landscape painting and Surrealism (BFA) to interactive sculpture (MFA) to 3D animation (industry) to UID (industry) to discourse analysis (PhD) to UXD and information visualization (industry), with more and more writing along the way.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:davidbotta@gmail.com">davidbotta@gmail.com</a></p>
+                                    <p>/</p> 
+                                    <p><a href="tel:604 314 3012">604 314 3012</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
                 </div>
-            </div>        
-        </div> <!-- END OF OSAMA'S CARD -->
+                <!-- END OF DAVID BOTTA'S CARD -->
 
-
-        <!-- Ahmed Abu Zuraiq -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/ahmed-abuzuraiq.jpg" alt="Photo of Ahmed Abu Zuraiq">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Ahmed Abu Zuraiq</h4>
-                        <h5 class="card-subtitle">MSc. Candidate</h5>
-                        <br>
-                        <p class="card-text ">Ahmed is a computer scientist and game developer who realized his passion for research and design at SIAT. He is interested in the potential of computational generation for augmenting our creativity and problem-solving capabilities, whether this is applied to games or architectural design or other fields.</p>
-
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:abuzreq@hotmail.com">abuzreq@hotmail.com</a></p>
-                            <p>/</p>
-                            <p><a href="https://abuzreq.netlify.app/" target="_blank">abuzreq.netlify.app</a></p>
+                <!-- MAHA AL-SAATI -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/maha-alsaati.png" alt="Photo of Maha Al-Saati">
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Maha Al-Saati</h4>
+                                <h5 class="card-subtitle">PhD in Interactive Arts and Technology, SFU.</h5>
+                                <br>
+                                <p class="card-text ">Maha Al-Saati is Assistant Professor in the Graphic Design and Multimedia Dept at Imam Abdulrahman Bin Faisal University, Saudi Arabia. She teaches courses in relation to media studies and moving image. She is also an independent filmmaker whose films screened at Fantastic Fest, Slamdance Film Festivals.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:mahazsaati@gmail.com">mahazsaati@gmail.com</a></p>
+                                    <p>/</p>
+                                    <p><a href="tel:96 653 851 2880">96 653 851 2880</a></p>
+                                    <p>/</p>
+                                    <p><a href="malsaati.wordpress.com" target="_blank">malsaati.wordpress.com</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
                 </div>
-            </div>        
-        </div> <!-- END OF AHMED'S CARD -->
+                <!-- END OF MAHA AL-SAATI'S CARD -->
 
-    </div>
-    <!-- END OF CURRENT STUDENTS -->
 
-    <!-- ALUMNI -->
-    <a class="anchor-top" id="alumni"></a>
-    <h2 class="mb-4">Alumni</h2>
-
-    <div class="members">
-
-        <!-- Cheryl Zhenyu Qian -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/cheryl-zhenyu-qian.jpg" alt="Photo of Cheryl Zhenyu Qian">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Cheryl Zhenyu Qian</h4>
-                        <h5 class="card-subtitle">Associate Professor of Interaction Design and Industrial Design</h5>
-                        <br>
-                        <p class="card-text ">Qian's research is focused on 1) the harmonious integration of physical and virtual interactions in the user experience design, 2) adopting interaction design theories, tools, and evaluation methods to review, compare, guide, and enhance product design outcomes, and 3) employing innovative design thinking into the domain of visual analytics.</p>
-
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:qianz@purdue.edu">qianz@purdue.edu</a></p>
-                            <p>/</p>
-                            <p><a href="tel:765 494 3069">765 494 3069</a></p>
-                            <p>/</p>
-                            <p><a href="https://cla.purdue.edu/directory/profiles/cheryl-zhenyu-qian.html" target="_blank">cla.purdue.edu</a></p>
+                <!-- KARINE KOZLOVA -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/karine-kozlova.jpeg" alt="Photo of Karine Kozlova" >
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Karine Kozlova</h4>
+                                <h5 class="card-subtitle">Lead UX Designer at EPAM Systems, HCI Researcher</h5>
+                                <br>
+                                <p class="card-text ">Karine holds a PhD in Human-Computer Interaction from SFU and a Specialist in Information Systems and Technologies degree from MIREA. Her PhD thesis explored design principles that support collaborative decision making and reconstruction. The Visual Histories tool demonstrates how design principles supported the capture, sharing and re-use of knowledge in groups.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:karine_kozlova@epam.com">karine_kozlova@epam.com</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                </div>        
+                </div>
+                <!-- END OF KARINE KOZLOVA'S CARD -->
+
+                <!-- SINISA KOLARIC -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/siniša-kolarić.jpg" alt="Photo of Siniša Kolarić" >
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Siniša Kolarić</h4>
+                                <h5 class="card-subtitle">PhD</h5>
+                                <br>
+                                <p class="card-text ">Siniša is a scholar, technologist, and educator focusing on design theory, human-computer interaction, design computing, and the Smart City / Digital Twin paradigm. His academic affiliations have included Computational Design Lab at SFU, Digital Building Lab at Georgia Tech, VR Group at TecGraf, and Rudjer Boskovic Institute.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:sinisa.kolaric@gmail.com">sinisa.kolaric@gmail.com</a></p>
+                                    <p>/</p>
+                                    <p><a href="sinisakolaric.net" target="_blank">sinisakolaric.net</a></p>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <!-- END OF SINISA KOLARIC'S CARD -->
+
+                <!-- NAHAL H. SALMASI -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/nahal-salmasi.png" alt="Photo of Nahal H.Salmasi" >
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Nahal H. Salmasi</h4>
+                                <h5 class="card-subtitle">Structural Design Engineer</h5>
+                                <br>
+                                <p class="card-text ">Nahal holds a Bachelor's in Structural Engineering and a Master's in Interactive Arts and Technology from SIAT, SFU. Nahal is working in California as a Structural and Earthquake Engineer and is also leading the firm’s residential department. Her work involves structural design for many high tech headquarters in Silicon Valley and structures in University of California campuses.</p>
+
+                                <!-- CONTACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:nhsalmasi@gmail.com">nhsalmasi@gmail.com</a></p>
+                                    <p>/</p>
+                                    <p><a href="tel:408 712 0159">408 712 0159</a></p>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <!-- END OF NAHAL H. SALMASI'S CARD -->
+
+                <!-- RODOLFO SANCHEZ -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/rodolfo-sanchez.jpg" alt="Photo of Rodolfo Sanchez">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Rodolfo Sanchez</h4>
+                                <h5 class="card-subtitle">Engineering Assistant at City of Surrey</h5>
+                                <br>
+                                <p class="card-text ">Rodolfo likes orange traffic cones, specificity and fixing things. Surrey. He thinks.</p>
+
+                                <!-- CONACT INFO -->
+                                <div class="member-contact">
+                                    <p><a href="mailto:arq.rsr@gmail.com">arq.rsr@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <!-- END OF RODOLFO SANCHEZ'S CARD -->
+
             </div> 
-        </div> <!-- END OF CHERYL'S CARD -->
+            <!-- END OF ALUMNI -->
 
-        <!-- Victor Yingjie Chen -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/yingjie-chen.jpg" alt="Photo of Yingjie Chen">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Victor Yingjie Chen</h4>
-                        <h5 class="card-subtitle">Associate Professor</h5>
-                        <br>
-                        <p class="card-text ">Chen’s research covers interdisciplinary domains of Information Visualization, Visual Analytics, Digital Media, and Human Computer Interaction. He seeks to design, model, and construct new forms of interaction in visualization and system design, by which the system can minimize its influence on design and analysis, and become a true free extension of human’s brain and hand.</p>
 
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:victorchen@purdue.edu">victorchen@purdue.edu</a></p>
-                            <p>/</p>
-                            <p><a href="tel:765 494 1454">765 494 1454</a></p>
-                            <p>/</p>
-                            <p><a href="https://polytechnic.purdue.edu/profile/chen489" target="_blank">polytechnic.purdue.edu</a></p>
+            <!-- INDUSTRY PARTNERS -->
+            <a class="anchor-top" id="industry-partners"></a>
+            <h2 class="mb-4">Industry Partners</h2>
+
+            <div class="members partners">
+
+                <!-- Autodesk -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/autodesk-logo.jpg" alt="Autodesk Logo">
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Autodesk</h4>
+                                <br>
+                                <p class="card-text truncate">Autodesk, Inc. is a world leader in 2D and 3D design, engineering, and entertainment software for the manufacturing, building and construction, and media and entertainment markets. Since its introduction of AutoCAD software in 1982, Autodesk continues to develop the broadest portfolio of state-of-the-art software to help customers experience their ideas digitally before they are built. Fortune 100 companies as well as the last 15 Academy Award winners for Best Visual Effects use Autodesk software tools to design, visualize and simulate their ideas to save time and money, enhance quality and foster innovation for competitive advantage.</p>
+                                <div class="member-contact">
+                                    <p><a href="https://www.autodesk.ca/en" target="_blank">www.autodesk.ca</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                </div>        
-            </div>
-        </div> <!-- END OF VICTOR'S CARD -->
-
-
-        <!-- David Botta -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/david-botta.jpg" alt="Photo of David Botta">
                 </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">David Botta</h4>
-                        <h5 class="card-subtitle">University Professor BArch (Carleton); MSc, PhD (Carnegie Mellon)</h5>
-                        <br>
-                        <p class="card-text ">David has meandered from traditional Canadian landscape painting and Surrealism (BFA) to interactive sculpture (MFA) to 3D animation (industry) to UID (industry) to discourse analysis (PhD) to UXD and information visualization (industry), with more and more writing along the way.</p>
+                <!-- END OF AUTODESK CARD -->
 
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:davidbotta@gmail.com">davidbotta@gmail.com</a></p>
-                            <p>/</p> 
-                            <p><a href="tel:604 314 3012">604 314 3012</a></p>
+                <!-- Bentley Systems Inc. -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/bentley-logo.jpg" alt="Bentley Systems Logo">
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Bentley Systems, Inc.</h4>
+                                <br>
+                                <p class="card-text ">Bentley is the global leader dedicated to providing architects, engineers, constructors, and owner-operators with comprehensive software solutions for sustaining infrastructure. Founded in 1984, Bentley has nearly 3,000 colleagues in more than 45 countries, $500 million in annual revenues, and, since 1999, has invested more than $1 billion in research, development, and acquisitions.</p>
+                                <div class="member-contact">
+                                    <p><a href="https://www.bentley.com/en" target="blank">www.bentley.com</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                </div>        
-            </div>
-        </div> <!-- END OF DAVID'S CARD --> 
+                </div>  
+                <!-- END OF BENTLEY CARD -->  
 
-        <!-- Maha Al-Saati -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/maha-alsaati.png" alt="Photo of Maha Al-Saati">
+                <!-- GRAND NCE -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/grandnce-logo.jpg" alt="Grand Nce Logo">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">GRAND NCE</h4>
+                                <br>
+                                <p class="card-text ">The GRAND NCE undertakes a comprehensive research program whose goal is to understand the underlying technologies and to make selective advances in a coordinated, multidisciplinary setting that lead to social, legal, economic, and cultural benefits for Canadians.</p>
+                                <div class="member-contact">
+                                    <p><a href="http://grand-nce.ca/" target="blank">www.grand-nce.ca</a></p>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
                 </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Maha Al-Saati</h4>
-                        <h5 class="card-subtitle">PhD in Interactive Arts and Technology, SFU.</h5>
-                        <br>
-                        <p class="card-text ">Maha Al-Saati is Assistant Professor in the Graphic Design and Multimedia Dept at Imam Abdulrahman Bin Faisal University, Saudi Arabia. She teaches courses in relation to media studies and moving image. She is also an independent filmmaker whose films screened at Fantastic Fest, Slamdance Film Festivals.</p>
+                <!-- END OF GRAND NCE CARD -->
 
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:mahazsaati@gmail.com">mahazsaati@gmail.com</a></p>
-                            <p>/</p>
-                            <p><a href="tel:96 653 851 2880">96 653 851 2880</a></p>
-                            <p>/</p>
-                            <p><a href="malsaati.wordpress.com" target="_blank">malsaati.wordpress.com</a></p>
+                <!-- PERKINS AND WILL ARCHITECTS -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/perkinsandwill-logo.jpg" alt="Perkins and Will Architects Logo">
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Perkins and Will Architects</h4>
+                                <br>
+                                <p class="card-text ">SAP is the world’s leading provider of business software, offering applications and services that enable companies of all sizes and in more than 25 industries to become best-run businesses. With more than 97,000 customers in over 120 countries, the company is listed on several exchanges, including the Frankfurt stock exchange and NYSE, under the symbol "SAP".</p>
+                                <div class="member-contact">
+                                    <p><a href="https://perkinswill.com/" target="_blank">www.perkinswill.com</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                </div>        
-            </div>
-        </div> <!-- END OF MAHA'S CARD -->
-
-
-        <!-- Karine Kozlova -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/karine-kozlova.jpeg" alt="Photo of Karine Kozlova" >
                 </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Karine Kozlova</h4>
-                        <h5 class="card-subtitle">Lead UX Designer at EPAM Systems, HCI Researcher</h5>
-                        <br>
-                        <p class="card-text ">Karine holds a PhD in Human-Computer Interaction from SFU and a Specialist in Information Systems and Technologies degree from MIREA. Her PhD thesis explored design principles that support collaborative decision making and reconstruction. The Visual Histories tool demonstrates how design principles supported the capture, sharing and re-use of knowledge in groups.</p>
+                <!-- END OF PERKINS AND WILL ARCHITECTS -->
 
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:karine_kozlova@epam.com">karine_kozlova@epam.com</a></p>
+                <!-- STANTEC VANCOUVER -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/stantec-logo.jpg" alt="SAP Logo">
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">Stantec Vancouver</h4>
+                                <br>
+                                <p class="card-text truncate">SAP is the world’s leading provider of business software, offering applications and services that enable companies of all sizes and in more than 25 industries to become best-run businesses. With more than 97,000 customers in over 120 countries, the company is listed on several exchanges, including the Frankfurt stock exchange and NYSE, under the symbol "SAP".</p>
+                                <div class="member-contact">
+                                    <p><a href="https://www.stantec.com/en/offices/canada-locations/british-columbiaoffices/vancouver-british-columbia-office" target="_blank">www.stantec.com</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                </div>        
-            </div>
-        </div> <!-- END OF KARINE'S CARD -->
+                </div>  
+                <!-- END OF STANTEC VANCOUVER -->        
 
-        <!-- Siniša Kolarić -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/siniša-kolarić.jpg" alt="Photo of Siniša Kolarić" >
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Siniša Kolarić</h4>
-                        <h5 class="card-subtitle">PhD</h5>
-                        <br>
-                        <p class="card-text ">Siniša is a scholar, technologist, and educator focusing on design theory, human-computer interaction, design computing, and the Smart City / Digital Twin paradigm. His academic affiliations have included Computational Design Lab at SFU, Digital Building Lab at Georgia Tech, VR Group at TecGraf, and Rudjer Boskovic Institute.</p>
-
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:sinisa.kolaric@gmail.com">sinisa.kolaric@gmail.com</a></p>
-                            <p>/</p>
-                            <p><a href="sinisakolaric.net" target="_blank">sinisakolaric.net</a></p>
+                <!-- SAP -->
+                <div class="card noclick pb-4">
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 col-lg-3">
+                            <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/sap-logo.jpg" alt="SAP Logo">
                         </div>
+                        <div class="col-sm-8">
+                            <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
+                                <h4 class="card-title">SAP</h4>
+                                <br>
+                                <p class="card-text ">SAP is the world’s leading provider of business software, offering applications and services that enable companies of all sizes and in more than 25 industries to become best-run businesses. With more than 97,000 customers in over 120 countries, the company is listed on several exchanges, including the Frankfurt stock exchange and NYSE, under the symbol "SAP".</p>
+                                <div class="member-contact">
+                                    <p><a href="https://www.sap.com/canada/index.html" target="_blank">www.sap.com</a></p>
+                                </div>
+                            </div>
+                        </div>        
                     </div>
-                </div>        
+                </div>  
+                <!-- END OF SAP -->     
+
             </div>
-        </div> <!-- END OF SINSA'S CARD -->
+            <!-- END OF INDUSTRY PARTNERS -->
 
-        <!-- Nahal H.Salmasi -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/nahal-salmasi.png" alt="Photo of Nahal H.Salmasi" >
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Nahal H.Salmasi</h4>
-                        <h5 class="card-subtitle">Structural Design Engineer</h5>
-                        <br>
-                        <p class="card-text ">Nahal holds a Bachelor's in Structural Engineering and a Master's in Interactive Arts and Technology from SIAT, SFU. Nahal is working in California as a Structural and Earthquake Engineer and is also leading the firm’s residential department. Her work involves structural design for many high tech headquarters in Silicon Valley and structures in University of California campuses.</p>
-
-                        <!-- CONTACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:nhsalmasi@gmail.com">nhsalmasi@gmail.com</a></p>
-                            <p>/</p>
-                            <p><a href="tel:408 712 0159">408 712 0159</a></p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div> <!-- END OF NAHAL'S CARD -->
-
-        <!-- Rodolfo Sanchez -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/headshots/rodolfo-sanchez.jpg" alt="Photo of Rodolfo Sanchez">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Rodolfo Sanchez</h4>
-                        <h5 class="card-subtitle">Engineering Assistant at City of Surrey</h5>
-                        <br>
-                        <p class="card-text ">Rodolfo likes orange traffic cones, specificity and fixing things. Surrey. He thinks.</p>
-
-                        <!-- CONACT INFO -->
-                        <div class="member-contact">
-                            <p><a href="mailto:arq.rsr@gmail.com">arq.rsr@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div> <!-- END OF RODOLFO'S CARD -->
-
-    </div> 
-
-
-    <!-- INDUSTRY PARTNERS -->
-    <a class="anchor-top" id="industry-partners"></a>
-    <h2 class="mb-4">Industry Partners</h2>
-
-    <div class="members partners">
-        <!-- Autodesk -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/autodesk-logo.jpg" alt="Autodesk Logo">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Autodesk</h4>
-                        <br>
-                        <p class="card-text truncate">Autodesk, Inc. is a world leader in 2D and 3D design, engineering, and entertainment software for the manufacturing, building and construction, and media and entertainment markets. Since its introduction of AutoCAD software in 1982, Autodesk continues to develop the broadest portfolio of state-of-the-art software to help customers experience their ideas digitally before they are built. Fortune 100 companies as well as the last 15 Academy Award winners for Best Visual Effects use Autodesk software tools to design, visualize and simulate their ideas to save time and money, enhance quality and foster innovation for competitive advantage.</p>
-                        <div class="member-contact">
-                            <p><a href="https://www.autodesk.ca/en" target="_blank">www.autodesk.ca</a></p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
         </div>
-
-        <!-- Bentley Systems Inc. -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/bentley-logo.jpg" alt="Bentley Systems Logo">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Bentley Systems, Inc.</h4>
-                        <br>
-                        <p class="card-text ">Bentley is the global leader dedicated to providing architects, engineers, constructors, and owner-operators with comprehensive software solutions for sustaining infrastructure. Founded in 1984, Bentley has nearly 3,000 colleagues in more than 45 countries, $500 million in annual revenues, and, since 1999, has invested more than $1 billion in research, development, and acquisitions.</p>
-                        <div class="member-contact">
-                            <p><a href="https://www.bentley.com/en" target="blank">www.bentley.com</a></p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div>    
-
-        <!-- GRAND NCE -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/grandnce-logo.jpg" alt="Grand Nce Logo">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">GRAND NCE</h4>
-                        <br>
-                        <p class="card-text ">The GRAND NCE undertakes a comprehensive research program whose goal is to understand the underlying technologies and to make selective advances in a coordinated, multidisciplinary setting that lead to social, legal, economic, and cultural benefits for Canadians.</p>
-                        <div class="member-contact">
-                            <p><a href="http://grand-nce.ca/" target="blank">www.grand-nce.ca</a></p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div>
-
-        <!-- Perkins and Will Architects -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/sap-logo.jpg" alt="SAP Logo">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Perkins and Will Architects</h4>
-                        <br>
-                        <p class="card-text ">SAP is the world’s leading provider of business software, offering applications and services that enable companies of all sizes and in more than 25 industries to become best-run businesses. With more than 97,000 customers in over 120 countries, the company is listed on several exchanges, including the Frankfurt stock exchange and NYSE, under the symbol "SAP".</p>
-                        <div class="member-contact">
-                            <p><a href="https://www.sap.com/canada/index.html" target="_blank">www.sap.com</a></p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div>
-
-        <!-- STANTEC VANCOUVER -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/sap-logo.jpg" alt="SAP Logo">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">Stantec Vancouver</h4>
-                        <br>
-                        <p class="card-text truncate">SAP is the world’s leading provider of business software, offering applications and services that enable companies of all sizes and in more than 25 industries to become best-run businesses. With more than 97,000 customers in over 120 countries, the company is listed on several exchanges, including the Frankfurt stock exchange and NYSE, under the symbol "SAP".</p>
-                        <div class="member-contact">
-                            <p><a href="https://www.sap.com/canada/index.html" target="_blank">www.sap.com</a></p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div>       
-
-        <!-- SAP -->
-        <div class="card noclick pb-4">
-            <div class="row no-gutters">
-                <div class="col-sm-4 col-lg-3">
-                    <img class="card-img img-fluid img-square-wrapper" src="../IMG/Logos/sap-logo.jpg" alt="SAP Logo">
-                </div>
-                <div class="col-sm-8">
-                    <div class="card-block pt-4 pt-md-2 pl-sm-3 pl-md-4">
-                        <h4 class="card-title">SAP</h4>
-                        <br>
-                        <p class="card-text ">SAP is the world’s leading provider of business software, offering applications and services that enable companies of all sizes and in more than 25 industries to become best-run businesses. With more than 97,000 customers in over 120 countries, the company is listed on several exchanges, including the Frankfurt stock exchange and NYSE, under the symbol "SAP".</p>
-                        <div class="member-contact">
-                            <p><a href="https://www.sap.com/canada/index.html" target="_blank">www.sap.com</a></p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div>       
+        <!-- MAIN CONTENT AREA ENDS -->
 
     </div>
 
-</div> <!--Main Area ends -->
-
-</div> <!-- End of Row -->
-
-<!-- Back to top Button-->
-<a class="top-link hide" href="" id="js-top">
-    <svg t="1604847638891" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3228" width="200" height="200"><path d="M179.626667 457.941333a32 32 0 0 0 46.336 44.117334l254.037333-266.709334V864a32 32 0 0 0 64 0V235.349333l254.08 266.709334a32 32 0 0 0 46.336-44.117334l-301.525333-316.586666a42.453333 42.453333 0 0 0-24.746667-12.8 32.170667 32.170667 0 0 0-12.373333 0.042666 42.453333 42.453333 0 0 0-24.661334 12.8L179.626667 457.941333z" p-id="3229"></path></svg>
-</a>
+    <!-- BACK TO TOP BUTTON -->
+    <a class="top-link hide" href="" id="js-top">
+        <svg t="1604847638891" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3228" width="200" height="200"><path d="M179.626667 457.941333a32 32 0 0 0 46.336 44.117334l254.037333-266.709334V864a32 32 0 0 0 64 0V235.349333l254.08 266.709334a32 32 0 0 0 46.336-44.117334l-301.525333-316.586666a42.453333 42.453333 0 0 0-24.746667-12.8 32.170667 32.170667 0 0 0-12.373333 0.042666 42.453333 42.453333 0 0 0-24.661334 12.8L179.626667 457.941333z" p-id="3229"></path></svg>
+    </a>
 
 
-<!-- STICKY BUTTON / SCROLL TO TOP -->
-<script  src="../SCRIPTS/scrolltotop.js"></script>
+    <!-- STICKY BUTTON / SCROLL TO TOP -->
+    <script  src="../SCRIPTS/scrolltotop.js"></script>
 
-<!--
+    <!-- CAN WE REMOVE THIS POLINA? -->
+    <!--
         <script src="../SCRIPTS/jquery.collapser.js"></script>
         <script>
             $(document).ready(function(){
@@ -618,41 +643,42 @@
             });
         </script>
     -->
+
 </body>       
 
 <!-- FOOTER -->
-    <footer>
-      <div class="row">
+<footer>
+    <div class="row">
         <div class="col-md-3">
-          <a href="about.html"><div class="footer-logo"></div></a>
+            <a href="about.html"><div class="footer-logo"></div></a>
         </div>
 
         <!-- SOCIAL ICONS -->
         <div class="col-md-4 white">
-          <p>Find Us</p>
-          <a href="#" class="fa fa-facebook white"></a>
-          <a href="#" class="fa fa-instagram white"></a>
-          <a href="#" class="fa fa-linkedin white"></a>
-          <a href="#" class="fa fa-youtube white"></a>
+            <p>Find Us</p>
+            <a href="#" class="fa fa-facebook white"></a>
+            <a href="#" class="fa fa-instagram white"></a>
+            <a href="#" class="fa fa-linkedin white"></a>
+            <a href="#" class="fa fa-youtube white"></a>
         </div>
 
         <!-- ADDRESS AND CONTACT INFO -->
         <div class="col-md-5">
-          <div class="footer-container-item white">
-            <p>Simon Fraser University - Surrey Campus</p>
-            <p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
-          </div>
-          <div class="footer-container-item">
-            <p><a href="mailto:herhan@sfu.ca" class="white"><i class="material-icons md-1">&#xe0be;</i>herhan@sfu.ca</a></p>
-            <p class="white"><a href="tel:778.876.3456" class="white"><i class="material-icons md-1">&#xe0cd;</i>778.876.3456</a></p>
-          </div>
-          <div class="footer-container-item">
-            <button class="secondary-button" onclick='location.href="contact.html"'>Contact Now</button>
-          </div>
-          <p class="copyright light-blue">Computational Design Group, SFU. COPYRIGHT 2020.</p>
+            <div class="footer-container-item white">
+                <p>Simon Fraser University - Surrey Campus</p>
+                <p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
+            </div>
+            <div class="footer-container-item">
+                <p><a href="mailto:herhan@sfu.ca" class="white"><i class="material-icons md-1">&#xe0be;</i>herhan@sfu.ca</a></p>
+                <p class="white"><a href="tel:778.876.3456" class="white"><i class="material-icons md-1">&#xe0cd;</i>778.876.3456</a></p>
+            </div>
+            <div class="footer-container-item">
+                <button class="secondary-button" onclick='location.href="contact.html"'>Contact Now</button>
+            </div>
+            <p class="copyright light-blue">Computational Design Group, SFU. COPYRIGHT 2020.</p>
         </div>  
-      </div>
-    </footer>
-    <!-- END OF FOOTER -->
+    </div>
+</footer>
+<!-- END OF FOOTER -->
 
 </html> 
