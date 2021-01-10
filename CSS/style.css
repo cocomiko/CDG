@@ -247,38 +247,6 @@ section {
         padding-top:0.8em;
     }
 
-    .side-filters.sticky-top button {
-        width: 100%;
-        display: block;
-        margin: 0px;
-        justify-content: space-between;
-        
-    }
-    
-    
-    .publications-sticky-menu > .btn:focus{
-        background-color:#ecebff;
-        color:#221EE0;
-        border-width: 3px;  
-    }
-  
-    .bootstrap-slider {
-        width: 100%;
-        margin-top: 2.5em !important;
-        justify-content:center;
-        top:100px;
-        padding-left: 1em;
-    }
-
-    .side-filters.sticky-top {
-
-        width: 100%;
-        display: block;
-        justify-content: space-between;
-        margin: 0px;
-        top: 62px;
-        background-color: white;
-    }
 
     .filter-label {
         display: none;
@@ -375,17 +343,8 @@ section {
     }
 
     .members-all .sticky-top {
-        
         padding: 9px;
-/*        padding-top:2em;*/
         justify-content: space-around;
-/*        margin-top:0px;*/
-
-/*
-        padding-top: 1em;
-        padding-bottom: 1em;
-*/
-        
     }
 }
 
@@ -519,18 +478,8 @@ img.howtoapply-image {
     text-decoration-color: white;
 }
 
-/*Back to projects btn for single proj page*/
-.back-to-projects-link:hover img {
-    left: -0.5em;
-    transition-duration: 0.5s;
-}
 
-/*
-.back-to-projects-link:hover p {
-    text-decoration: underline;
-    text-decoration-color: white;
-}
-*/
+
 /* --------------- END IN TEXT AND LINKS --------------------- */
 
 
@@ -658,10 +607,6 @@ p.tertiary-button-text {
     display: inline;
 }
 
-/*.tertiary-button:hover img {
-    right: -0.5em;
-    transition-duration: 0.5s;
-}*/
 
 
 .filter-button {
@@ -824,28 +769,238 @@ div.news-page-side-image img {
 /* ----------------------------------------------------------- */
 /* ------------------- PROJECTS PAGE SPECIFICS --------------- */
 /* ----------------------------------------------------------- */
+  
+  
+  .card {
+    flex-grow: 1;
 
-  .layout-margin-8 {
-    margin: 3% 8%;
+    /* Edit the amount of space between each row of projects */
+    margin-top: 0.5em;
   }
-  
-  .card-img-top-custom {
-    width: 50%;
-    margin: 0 auto;
+
+  /* Edit the shadow that appears when you hover over projects */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
   }
-  
+
+  /* Change the size of all project cards */
+  .projcards .card{
+    width: 18rem;
+  }
+    
+  /* Edit font size and colour of project titles */
   .card-title {
     text-align: left;
     font-size: 1.25em;
     color: #001fcc;
   }
 
+  /* Edit the project descriptions */
+  .card-text {
+      overflow: hidden;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+
+      /* Change the number of lines visible */
+      -webkit-line-clamp: 3;
+  }
+
+  /* Edit the font, border, and colours of the filter buttons in DESKTOP VIEW */
+  .btn {
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+
+    /* Change the colour of the font on the filter buttons */
+    color: #221EE0;
+
+    /* Change the colour of the filter buttons */
+    background: rgb(244, 241, 255);
+
+    /* Change the border thickness and colour of the filter buttons */
+    border: 1.9px solid #433FFF;
+
+    /* Edit the rounded corners of the filter buttons */
+    border-radius: 5px 5px !important;
+
+    /* Edit the shadow effect of the filter buttons */
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+    text-align: left;
+    display: inline-block;
+    margin: 3px !important;  
+  }
+
+/* Edit the border and colours of the filter buttons when they are hovered over in DESKTOP VIEW */
+  .btn:hover {
+
+    /* Change the border colour of the filter button on hover */
+    border-color: #13117D;
+
+    /* Change the colour of the font on hover */
+    color: #221EE0;
+
+    /* Change the thickness and colour of the filter buttons' border on hover */
+    border: 2px solid #433FFF;
+
+    /* Change the colour of the filter that you are hovering on */
+    background: rgb(251, 249, 255);
+
+    /* Edit the shadow effect of the filter buttons on hover */
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Change the colours of the filter that is selected in DESKTOP VIEW */
+.btn:active, .btn.is-checked {
+
+    /* Change the colour of the filter that is selected */
+    background: rgb(246, 244, 255);
+
+    /* Edit the border thickness and colour of the selected filter */
+    border: 2.3px solid #433FFF;
+
+    /* Edit the shadow effect of the filter button that's selected */
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+
+    font-weight: bold;
+}
+
+.side-filters.sticky-top button {
+    width: 100%;
+    display: block;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+.side-filters.sticky-top {
+
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    margin: 0px;
+    top: 62px;
+    background-color: white;
+}
+
+
+@media (max-width: 768px){
+    
+    /* Edit the font, border, and colours of the filter buttons in MOBILE VIEW */
+    .btn-group>.btn {
+
+        /* Edit the font colour of the filters */
+        color: #221EE0;
+
+        /* Edit the colour of the filter buttons */
+        background-color: #f9f8ff;
+
+        /* Edit the border thickness and colour of the filter buttons */
+        border: 1.9px solid #433FFF;
+
+        /* Edit the rounded corners of the filter buttons */
+        border-radius: 5px 5px !important;
+
+        /* Edit the shadow effect of the filter buttons */
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+        width: 100%;
+        font-family: 'Karla', sans-serif;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: normal;
+        cursor: pointer;
+        text-align: left;
+        top: 1em;
+        margin: 2px !important; 
+        display: block;
+    }
+
+    /* Edit the border and colours of the filter buttons when they are hovered over in MOBILE VIEW */
+    .btn:hover {
+
+        /* Change the border colour of the filter button on hover */
+        border-color: #13117D;
+
+        /* Change the colour of the font on hover */
+        color: #221EE0;
+
+        /* Change the thickness and colour of the filter buttons' border on hover */
+        border: 2px solid #433FFF;
+
+        /* Edit the shadow effect of the filter buttons on hover */
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+
+        /* Change the colour of the filter that you are hovering on */
+        background: rgb(251, 249, 255);
+    }
+
+    /* Change the colour of the filter that is selected in MOBILE VIEW */
+    .btn:active, .btn.is-checked {
+
+        /* Change the colour of the filter that is selected */
+        background-color: rgb(255, 255, 255);
+
+        /* Edit the border thickness and colour of the selected filter */
+        border: 2.3px solid #433FFF;
+
+        /* Edit the shadow effect of the filter button that's selected */
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+
+        font-weight: bold;
+    }
+    
+}
+
+  .projects-sticky-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+  }
+
+  .btn-filter{
+    margin-bottom: 5em;
+      background-color: #f9f8ff;
+  }
+
+  .btn-group {
+    display: grid;
+  }
+
+    
+  @media (max-width: 634px){
+    .projcards .card{
+        width:100%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .projcards .card {
+    width:16rem;
+    }
+   
+    .projcards {
+        justify-content: center;
+        align-content: center;
+    } 
+  }
+
+
+
+  /* --- DO WE NEED THESE? --- */
+
   .reflection .card-title {
     text-align: left;
     font-size: 1.15em;
     color: #363636;
   }
-  
+          
+  .layout-margin-8 {
+    margin: 3% 8%;
+  }
+    
   .card-deck {
     display: flex;
     justify-content: space-around;
@@ -853,33 +1008,9 @@ div.news-page-side-image img {
     align-items: stretch;
   }
 
-  .card-text {
-      overflow: hidden;
-      display: -webkit-box;
-      text-overflow: ellipsis;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-  }
-  
-  .card {
-    margin-top: 0.5em;
-    
-/*
-    padding: 3% 1.5%;
-    border: none;
-    max-width: 375px;*/
-    flex-grow: 1;
-  }
-
-  p.hidden-project-description {
-      font-size: 0;
-  }
-  
-  @media (min-width: 768px) {
-  .form-control {
-    width: 500px !important;
-    height: 50px;
-  }
+  .card-img-top-custom {
+    width: 50%;
+    margin: 0 auto;
   }
   
   ul.filters{
@@ -888,12 +1019,12 @@ div.news-page-side-image img {
     margin: 0;
     padding: 30px 0;
     text-align: left;
-}
+  }
 
   ul.filters > li{
     list-style: none;
     text-align: left;
-}
+  }
 
   ul.filters > li > a{
     display: block;
@@ -901,24 +1032,376 @@ div.news-page-side-image img {
     text-decoration: none;
     padding: 5px 20px;
     text-align: left;
-}
-
-  ul.filters > li > a:hover{
-    background-color: #e6e9ed;
-    text-align: left;
-}
-
+  }
+  
   ul.filters > li.active > a{
     color: #fff;
     background-color: #28bea8;
     text-align: left;
-}
+  }
 
-.projects {
+  ul.filters > li > a:hover{
+    background-color: #e6e9ed;
+    text-align: left;
+  }
+
+  .projects {
     padding-bottom: 10em;
-}
+  }
+    
+  @media (min-width: 768px) {
+    .form-control {
+        width: 500px !important;
+        height: 50px;
+    }
+  }
+  
 
 /* ------------- END PROJECTS PAGE SPECIFICS ----------------- */
+
+
+
+
+/* ----------------------------------------------------------- */
+/* -------------- PUBLICATIONS PAGE SPECIFICS ---------------- */
+/* ----- *see project page specifics to edit the filters* ---- */
+/* ----------------------------------------------------------- */
+
+
+.publications-sticky-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+}
+
+.offset-md-2 {
+    margin-left: 2.5em;
+}
+
+.bootstrap-slider {
+    padding-bottom: 2em;
+}
+
+.sliders { padding: 15px 0 30px 0; }
+
+.bootstrap-slider .slider-selection { background: #2175b0; }
+
+.filter-label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+    
+    .publications-sticky-menu > .btn:focus{
+        background-color:#ecebff;
+        color:#221EE0;
+        border-width: 3px;  
+    }
+  
+    .bootstrap-slider {
+        width: 100%;
+        margin-top: 2.5em !important;
+        justify-content:center;
+        top:100px;
+        padding-left: 1em;
+    }
+}
+
+/* ------------ END PUBLICATIONS PAGE SPECIFICS -------------- */
+
+
+
+
+/* ----------------------------------------------------------- */
+/* ------------ INDIVIDUAL PROJECT PAGE SPECIFICS ------------ */
+/* ----------------------------------------------------------- */
+
+/* The Modal (bg) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.65);
+  
+  }
+  
+  /* Images inside Modal*/
+  .modal-content {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0); 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    max-height: 99vh;
+    margin: auto;
+  
+  }
+  
+  .modal-content .mySlides img{
+      position: relative;
+      object-fit: contain;
+      align-content: center;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      margin: auto;
+  }
+  
+  /* close Button */
+  .close {
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #ffffff;
+    text-decoration: none;
+  /*  cursor: pointer;*/
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+  }
+  
+  /* Image Caption top */
+  .numbertext {
+    color: #f2f2f2;
+    background-color: rgb(60, 60, 60);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: relative;
+    top:0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  
+  }
+
+/*Back to projects btn for single proj page*/
+.back-to-projects-link:hover img {
+    left: -0.5em;
+    transition-duration: 0.5s;
+}
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  /* Edit the hover shadow colour of the image previews at the top of the page */
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* Crop gallery images.*/
+  #gallery img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  
+  #gallery .single-3-images img {
+    width: 98% !important;
+  }
+  
+  #gallery .single-2-images img {
+    width: 98% !important;
+    height: 375px !important;
+  }
+  
+  #gallery .single-1-image img {
+    width: 98% !important;
+    height: 375px !important;
+  }
+  
+  .middle-smaller-height {
+    margin-top: -8px !important;
+  }
+  
+  .single-2-images .mainimg {
+    margin-top: 0px !important;
+  }
+  
+  @media (min-width: 1273px) {
+    /*Gallery 1st Img heigh*/
+    #gallery .single-5-images >div {
+      height: 369px;
+    }
+  
+    #gallery .single-5-images .single-5-images >div {
+      height: 369px;
+    }
+  
+    #gallery .single-4-images .force-height > div {
+      height: 176px;
+    }
+  }
+  
+  .single-3-images .d-md-block {
+    margin-top: 0px;
+  }
+  
+  .single-2-images .d-md-block {
+    margin-top: 0px;
+  }
+  
+  .single-1-image .d-md-block {
+    margin-top: 0px;
+  }
+  
+  @media (max-width: 1273px) {
+    /*Gallery 1st Img height*/
+    #gallery .single-5-images >div {
+        height: 373px;
+    }
+  
+    #gallery .single-5-images >div {
+      height: 373px;
+    }
+  }
+  
+  .single-4-images .col-md-4, .col-lg-4 {
+    height: 378px;
+  }
+  
+  .single-4-images .d-md-block {
+    height: 385px;
+  }
+  
+  .single-4-images .col-md-4,.col-lg-4 {
+    padding-right: 0px;
+  }
+  
+  #gallery .mainimg {
+    margin-top: 0.5em; 
+    margin-bottom: 0.5em; 
+  }
+  
+  /*Gallery rest Img heigh*/
+  #gallery .row .force-height>div {
+    height: 180px;
+    margin: 0.5em;
+  }
+  
+  
+  .single-4-images .d-md-block {
+    margin-top: 0px;
+    padding-top: 5px;
+  }
+  
+  
+  #gallery .row .button-height {
+      height: 50px;
+  }
+  
+  /*Gallery 1st Img heigh on mobile*/
+  @media (max-width: 425px) {
+   
+      #gallery .row >div {
+      height: 200px;
+      }
+  }
+
+#gallery .single-5-images .btn {
+    margin: -8px !important;
+    margin-left: -20px !important;
+}
+
+#gallery .single-4-images .btn {
+    margin: -15px !important;
+}
+
+#gallery .single-3-images .btn {
+    margin: -15px !important;
+}
+
+#gallery .single-2-images .btn {
+    margin: -20px !important;
+}
+
+#gallery .single-1-image .btn {
+    margin: -20px !important;
+}
+
+@media (max-width: 426px) {
+    #gallery .single-2-images .btn {
+        margin: -15px !important;
+    }
+
+    #gallery .single-2-images img {
+        height: 200px !important;
+    }
+
+    #gallery .single-1-image img {
+        height: 200px !important;
+    }
+}
+
+.gallery .row .col-md-6,.col-lg-6 {
+    margin-top: 4em;
+}
+
+.single-4-images .d-md-block {
+    margin-top: 0px;
+}
+
+.single-5-images .col-md-6, .col-lg-6 {
+    margin-top: 0em;
+}
+
+
+/* ------------- INDIVIDUAL PROJECT PAGE SPECIFICS ----------- */
 
 
 
@@ -933,16 +1416,6 @@ div.news-page-side-image img {
 }
 
 
-
-.sliders { padding: 15px 0 30px 0; }
-
-.bootstrap-slider .slider-selection { background: #2175b0; }
-
-.filter-label {
-    display: block;
-    font-weight: bold;
-    padding-bottom: 1em;
-}
 /* ------------------ END NEWS PAGE SPECIFICS ---------------- */
 
 
@@ -1067,124 +1540,18 @@ p.copyright {
 /* ------------------------ END MAP ------------------------- */
 
 
-.btn-group {
-    display: grid;
-}
+
 
 .filter-min, .filter-max {
     display: none;
 }
 
-.btn {
-    font-family: 'Karla', sans-serif;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: normal;
-    color: #221EE0;
-    background: rgb(244, 241, 255);
-    border: 1.9px solid #433FFF;
-    border-radius: 5px 5px !important;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    text-align: left;
-    display: inline-block;
-    margin: 3px !important;  
-}
-
-#gallery .single-5-images .btn {
-    margin: -8px !important;
-    margin-left: -20px !important;
-}
-
-#gallery .single-4-images .btn {
-    margin: -15px !important;
-}
-
-#gallery .single-3-images .btn {
-    margin: -15px !important;
-}
-
-#gallery .single-2-images .btn {
-    margin: -20px !important;
-}
-
-#gallery .single-1-image .btn {
-    margin: -20px !important;
-}
-
-@media (max-width: 426px) {
-    #gallery .single-2-images .btn {
-        margin: -15px !important;
-    }
-
-    #gallery .single-2-images img {
-        height: 200px !important;
-    }
-
-    #gallery .single-1-image img {
-        height: 200px !important;
-    }
-}
 
 
-.btn:hover {
-    border-color: #13117D;
-    color: #221EE0;
-    border: 2px solid #433FFF;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-    background: rgb(251, 249, 255);
-}
 
-.btn:active, .btn.is-checked {
-  background: rgb(246, 244, 255);
-/*  color: #fff;*/
-    border: 2.3px solid #433FFF;
-    font-weight: bold;
-     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-    
-}
 
-@media (max-width: 768px){
 
-.btn-group>.btn {
-    width: 100%;
-    font-family: 'Karla', sans-serif;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: normal;
-    color: #221EE0;
-    background-color: #f9f8ff;
-    border: 1.9px solid #433FFF;
-    border-radius: 5px 5px !important;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    text-align: left;
-    top: 1em;
-    margin: 2px !important; 
-    display: block;
-}
-    .btn:hover {
-    border-color: #13117D;
-    color: #221EE0;
-    border: 2px solid #433FFF;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-    background: rgb(251, 249, 255);
-}
 
-.btn:active, .btn.is-checked {
-  background-color: rgb(255, 255, 255);
-/*  color: #fff;*/
-    border: 2.3px solid #433FFF;
-    font-weight: bold;
-     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-
-}
-    
-}
-
-.bootstrap-slider {
-    padding-bottom: 2em;
-}
 
 .dropdown-menu {
     padding: 1em;
@@ -1275,56 +1642,6 @@ p.copyright {
 
 
 /* --------------- END MEMBERS PAGE SPECIFICS ---------------- */
-
-
-
-
-
-/* ----------------------------------------------------------- */
-/* ---------------- PROJECTS PAGE SPECIFICS ------------------ */
-/* ----------------------------------------------------------- */
-.projects-sticky-menu {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 2em;
-}
-
-.gallery .row .col-md-6,.col-lg-6 {
-    margin-top: 4em;
-}
-
-.single-4-images .d-md-block {
-    margin-top: 0px;
-}
-
-.single-5-images .col-md-6, .col-lg-6 {
-    margin-top: 0em;
-}
-
-
-
-
-/* ---------------- END PROJECT PAGE SPECIFICS --------------- */
-
-
-
-
-
-/* ----------------------------------------------------------- */
-/* -------------- PUBLICATIONS PAGE SPECIFICS ---------------- */
-/* ----------------------------------------------------------- */
-.publications-sticky-menu {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 2em;
-}
-
-/* FIX PUBLICATION PAGE HEADER ALIGNMENT */
-.offset-md-2 {
-    margin-left: 2.5em;
-}
-
-/* ------------ END PUBLICATIONS PAGE SPECIFICS -------------- */
 
 
 
@@ -1800,12 +2117,6 @@ p.copyright {
 }
 
 
-
-
-.btn-filter{
-  margin-bottom: 5em;
-    background-color: #f9f8ff;
-}
 
 /*
 @media (min-width:768){
