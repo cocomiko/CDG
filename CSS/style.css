@@ -905,8 +905,6 @@ div.news-page-side-image img {
 
 
 /* FORM */
-
-
 form {
     margin-left: -1em;
     width: 100%;
@@ -957,7 +955,6 @@ textarea {
 
 
 /* MAP */
-
 @media (min-width: 768px){
     
     .mapouter {
@@ -983,8 +980,10 @@ textarea {
     justify-content: left;
 }
 
-
-
+/* To have spacing of this particular section lock to to the bottom of the footer */
+section.how-to-apply-section {
+    margin-bottom: -100px;
+}
 
 /* ----------------- END CONTACT PAGE SPECIFICS -------------- */
 
@@ -1621,10 +1620,6 @@ div.container-all {
     padding: 30px 80px 30px 80px;
 }
 
-div.contain-items {
-    padding: 5em 0px 5em 0px;
-}
-
 /*Not Clickable Cards*/
 .card.noclick{
     border: none;
@@ -2010,6 +2005,7 @@ box-shadow: none;
 /* Define footer personality (spacing, colour and layer order) */
 footer {
     padding: 2.5em 0.7em 0.7em 0.7em;
+    margin-top: 100px;
     background-color: #221EE0;
     position: absolute;
     z-index: 100;
@@ -2218,7 +2214,7 @@ p.copyright {
 
 
 /* ----------------------------------------------------------- */
-/* ------------------------HOME PAGE SPECIFICS---------------- */
+/* --------------------- HOME PAGE SPECIFICS ----------------- */
 /* ----------------------------------------------------------- */
 
 /*HOME PAGE BANNER*/
@@ -2261,13 +2257,60 @@ p.copyright {
 
 /*recent proj cards*/
     .recentproj .card  {
-    height: 404px;
+        height: 404px;
     }
     
     
     .recentsection{
-      top: -100px;
+        position: relative;
+        z-index: 5;
+        margin-top: -80px;
         max-height: 600px;
+    }
+
+    @media (max-width: 400px) {
+        .recentsection {
+            position: relative;
+            z-index: 5;
+            margin-top: 130px;
+            max-height: 600px;
+        }
+    }
+
+    @media (min-width: 400px) {
+        .recentsection {
+            position: relative;
+            z-index: 5;
+            margin-top: 100px;
+            max-height: 600px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .recentsection {
+            position: relative;
+            z-index: 5;
+            margin-top: 40px;
+            max-height: 600px;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .recentsection {
+            position: relative;
+            z-index: 5;
+            margin-top: -30px;
+            max-height: 600px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .recentsection {
+            position: relative;
+            z-index: 5;
+            margin-top: -80px;
+            max-height: 600px;
+        }
     }
 
 /*TRUNKATE TEXT*/
@@ -2281,8 +2324,8 @@ p.copyright {
 
 .recentproj .card{
     width: 20rem;
-     justify-content: center;
-     align-content: center;
+    justify-content: center;
+    align-content: center;
     height:100%;
 
 }
