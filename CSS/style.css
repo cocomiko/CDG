@@ -321,6 +321,7 @@ section.heading {
         line-height: 1em;
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: 1em;
         text-align: center;
     }
 
