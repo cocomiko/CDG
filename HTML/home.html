@@ -43,7 +43,7 @@
 
 <body class="container-fluid px-0">
 
-  <!-- Navigation Bar -->
+  <!------------------ Navigation Bar -------------------------->
   <header>
     <nav class="navbar navbar-expand-md fixed-top">
       <a class="navbar-brand" href="home.html">Home Page</a>
@@ -75,11 +75,13 @@
       </div>
     </nav>
   </header>
+  <!----------------- End of Navigation Bar ----------------------->
 
-
-  <!-- Page Title + Banner -->
+  <!------------------------------------------- PAGE TITLE + BANNER --------------------------------------------------->
+  <!--------------- PAGE BANNER image can be changed in style.css->#bannerimage -------------------->
   <div id="bannerimage">
-    <!--Banner image can be changed in style.css->#bannerimage-->
+      
+    <!--------------PAGE TITLE + INTRO ------------------------------------->
     <div class="pl-md-6 pt-md-7 pt-6 pl-sm-5 px-3">
       <h1>The Computational <br> Design Group</h1>
       <h3>A Profound Description Here</h3>
@@ -89,18 +91,22 @@
       </p>
     </div>
   </div>
+  <!--------------------------------------- END OF PAGE TITLE + BANNER ------------------------------------------------>
 
-  <!-- MAIN COMTENT -->
 
+    
+  <!------------------------------------- GET TO KNOW US SECTION + VIDEO ---------------------------------------------->
   <div class="row position-relative">
-    <!-- Intro Video -->
+      
+    <!------ 1st column Intro Video --------------->
     <div id="video" class="col-md-5 mb-auto mx-auto overlay embed-responsive embed-responsive-16by9 order-md-2">
       <iframe class="pr-md-5 embed-responsive-item video-fluid" src="https://www.youtube.com/embed/QB9LxhoUzAQ"
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
+    <!--- end of 1st column Intro Video ----------->
 
-    <!-- Introduction-->
+    <!----- 2nd column Intro Paragraph ------------>
     <div id="solidbg-lightblue" class="col-md-6 pt-md-6 px-md-6 pb-md-7 p-5 order-md-1">
       <div>
         <h3>We’re the Computational Design Team at SFU!</h3>
@@ -113,19 +119,29 @@
         <button class="primary-button" onclick='location.href="about.html"' type="button">get to know us</button>
       </div>
     </div>
+    <!--- end of 2nd column Intro Paragraph ------->
+      
   </div>
+  <!---------------------------------- End OF GET TO KNOW US SECTION + VIDEO ------------------------------------------->
 
-  <!-- Recent projects -->
-
+    
+    
+  <!----------------------------------------- RECENT PROJECTS SECTION -------------------------------------------------->
   <div class="recentsection offset-md-3 pt-5 pr-md-5">
     <h3 class="mb-5 pl-2">Recent projects</h3>
+    
+    <!----- column with a row of Projects  ---------->
     <div class="col-md-10 px-0">
+        
+      <!--------- row of Projects Cards carousel ----------->
+      <!----------To change carousel behaviour refer to 
+                  -> SCRIPTS/main.js -> recentproj --------->
       <div class="recentproj row justify-content-center w-100 p-0">
-        <!--To change carousel behaviour refer to -> SCRIPTS/main.js -> recentproj -->
-
+        
+        <!--------- 1st project card ----------->
         <div class="card">
-          <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
-              alt="Project image"></a>
+          <a href="projects/shiro.html" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
+              alt="Shiro Project image"></a>
           <div class="card-body">
             <h4 class="card-title">Shiro</h4>
             <p class="card-text">When people solve problems they explore a variety of different solutions. Parametric
@@ -138,9 +154,12 @@
               alternatives in parametric systems.</p>
           </div>
         </div>
+        <!------ end of 1st project card ------->
+          
+        <!--------- 2nd project card ----------->  
         <div class="card">
-          <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
-              alt="Project image"></a>
+          <a href="projects/alt-text.html" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
+              alt="Alt. Text Project image"></a>
           <div class="card-body">
             <h4 class="card-title">Alt. Text</h4>
             <p class="card-text">Designers devise and explore alternatives as they work. Current parametric modeling
@@ -159,9 +178,12 @@
               only that of parametric modeling.</p>
           </div>
         </div>
+        <!------ end of 2nd project card -------->
+          
+        <!--------- 3rd project card ------------>  
         <div class="card">
-          <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
-              alt="Project image"></a>
+          <a href="projects/cambria.html" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
+              alt="Cambria Project image"></a>
           <div class="card-body">
             <h4 class="card-title">Cambria</h4>
             <p class="card-text">Computational design tools assist designers in their professional work, one key aspect
@@ -175,9 +197,12 @@
               alternatives.</p>
           </div>
         </div>
+        <!----- end of 3rd project card --------->  
+          
+        <!--------- 4th project card ------------>  
         <div class="card">
-          <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
-              alt="Project image" style="width:100%"></a>
+          <a href="projects/parallel-editing.html" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
+              alt="Parallel Editing Project image" style="width:100%"></a>
           <div class="card-body ellipses-text">
             <h4 class="card-title">Parallel Editing</h4>
             <p class="card-text">Exploring problems through multiple alternatives is a key aspect of design. We present
@@ -193,9 +218,12 @@
               creativity support tools: enabling exploration and simultaneous development of variations.</p>
           </div>
         </div>
+        <!---- end of 4th project card ---------->
+          
+        <!--------- 5th project card ------------>  
         <div class="card">
-          <a href="#" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
-              alt="Project image" style="width:100%"></a>
+          <a href="projects/exploring-recursive-forms.html" class="stretched-link"><img class="card-img-top" src="https://via.placeholder.com/402X241.png"
+              alt="Exploring Recursive Forms Project image" style="width:100%"></a>
           <div class="card-body ellipses-text">
             <h4 class="card-title">Exploring Recursive Forms</h4>
             <p class="card-text">exploreForm implements novel interactions for exploring design spaces over a simple
@@ -204,10 +232,19 @@
               enable rapid generation and exploration of the design space.</p>
           </div>
         </div>
+        <!---- end of 5th project card ---------->
+          
       </div>
+      <!----- end of row of Projects Cards -------->
+        
     </div>
+    <!---- end of column with a row of Projects  ------->
+      
   </div>
+  <!------------------------------------- END OF RECENT PROJECTS SECTION ----------------------------------------------->
 
+    
+    
   <!------------------------------------------ ADDING STUDENT REFLECTIONS ------------------------------------------
 
     
@@ -244,7 +281,10 @@
 
         ----------------------------------------------------------------------------------------------------------->
 
-
+    
+    
+  <!-------------------------------------------------- SCRIPTS ---------------------------------------------------------->
+    
   <!--SLICK-->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -253,9 +293,11 @@
   <!-- native SLICK script for carousells-->
   <script type="text/javascript" src="../SCRIPTS/main.js"></script>
 
+  <!----------------------------------------------- END OF SCRIPTS ------------------------------------------------------>
+    
 </body>
 
-<!-- FOOTER -->
+<!----------------------------------------------------- FOOTER ---------------------------------------------------------->
 <footer>
   <div class="row">
     <div class="col-md-3">
@@ -291,6 +333,6 @@
     </div>
   </div>
 </footer>
-<!-- END OF FOOTER -->
+<!-------------------------------------------------- END OF FOOTER -------------------------------------------------------->
 
 </html>
