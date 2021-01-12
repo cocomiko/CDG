@@ -996,6 +996,14 @@ section.how-to-apply-section {
     margin-bottom: -100px;
 }
 
+@media (max-width: 576px){
+    
+    section.how-to-apply-section {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+}
+
 /* ----------------- END CONTACT PAGE SPECIFICS -------------- */
 
 
