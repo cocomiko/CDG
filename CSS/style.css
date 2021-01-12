@@ -486,13 +486,6 @@ img.back-to-top-arrow {
     transition-duration: 0.5s;
 }
 
-div.members-landing-image {
-    content: url(../IMG/Website-Images/team-photo.jpg);
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-}
-
 img.howtoapply-image {
     width: 100%;
     padding-bottom: 50px;
@@ -1782,14 +1775,13 @@ box-shadow: none;
     top: 4em;
 }
 
-@media (min-width: 768px) {
-    a.anchor-top {
-        display: block;
-        position: relative;
-        top: -100px;
-        visibility: hidden;
-    }
+div.members-landing-image {
+    content: url(../IMG/Website-Images/team-photo.jpg);
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
 }
+
 
 
 /* --------------- END MEMBERS PAGE SPECIFICS ---------------- */
@@ -1870,6 +1862,7 @@ box-shadow: none;
 }
 
 @media (min-width: 768px) {
+    
     .sticky-top {
         position: -webkit-sticky;
         background-color: transparent;
@@ -1880,25 +1873,6 @@ box-shadow: none;
         margin-left: 2em;
     }
 
-    
-
-/*
-    
-    .side-filters.sticky-top {
-        background-color: transparent;
-        width: 100%;
-        display: block;
-        justify-content: space-between;
-        margin: 0px;
-        top:7em !important;
-    }
-*/
-
-/*
-    .d-md-block {
-        margin-top: 4em
-    }
-*/
 
     .sticky-top a {
         position: -webkit-sticky;
@@ -1924,10 +1898,11 @@ box-shadow: none;
     .members-heading {
         position: relative;
         top: 0;
+        left: -0.1em;
         color: black;
     }
-
-    div.three-image-news-layout {
+    
+        div.three-image-news-layout {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
@@ -1941,50 +1916,21 @@ box-shadow: none;
         width: 100%;
         height: 100%;
     }
-
+    
     .negative-row {
         margin-left: -1em;
-    }
-}
-
-@media (min-width: 768px) {
-    .side-filter{
-        background-color: black;
-        display: block;
-        width: 100%;
-        margin-top: 1em;
-        margin-left: 1em;
-    }
-
-    .sticky-top a {
-        position: -webkit-sticky;
-        color: #221EE0;
-        width: 100%;
-        display: block;
-        line-height: 2em;
-    }
-
-    .sticky-top a:hover {
-        color: #221EE0;
-        width: 100%;
-        display: table-cell;
-        border-bottom: 3px solid #221EE0;
-    }
-
-    div.members-landing-image {
-        width: 100%;
-        height: 400px;
-    }
-
-    .members-heading {
-        position: relative;
-        top: 0;
-        left: -0.1em;
     }
 
     .form-control {
         width: 500px !important;
         height: 50px;
+    }
+    
+    a.anchor-top {
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
     }
 }
 /* ----------------------------------------------------------- */
