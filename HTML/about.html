@@ -35,7 +35,7 @@
 
 <body class="container-fluid px-0">
 
-  <!-- Navigation Bar -->
+  <!------------------ Navigation Bar -------------------------->
   <header>
     <nav class="navbar navbar-expand-md fixed-top">
       <a class="navbar-brand" href="home.html">Home Page</a>
@@ -67,11 +67,16 @@
       </div>
     </nav>
   </header>
+  <!---------------- End of Navigation Bar ----------------------->
 
-  <!-- Page Title + Banner -->
+    
+    
+  <!------------------------------------------- PAGE TITLE + BANNER ---------------------------------------------------->
+  <!--------------- PAGE BANNER image can be changed in style.css->#bannerimageaboutpage -------------------->
   <div class="px-3 px-sm-5 pt-6 pt-md-7 position-relative" id="bannerimageaboutpage">
-    <!--Banner image can be changed in style.css->#bannerimageaboutpage-->
-    <div class="offset-md-6 ">
+      
+    <!--------------------------------- PAGE TITLE + INTRO -------------------------------------------------->
+    <div class="offset-md-6">
       <h1 class="white">Blending Design and Technology</h1>
       <p class="banner-para white" id="aboutpara">
         We are faculty and graduate students in the School of Interactive Arts and Technology at Simon Fraser
@@ -81,13 +86,21 @@
       </p>
     </div>
   </div>
+  <!--------------------------------------- END OF PAGE TITLE + BANNER ------------------------------------------------>
 
-  <!-- History -->
+    
+    
+  <!--------------------------------------------- HISTORY SECTION ----------------------------------------------------->
   <section class="content">
-    <div class="row">
+    <div class="row"> 
+        
+      <!------------ 1st column --------------->
       <div class="col-md-6 overlay">
         <img src="../IMG/Website-Images/about-page-history.jpg" class="img-fluid px-md-5" alt="CDG first lab">
       </div>
+      <!---------- end of 1st column ---------->  
+        
+      <!------------ 2nd column --------------->
       <div class="col-md-5 px-md-0 pt-md-6 py-4 pb-md-5">
         <h3>History</h3>
         <p>
@@ -103,16 +116,24 @@
           their use are necessary prerequisites.
         </p>
       </div>
+      <!---------- end of 2nd column ----------> 
     </div>
   </section>
+  <!------------------------------------------ END OF HISTORY SECTION ------------------------------------------------->
 
-  <!-- Primary Focus -->
+    
+    
+  <!------------------------------------------- PRIMARY FOCUS SECTION ------------------------------------------------->
   <section class="content" id="solidbg-blue">
     <div class="row px-4 px-md-6 py-3 pt-md-5">
+        
+      <!------------ 1st column --------------->  
       <div class="col-md-4 p-xs-0">
         <h3 class="white">Our Primary Focus</h3>
       </div>
-
+      <!---------- end of 1st column ---------->
+        
+      <!------------ 2nd column ---------------> 
       <div class="col-md-8">
         <p class="large-text white">Computational Design seeks to understand design and to use computers to do so. Our
           vision is to create compelling computing aids that complement the capabilities of designers in general and
@@ -125,12 +146,18 @@
             aliquip ex ea commodo consequat.</p>
         </div>
       </div>
+      <!---------- end of 2nd column ---------->
     </div>
   </section>
-
-  <!-- Workplace -->
+  <!---------------------------------------- END OF PRIMARY FOCUS SECTION ---------------------------------------------->
+    
+    
+    
+  <!--------------------------------------------- WORKPLACE SECTION ---------------------------------------------------->
   <section class="content">
     <div class="row mb-5">
+        
+      <!------------ 1st column --------------->
       <div class="col-md-6 order-2 order-md-1 px-md-6 px-4 pt-4 pt-md-6 position-relative">
         <h3>Workplace</h3>
         <p>
@@ -139,21 +166,31 @@
           consequat.
         </p>
       </div>
+      <!--------- end of 1st column ----------->
+        
+      <!------------ 2nd column --------------->
       <div class="col-md-5 order-1 order-md-2 overlay pt-5 position-relative">
+          
+        <!---------------------------- IMAGE CAROUSEL  ------------------------------------>
+        <!--To change carousel behaviour refer to -> SCRIPTS/main.js -> workplacegallery -->
         <div class="workplacegallery">
-          <!--To change carousel behaviour refer to -> SCRIPTS/main.js -> workplacegallery -->
-          <div><img src="../IMG/Website-Images/about-slider-1.jpg"
-              alt="Robert Woodbury is giving a speech at a 2019 International Conference"></div>
+          <div><img src="../IMG/Website-Images/about-slider-1.jpg" alt="Robert Woodbury is giving a speech at a 2019 International Conference"></div>
           <div><img src="../IMG/Website-Images/about-slider-2.jpg" alt="CDG at a 2019 International Conference"></div>
           <div><img src="../IMG/Website-Images/about-slider-3.png" alt="CDG on a video call"></div>
-          <div><img src="../IMG/Website-Images/about-slider-4.jpg"
-              alt="Robert Woodbury at a 2019 International Conference"></div>
+          <div><img src="../IMG/Website-Images/about-slider-4.jpg" alt="Robert Woodbury at a 2019 International Conference"></div>
         </div>
+        <!------------------------- END OF IMAGE CAROUSEL  -------------------------------->
+          
       </div>
+      <!--------- end of 2nd column ----------->
     </div>
   </section>
+  <!------------------------------------------ END OF WORKPLACE SECTION ------------------------------------------------->
 
-
+    
+    
+  <!-------------------------------------------------- SCRIPTS ---------------------------------------------------------->  
+    
   <!--SLICK-->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -162,8 +199,11 @@
   <!-- native SLICK script for carousells-->
   <script type="text/javascript" src="../SCRIPTS/main.js"></script>
 
+  <!---------------------------------------- ------ END OF SCRIPTS ------------------------------------------------------>  
+    
 </body>
 
+<!--------------------------------------------- FOOTER --------------------------------------------------->
 <footer>
   <div class="row">
     <div class="col-md-3">
@@ -199,5 +239,6 @@
     </div>
   </div>
 </footer>
+<!------------------------------------------ END OF FOOTER ---------------------------------------------->
 
 </html>
