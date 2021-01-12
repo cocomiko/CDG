@@ -993,14 +993,14 @@ textarea {
 
 /* To have spacing of this particular section lock to to the bottom of the footer */
 section.how-to-apply-section {
-    margin-bottom: -100px;
+    padding-bottom: 3em;
 }
 
 @media (max-width: 576px){
     
     section.how-to-apply-section {
         padding-top: 3em;
-        padding-bottom: 3em;
+        padding-bottom: 5em;
     }
 }
 
@@ -2020,7 +2020,6 @@ box-shadow: none;
 /* Define footer personality (spacing, colour and layer order) */
 footer {
     padding: 2.5em 0.7em 0.7em 0.7em;
-    margin-top: 100px;
     background-color: #221EE0;
     position: absolute;
     z-index: 100;
