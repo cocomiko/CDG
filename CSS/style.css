@@ -731,6 +731,10 @@ div.news-page-side-image img {
     justify-content: center;
 }
 
+.news{
+    margin-top: 2em;
+}
+
 @media (min-width: 300px){
     div.three-image-news-layout {
         margin-top: 50px;
