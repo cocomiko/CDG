@@ -2196,7 +2196,7 @@ p.copyright {
 /*banner for mobile sizes*/
 #bannerimage{
   width: 100%;
-  background-image: url(https://via.placeholder.com/1440X671.png);
+  background-image: url(../IMG/Website-Images/home-page-banner-blurred-gradient.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2206,7 +2206,7 @@ p.copyright {
 /*banner for tablet size*/
 @media (min-width: 425px) {
   #bannerimage {
-    background-image: url(https://via.placeholder.com/1440X571.png);
+    background-image: url(../IMG/Website-Images/home-page-banner-blurred-gradient.jpg);
     height:571px;
     
   }
@@ -2215,7 +2215,7 @@ p.copyright {
 /*banner for descktop*/
 @media (min-width: 769px) {
   #bannerimage {
-    background-image: url(https://via.placeholder.com/1440X771.png);
+    background-image: url(../IMG/Website-Images/home-page-banner-blurred-gradient.jpg);
     height:771px;
   }
 }
