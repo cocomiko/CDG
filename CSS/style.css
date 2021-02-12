@@ -2164,7 +2164,7 @@ p.copyright {
 /*banner for descktop*/
 @media (min-width: 769px) {
   #bannerimageaboutpage {
-    background-image: url(../IMG/Website-Images/about-page-landing-image-blurred.jpg);
+    background-image: url(../IMG/Website-Images/about-page-blue2.png);
     height:771px;
   }
 }
@@ -2213,10 +2213,11 @@ p.copyright {
 }
 
 /*banner for descktop*/
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1440px ) {
   #bannerimage {
-    background-image: url(../IMG/Website-Images/home-page-banner-blurred-gradient.jpg);
+    background-image: url(../IMG/Website-Images/darker.png);
     height:771px;
+    margin-bottom: 2em;
   }
 }
 

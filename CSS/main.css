@@ -77,7 +77,8 @@ margin-top: -10em;
 }
 
 #solidbg-lightblue {
-  background-color: #EDEDFD;
+/*  background-color: #EDEDFD;*/
+    background-image: linear-gradient(white, #EDEDFD);
 }
 
 #solidbgblock {

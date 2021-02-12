@@ -40,7 +40,6 @@ $('.works-slideshow .team-item').each(function() {
 //recent proj carousell
     $('.recentproj').slick({
                   dots: true,
-                  infinite: false,
                   speed: 300,
                   slidesToShow: 3,
                   slidesToScroll: 1,
@@ -48,15 +47,15 @@ $('.works-slideshow .team-item').each(function() {
                   autoplaySpeed: 2000,
                   infinite: true,
                   responsive: [
-                    {
-                      breakpoint: 1024,
-                      settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                      }
-                    },
+//                    {
+//                      breakpoint: 1024,
+//                      settings: {
+//                        slidesToShow: 3,
+//                        slidesToScroll: 1,
+//                        infinite: true,
+//                        dots: true
+//                      }
+//                    },
                     {
                       breakpoint: 768,
                       settings: {
