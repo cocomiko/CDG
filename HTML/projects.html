@@ -19,7 +19,6 @@
   <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
 
   <!-- Native Stylesheets -->
-  <link rel="stylesheet" href="../CSS/main.css">
   <link href="../CSS/style.css" rel="stylesheet">
 
   <!-- Fonts -->
@@ -37,7 +36,7 @@
 <body class="container-fluid px-0">
 
   <header>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <a class="navbar-brand" href="home.html">Home Page</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,19 +69,27 @@
 
 
   <!------------------------------------------ EDIT BANNER IMAGE -------------------------------------------->
+    
+<!------------------------------------------ LANDING PAGE IMAGE ---------------------------------------------->
+    <section>
+        <div class="projects-landing-image"></div>
+    </section>
+    
+<!--
   <div class="pt-5 mb-5">
-    <!-- Change the banner image at the top of the page by replacing the link in quotes after src="" -->
-    <img class="header-image image-fluid" src="https://via.placeholder.com/1400X400.png">
+     Change the banner image at the top of the page by replacing the link in quotes after src="" 
+    <img class="header-image image-fluid" src="https://via.placeholder.com/2560X600.png">
   </div>
+-->
 
 
 
   <!------------------------------------------- EDIT PAGE TITLE ---------------------------------------------->
   <div class="row">
     <div class="col-md-3 pl-md-3 side-filters sticky-top publications-sticky-menu d-none d-md-block"></div>
-    <div class="col-md-8">
+    <div class="col-lg-8 offset-lg-4">
       <!-- Change the title of the page by replacing "Projects" with whatever you wish -->
-      <h1 class="publication-heading">Projects</h1>
+      <h1 class="pt-3 projects-heading">Projects</h1>
     </div>
   </div>
 
@@ -90,11 +97,12 @@
 
   <!--------------------------------------------- EDIT FILTERS ---------------------------------------------->
   <div class="row">
-    <div class="col-md-3 pl-md-3 side-filters sticky-top projects-sticky-menu">
+     <!-- 1st column with filters -->
+    <div class="col-lg-3 pl-lg-5 side-filters sticky-top projects-sticky-menu">
       <button type="button" data-toggle="collapse" data-target="#filters"
-        class="d-block d-md-none btn mt-1 btn-primary btn-block">Filters &dtrif;</button>
+        class="d-block d-lg-none btn mt-1 btn-primary btn-block">Filters &dtrif;</button>
 
-      <div id="filters" class="collapse d-md-block mx-auto">
+      <div id="filters" class="collapse d-lg-block mx-auto">
 
         <!-- Edit the title of the filters section by replacing "Topics:" -->
         <span class="filter-label">Topics:</span>
@@ -122,7 +130,7 @@
 
     Edit the code written in uppercase after pasting.
 
-          <div class="col-auto pr-md-0 mb-2 item FILTER-TAG">     
+          <div class="cards_item item FILTER-TAG">     
 
             <div class="card h-100"> 
               <a href="projects/PROJECTFILENAME.html">
@@ -143,14 +151,13 @@
 
 
     ----------------------------------------------------------------------------------------------------------->
-
-
-    <div class="col-md-8 px-0 mx-0 d-flex">
-      <div class="row projcards justify-content-center w-100 p-0">
+    <!-- 2nd column with projects cards-->
+    <div class="col-lg-9 px-md-4">
+      <div class="cards projcards">
 
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 item design-analytics">
+        <div class="cards_item item design-analytics">
           <div class="card h-100">
             <a href="projects/alt-text.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -178,7 +185,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 item collaboration">
+        <div class="cards_item item collaboration">
           <div class="card h-100">
             <a href="projects/cambria.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -200,7 +207,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 item collaboration">
+        <div class="cards_item item collaboration">
           <div class="card h-100">
             <a href="projects/cognitive-issues-in-3d-parametric-systems.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -220,7 +227,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 item d-star">
+        <div class="cards_item item d-star">
           <div class="card h-100">
             <a href="projects/collaboration-workflow-simplified.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -249,7 +256,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 item d-star">
+        <div class="cards_item item d-star">
           <div class="card h-100">
             <a href="projects/czsaw-visual-analytics.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -281,7 +288,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 item d-star">
+        <div class="cards_item item d-star">
           <div class="card h-100">
             <a href="projects/design-hysteresis.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -304,7 +311,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item spatial-design">
+        <div class="cards_item mb-4 item spatial-design">
           <div class="card h-100">
             <a href="projects/editing-history.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -327,7 +334,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item collaboration">
+        <div class="cards_item mb-4 item collaboration">
           <div class="card h-100">
             <a href="projects/elements-of-parametric-design.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -346,7 +353,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item design-analytics">
+        <div class="cards_item mb-4 item design-analytics">
           <div class="card h-100">
             <a href="projects/end-user-programming.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -368,7 +375,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item user-interfaces">
+        <div class="cards_item mb-4 item user-interfaces">
           <div class="card h-100">
             <a href="projects/exploring-recursive-forms.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -385,7 +392,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item design-analytics">
+        <div class="cards_item mb-4 item design-analytics">
           <div class="card h-100">
             <a href="projects/filmic-architecture.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -407,7 +414,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item user-interfaces">
+        <div class="cards_item mb-4 item user-interfaces">
           <div class="card h-100">
             <a href="projects/gem-ni-system.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -428,7 +435,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item collaboration">
+        <div class="cards_item mb-4 item collaboration">
           <div class="card h-100">
             <a href="projects/lightweight-lookahead.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -461,7 +468,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item collaboration">
+        <div class="cards_item mb-4 item collaboration">
           <div class="card h-100">
             <a href="projects/north-house.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -483,7 +490,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item spatial-design">
+        <div class="cards_item mb-4 item spatial-design">
           <div class="card h-100">
             <a href="projects/parallel-editing.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -508,7 +515,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item design-analytics">
+        <div class="cards_item mb-4 item design-analytics">
           <div class="card h-100">
             <a href="projects/parametric-modelling.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -534,7 +541,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item parametric-design">
+        <div class="cards_item mb-4 item parametric-design">
           <div class="card h-100">
             <a href="projects/shape-schema-grammars.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -556,7 +563,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item parametric-design">
+        <div class="cards_item mb-4 item parametric-design">
           <div class="card h-100">
             <a href="projects/shiro.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -577,7 +584,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item parametric-design">
+        <div class="cards_item mb-4 item parametric-design">
           <div class="card h-100">
             <a href="projects/visual-designdevs.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -603,7 +610,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item spatial-design">
+        <div class="cards_item mb-4 item spatial-design">
           <div class="card h-100">
             <a href="projects/visual-histories.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">
@@ -623,7 +630,7 @@
         </div>
 
         <!-- NEW PROJECT CARD -->
-        <div class="col-auto pr-md-0 mb-2 mb-4 item spatial-design">
+        <div class="cards_item mb-4 item spatial-design">
           <div class="card h-100">
             <a href="projects/west-house.html">
               <img class="card-img-top" src="../IMG/placeholder-image.png" alt="Card image cap">

@@ -18,12 +18,7 @@
   <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
 
-  <!--    https://github.com/josephschmitt/Clamp.js-->
-  <script src="../SCRIPTS/clamp.js"></script>
-
-
   <!-- Native Stylesheets -->
-  <link rel="stylesheet" href="../CSS/main.css">
   <link href="../CSS/style.css" rel="stylesheet">
 
   <!-- Test Gallery-->
@@ -45,7 +40,7 @@
 
   <!------------------ Navigation Bar -------------------------->
   <header>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <a class="navbar-brand" href="home.html">Home Page</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,16 +72,18 @@
   </header>
   <!----------------- End of Navigation Bar ----------------------->
 
+    
+    
   <!------------------------------------------- PAGE TITLE + BANNER --------------------------------------------------->
   <!--------------- PAGE BANNER image can be changed in style.css->#bannerimage -------------------->
   <div id="bannerimage">
       
     <!--------------PAGE TITLE + INTRO ------------------------------------->
-    <div class="pl-md-6 pt-md-7 pt-6 pl-sm-5 px-3">
-        <h1><br><br><br></h1>
+    <div class="bannertext col-lg-7 col-xl-5 pt-sm-20 p-sm-4">
+      <h1><br><br><br></h1>
 <!--      <h1 class="white">The Computational <br> Design Group</h1>-->
-      <h3 >A Profound Description Here</h3>
-      <p class="banner-para ">
+      <h2 class="pb-1 pb-sm-3">Computational Design Group</h2>
+      <p class="banner-para">
         Main catchy description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Main catchy description. Lorem
         ipsum dolor sit amet, consectetur adipiscing elit. Main catchy description.
       </p>
@@ -100,24 +97,24 @@
   <div class="row position-relative">
       
     <!------ 1st column Intro Video --------------->
-    <div id="video" class="col-md-5 mb-auto mx-auto overlay embed-responsive embed-responsive-16by9 order-md-2">
-      <iframe class="pr-md-5 embed-responsive-item video-fluid" src="https://www.youtube.com/embed/QB9LxhoUzAQ"
+    <div id="video" class="col-lg-5 mb-auto mx-1 mx-sm-2 mx-md-5 mx-lg-auto overlay embed-responsive embed-responsive-16by9 order-lg-2">
+      <iframe class="pr-lg-5 embed-responsive-item video-fluid" src="https://www.youtube.com/embed/QB9LxhoUzAQ"
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
     <!--- end of 1st column Intro Video ----------->
 
     <!----- 2nd column Intro Paragraph ------------>
-    <div id="solidbg-lightblue" class="col-md-6 pt-md-6 px-md-6 pb-md-7 p-sm-5 p-3 order-md-1">
+    <div id="solidbg-lightblue" class="col-lg-6 pt-lg-6 pb-lg-7 p-md-6 px-3 py-5 px-sm-4 px-md-6 order-lg-1">
       <div>
-        <h3>We’re the Computational Design Team at SFU!</h3>
-        <p class="pb-md-7 pb-4">
+        <h3>Who We Are</h3>
+        <p class="pb-lg-7 pb-4">
           We are a diverse team of faculty and graduate students in the School of Interactive Arts and Technology at
           SFU. We all share an interest in design and how it is being transformed by computation. We seek to create
           ideas, interfaces, algorithms and systems to lead change in our ever developing world.
         </p>
         <!-- Button to About Page -->
-        <button class="primary-button" onclick='location.href="about.html"' type="button">get to know us</button>
+        <button class="primary-button mt-lg-4" onclick='location.href="about.html"' type="button">get to know us</button>
       </div>
     </div>
     <!--- end of 2nd column Intro Paragraph ------->
@@ -128,11 +125,11 @@
     
     
   <!----------------------------------------- RECENT PROJECTS SECTION -------------------------------------------------->
-  <div class="recentsection offset-md-3 pt-5 pr-md-5 p-sm-5 p-3">
+  <div class="recentsection offset-lg-4 pr-lg-4 p-md-5 p-3 px-3 py-5 px-sm-4">
     <h3 class="mb-5 pl-2">Recent projects</h3>
     
     <!----- column with a row of Projects  ---------->
-    <div class="col-md-10 px-0">
+    <div class="col-lg-11 px-0">
         
       <!--------- row of Projects Cards carousel ----------->
       <!----------To change carousel behaviour refer to 
@@ -273,6 +270,15 @@
                         </div>
 
                         TO ADD A NEW REFLECTION TO THE GROUP, COPY AND PASTE THE ABOVE HERE
+
+                        <div class="col px-0">
+                          <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Arefin Mohiuddin</h4>
+                              <p class="card-text">“If you like to explore ideas at your pace and yet create value in the industry, this is the lab”</p>
+                            </div>
+                          </div>
+                        </div>
 
                       </div>
                     </div>

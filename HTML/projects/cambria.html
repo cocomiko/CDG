@@ -19,7 +19,6 @@
   <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css" />
 
   <!-- Native Stylesheets -->
-  <link rel="stylesheet" href="../../CSS/main.css">
   <link href="../../CSS/style.css" rel="stylesheet">
 
   <!-- Modal Gallery script-->
@@ -41,7 +40,7 @@
 <body class="container-fluid px-0">
 
   <header>
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="../home.html">Home Page</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -313,11 +312,10 @@
                 Exploring for Designs: Five Basic Elements, pages 210–215. Riverside Architectural Press, 2013.</p>
 
               <ul class="row justify-content-start ml-0">
-                <li class="dropdownn">
-                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
-                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
-                      class="down-caret"></span></a>
-                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                <li class="dropdown">
+                  <a href="#" class="in-text-link dropdown-toggle" id="abstractDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">view abstract</a>
+                  <ul class="dropdown-menu" aria-labelledby="abstractDropdown">
                     <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </ul>
                 </li>
@@ -397,8 +395,8 @@
     <!-- BACK TO PROJECTS PAGE BUTTON -->
     <div class="row">
       <div class="col-md-5 ml-3 pl-md-6">
-        <a id='acrBack' onclick='javascript:history.back();' class="back-to-projects-link">
-          <p class="back-to-top-text"><img class="back-to-top-arrow" src="../../IMG/arrow-left.png">back to projects</p>
+        <a id='acrBack' onclick='javascript:history.back();' role="button" class="back-to-projects-link">
+          <p class="back-to-project-text"><img class="arrow-left" src="../../IMG/arrow-left.png">back to projects</p>
         </a>
       </div>
     </div>

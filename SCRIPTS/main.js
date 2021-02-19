@@ -1,41 +1,3 @@
-//news slideshow
-$('.works-slideshow .team-item').each(function() {
-  var slider = $(this);
-  slider.slick({
-    arrows: false,
-    dots: false,
-    accessibility: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
-  var sLightbox = $(this);
-  sLightbox.slickLightbox({
-    src: 'src',
-    itemSelector: '.team-image img'
-  });
-});
-
-
-
 
 //recent proj carousell
     $('.recentproj').slick({
@@ -57,7 +19,7 @@ $('.works-slideshow .team-item').each(function() {
 //                      }
 //                    },
                     {
-                      breakpoint: 768,
+                      breakpoint: 769,
                       settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
@@ -74,10 +36,11 @@ $('.works-slideshow .team-item').each(function() {
                     }
                   ]
               });
+
+
 //reflection carousell
     $('.reflection').slick({
                   dots: false,
-                  infinite: false,
                   speed: 300,
                   slidesToShow: 2,
                   slidesToScroll: 2,
@@ -86,23 +49,7 @@ $('.works-slideshow .team-item').each(function() {
                   infinite: true,
                   responsive: [
                     {
-                      breakpoint: 1024,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        infinite: true
-                      }
-                    },
-                    {
                       breakpoint: 600,
-                      settings: {
-                        slidesToShow: 1,
-                        dots: true,
-                        slidesToScroll: 1
-                      }
-                    },
-                    {
-                      breakpoint: 480,
                       settings: {
                         slidesToShow: 1,
                         dots: true,
@@ -112,7 +59,7 @@ $('.works-slideshow .team-item').each(function() {
                   ]
               });
 
-// workplace gallery carousel script
+// workplace gallery carousel 
               $('.workplacegallery').slick({
                   dots: true,
                   infinite: true,
@@ -150,19 +97,7 @@ $('.works-slideshow .team-item').each(function() {
     });
 
 
-//$('.newscarousel').slick({
-//                    slidesToShow: 2,
-//                    slidesToScroll: 1,
-//                    mobileFirst: true,
-//                    responsive: [
-//                          {
-//                                  breakpoint: 768,
-//                                  settings: 'unslick'
-//                          }
-//                    ]
-//                  });
-// modal image gallery for single project page
-
+//Gallery with modal on all single projects page
             function openModal() {
               document.getElementById("myModal").style.display = "block";
             }
@@ -189,7 +124,6 @@ $('.works-slideshow .team-item').each(function() {
               var i;
               var slides = document.getElementsByClassName("mySlides");
               var dots = document.getElementsByClassName("demo");
-              var captionText = document.getElementById("caption");
               if (n > slides.length) {slideIndex = 1}
               if (n < 1) {slideIndex = slides.length}
               for (i = 0; i < slides.length; i++) {
