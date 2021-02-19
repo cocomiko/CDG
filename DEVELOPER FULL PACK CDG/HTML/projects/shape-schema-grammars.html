@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shape Schema Grammars | Computational Design Group</title>
+  <meta name="description" content="Webpage for Computational Design Group at SFU">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- SLICK carousel-->
+  <link rel="stylesheet" type="text/css" href="../../slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css" />
+
+  <!-- Native Stylesheets -->
+  <link href="../../CSS/style.css" rel="stylesheet">
+
+  <!-- Modal Gallery script-->
+  <script src="../../SCRIPTS/main.js"></script>
+
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body class="container-fluid px-0">
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="../index.html">Home Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mr-auto" id="navbarText">
+        <div class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../members.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+
+    <!------------------------------------------- EDIT IMAGE GALLERY PREVIEWS --------------------------------------------->
+    <div class="container-fluid px-md-5 px-1" id="gallery">
+      <div class="single-4-images row z-index-1 position-relative order-2">
+
+        <div class="col-md-4 col-lg-4">
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg"
+            alt="Project image">
+        </div>
+        <div class="col-md-4 col-lg-4 d-none d-md-block force-height px-0">
+          <div>
+            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png"
+              onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-fluid scale-on-hover"
+              alt="Project image">
+          </div>
+          <div>
+            <img src="https://designshack.net/wp-content/uploads/placeholder-image.png"
+              onclick="openModal();currentSlide(3)" class="hover-shadow cursor img-fluid scale-on-hover"
+              alt="Project image">
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 d-none d-md-block force-height px-0">
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            onclick="openModal();currentSlide(4)" class="hover-shadow cursor img-fluid scale-on-hover"
+            alt="Project image">
+        </div>
+
+        <!-- View All Gallery Button-->
+        <div class="button-height offset-md-11 offset-9 pr-6">
+          <button onclick="openModal();currentSlide(1)" type="button"
+            class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!------------------------------------------- EDIT POP-UP IMAGE GALLERY --------------------------------------------->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 7</div>
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 7</div>
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 7</div>
+          <img
+            src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 7</div>
+          <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <!-- Next/previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!------------------------------------------- EDIT PROJECT INFO --------------------------------------------->
+  <div class="project-info px-2 px-md-6 pb-5">
+    <div class="row">
+      <!--   Project Title -->
+      <div class="col-md-5">
+        <h1>Shape Schema Grammars</h1>
+        <!--   Project Specifcs-->
+        <div class="px-1">
+          <hr>
+          <div class="project-team">
+            <p class="paragraph">Robert Woodbury</p>
+          </div>
+          <hr>
+          <div class="project-tags">
+            <p class="body">Parametric Design</p>
+            <p class="body">User Interfaces</p>
+          </div>
+          <hr>
+          <div class="project-year">
+            <p class="body"></p>
+          </div>
+          <hr>
+
+        </div>
+      </div>
+      <!-- Project Summary -->
+      <div class="col-md-7 py-5 py-md-0">
+        <div class="project-description">
+          <p class="body">Shape schema grammars generalize parametric shape grammars so that both rules and the objects
+            to which they apply are expressed with shape schemata. We define shape schema grammars, starting with a
+            notation for schemata in general and shape schemata in particular. Schema equality is shown to have at least
+            three possible definitions, of which schema consistency is the most useful. A limited notion of shape schema
+            maximality potentially reduces the size and redundancy of a given schema. Shape schema subpart is a
+            multifunction returning all of the possible ways that one shape schema can be embedded in another. Shape
+            schema difference and addition complete the basic mathematical operations over shape schemata required to
+            define shape schema rules, grammars and languages.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------- EDIT PUBLICATIONS --------------------------------------------->
+  <section class="related-publications" id="solidbgblock">
+    <div class="row px-2 py-5 px-md-6">
+      <div class="col-md-5">
+        <h2>Related Publications</h2>
+      </div>
+
+      <div class="col-md-7 py-2 py-md-0">
+        <div class="row">
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0 pt-0">
+              <p>Robert F. Woodbury. An introduction to shape schema grammars. Environment and Planning B, 2015. to
+                appear.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Robert F. Woodbury. A definition of shape schema grammars. In Western Computer Graphics Symposium,
+                pages 103–112, Vernon, BC, March 24-27 2002.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Kewu Li, Robert Woodbury, and Antony Radford. A comparison of shape grammars, parametric shape grammars
+                and shape schema grammars. In Javier Barrallo, editor, Proceedings of the Second International
+                Conference on Mathematics and Design, pages 27–34, San Sebastian, Spain, June 1998. The University of
+                the Basque Country.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Robert F. Woodbury. Grammatical hermeneutics. Architectural Science Review, 36:53–64, 1993.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a class="drop in-text-link" id="abstractDropdown" role="button" data-toggle="dropdownn"
+                    aria-haspopup="true" aria-expanded="false" href="javascript:void(0);">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BACK TO PROJECTS PAGE BUTTON -->
+    <div class="row">
+      <div class="col-md-5 ml-3 pl-md-6">
+        <a id='acrBack' onclick='javascript:history.back();' role="button" class="back-to-projects-link">
+          <p class="back-to-project-text"><img class="arrow-left" src="../../IMG/arrow-left.png">back to projects</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drop Down Abstract-->
+  <script src="../../SCRIPTS/dropdown.js"></script>
+
+</body>
+
+
+<!--------------------------------------------- EDIT FOOTER ---------------------------------------------->
+<footer>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="about.html">
+        <div class="footer-logo"></div>
+      </a>
+    </div>
+
+    <div class="col-md-4 white">
+      <p>Find Us</p>
+      <a href="#" class="fa fa-facebook white"></a>
+      <a href="#" class="fa fa-instagram white"></a>
+      <a href="#" class="fa fa-linkedin white"></a>
+      <a href="#" class="fa fa-youtube white"></a>
+    </div>
+
+    <div class="col-md-5">
+      <div class="footer-container-item white">
+        <p>Simon Fraser University - Surrey Campus</p>
+        <p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
+      </div>
+      <div class="footer-container-item">
+        <p><a href="mailto:someone@eample.com" class="white"><i class="material-icons md-1">&#xe0be;</i>email@sfu.ca</a>
+        </p>
+        <p class="white"><a href="tel:778.876.3456" class="white"><i
+              class="material-icons md-1">&#xe0cd;</i>778.876.3456</a></p>
+      </div>
+      <div class="footer-container-item">
+        <button class="secondary-button" onclick='location.href="#"'>Contact Now</button>
+      </div>
+      <p class="copyright light-blue">Computational Design Group, SFU. COPYRIGHT 2020.</p>
+    </div>
+  </div>
+</footer>
+
+</html>

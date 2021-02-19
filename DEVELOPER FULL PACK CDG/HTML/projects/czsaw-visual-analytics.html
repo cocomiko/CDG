@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CZSaw Visual Analytics System | Computational Design Group</title>
+  <meta name="description" content="Webpage for Computational Design Group at SFU">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- SLICK carousel-->
+  <link rel="stylesheet" type="text/css" href="../../slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css" />
+
+  <!-- Native Stylesheets -->
+  <link href="../../CSS/style.css" rel="stylesheet">
+
+  <!-- Modal Gallery script-->
+  <script src="../../SCRIPTS/main.js"></script>
+
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body class="container-fluid px-0">
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="../index.html">Home Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mr-auto" id="navbarText">
+        <div class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../members.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!------------------------------------------- EDIT IMAGE GALLERY PREVIEWS --------------------------------------------->
+  <section>
+    <div class="container-fluid px-md-5 px-1" id="gallery">
+      <div class="single-1-image row z-index-1 position-relative order-2">
+
+        <div class="col-md-12 col-lg-12 d-md-block force-height px-0 image-higher">
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-fluid scale-on-hover mainimg"
+            alt="Project image">
+        </div>
+
+        <!-- View All Gallery Button-->
+        <div class="button-height offset-md-11 offset-9 pr-6">
+          <button onclick="openModal();currentSlide(1)" type="button"
+            class="btn btn-light z-index-2 order-1 position-absolute">View All</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!------------------------------------------- EDIT POP-UP IMAGE GALLERY --------------------------------------------->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 7</div>
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 7</div>
+          <img src="https://filestore.community.support.microsoft.com/api/images/72e3f188-79a1-465f-90ca-27262d769841"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 7</div>
+          <img
+            src="https://images.ctfassets.net/mk9nps9h607g/5DnT6NoTCguwc4egkiGcIg/b3f22bef3f59efa5b8711c8268cde80a/news-placeholder.jpg"
+            style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 7</div>
+          <img src="https://wp-rocket.me/wp-content/uploads/1/placeholder-feature-image.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 7</div>
+          <img src="https://designshack.net/wp-content/uploads/placeholder-image.png" style="width:100%">
+        </div>
+
+        <!-- Next/previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!------------------------------------------- EDIT PROJECT INFO --------------------------------------------->
+  <div class="project-info px-2 px-md-6 pb-5">
+    <div class="row">
+      <!--   Project Title -->
+      <div class="col-md-5">
+        <h1>CZSaw Visual Analytics System</h1>
+        <!--   Project Specifcs-->
+        <div class="px-1">
+          <hr>
+          <div class="project-team">
+            <p class="paragraph">John Dill</p>
+            <p class="paragraph">Chris Shaw</p>
+            <p class="paragraph">Robert Woodbury</p>
+            <p class="paragraph">Jeff Guenther</p>
+            <p class="paragraph">Ankit Gupta</p>
+            <p class="paragraph">Nazanin Kadivar</p>
+            <p class="paragraph">Saba Alamdadi</p>
+            <p class="paragraph">Cheryl Qian</p>
+            <p class="paragraph">Eris Lee</p>
+            <p class="paragraph">Yingjie Chen</p>
+            <p class="paragraph">Dustin Dunsmuir</p>
+            <p class="paragraph">Maureen Stone</p>
+          </div>
+          <hr>
+          <div class="project-tags">
+            <p class="body">Parametric Design</p>
+            <p class="body">User Interfaces</p>
+          </div>
+          <hr>
+          <div class="project-year">
+            <p class="body"></p>
+          </div>
+          <hr>
+
+        </div>
+      </div>
+      <!-- Project Summary -->
+      <div class="col-md-7 py-5 py-md-0">
+        <div class="project-description">
+          <p class="body">Visual analytics tools provide powerful visual representations to support sense-making
+            processes. Analysts typically repeatedly work through a series of steps, varying various parameters each
+            time. Few visual analytics tools support this process well, nor do they provide support for visualizing and
+            understanding the analysis process itself. To help analysts understand, explore, reference, and reuse their
+            analysis process, we developed a new visual analytics system called CZSaw (See-Saw) that provides an
+            editable and re-playable history navigation channel in addition to multiple visual representations of
+            document collections and contained entities (in a manner inspired by Jigsaw). Conventional history
+            navigation tools range from basic undo and redo to branching timelines of user actions. In CZSaw's approach,
+            user interactions are first translated into a script language that drives the underlying scripting-driven
+            propagation system. The latter allows analysts to edit analysis steps, and ultimately to program them.
+            Second, built on this base are both a history view showing progress and alternative paths, and a dependency
+            graph showing the underlying logic of the dependencies among the results of each step. These tools result in
+            a visual model of the sense-making process, letting analysts visualize their analysis process, and thus
+            reinterpret the problem, explore alternatives, extract analysis patterns from the existing process, and
+            reuse the patterns with other related analyses. The CZSaw group was awarded the VAST 2010 Mini Challenge 1
+            award for "Outstanding Interaction Model." It was also awarded, jointly with two other Simon Fraser
+            University teams using other visual analytics tools, a Grand Challenge award for "Excellent Student Team
+            Analysis"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------------------------------- EDIT PUBLICATIONS --------------------------------------------->
+  <section class="related-publications" id="solidbgblock">
+    <div class="row px-2 py-5 px-md-6">
+      <div class="col-md-5">
+        <h2>Related Publications</h2>
+      </div>
+
+      <div class="col-md-7 py-2 py-md-0">
+        <div class="row">
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0 pt-0">
+              <p>Yingjie Victor Chen, Zhenyu Cheryl Qian, Robert Woodbury, John Dill, and Chris D. Shaw. Employing a
+                parametric model for analytic provenance. ACM Trans. Interact. Intell. Syst., 4(1):6:1–6:32, April 2014.
+              </p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Eric Lee, Ankit Gupta, David Darvill, John Dill, Christopher D Shaw, and Robert Woodbury. The CZSaw
+                Notes case study. In Visualization and Data Analysis (VDA 2014), pages 901706–14. SPIE, February 2014.
+              </p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Dandan Huang, Melanie Tory, Bon Adriel Asenerio, Lyn Bartram, Scott Bateman, Sheelaugh Carpendale, Tony
+                Tang, and Robert Woodbury. Personal visualization and personal visual analytics. IEEE Transactions on
+                Visualization and Computer Graphics, 2014. to appear.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>David Botta and Robert Woodbury. Predicting topic shift locations in design history. Research in
+                Engineering Design, 24(3):1–14, 2012. DOI 10.1007/s00163-012-0141-1.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Dustin Dunsmuir, Eric Lee, Chris D. Shaw, Maureen Stone, Robert Woodbury, and John Dill. A focus +
+                context technique for visualizing a document collection. In Hawaií International Conference on System
+                Sciences, pages 1835–1844, Maui, Hawaií, January 2012. IEEE.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>V. Chen, D. Dunsmuir, S. Alimadadi, E. Lee, J. Guenther, J. Dill, C. Qian, C.D. Shaw, M. Stone, and R.
+                Woodbury. Model based interactive analysis of interwoven, imprecise narratives. In Proceedings of IEEE
+                Visual Analytics Science &amp; Technology, pages 275–276, Salt Lake City, UT, 24-29 October 2010. IEEE.
+                VAST 2010 Mini Challenge #1 Award: Outstanding Interaction Model.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>D. Dunsmuir, M.Z. Baraghoush, V. Chen, M.E. Joorabchi, S. Alimadadi, E. Lee, J. Dill, C. Qian, C.D.
+                Shaw, and R. Woodbury. CZSaw, Imas &amp; Tableau: Collaboration among teams. In Proceedings of IEEE
+                Visual Analytics Science &amp; Technology, pages 267–268, Salt Lake City, UT, 24-29 October 2010. IEEE.
+                VAST 2010 Grand Challenge Award: Excellent Student Team Analysis.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Nazanin Kadivar, Victor Chen, Dustin Dunsmuir, Eric Lee, Cheryl Qian, John Dill, Christopher Shaw, and
+                Robert Woodbury. Capturing and supporting the analysis process. In Proceedings of IEEE Visual Analytics
+                Science and Technology, pages 131–138. IEEE, Atlantic City, NJ, October 11-16 2009.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NEW PUBLICATION CARD -->
+          <div class="card-no-click">
+            <div class="card-body px-0">
+              <p>Yingjie (Victor) Chen, Zhenyu (Cheryl) Qian, and Robert Woodbury. Local navigation can reveal implicit
+                relations. In CAADFutures 2007, pages 403–416. CAADFutures Foundation, July 2007.</p>
+
+              <ul class="row justify-content-start ml-0">
+                <li class="dropdownn">
+                  <a href="javascript:void(0);" class="drop in-text-link" id="abstractDropdown" role="button"
+                    data-toggle="dropdownn" aria-haspopup="true" aria-expanded="false">view abstract<span
+                      class="down-caret"></span></a>
+                  <ul class="dropdownn-menu" aria-labelledby="abstractDropdown">
+                    <p>Shape Schema Grammars, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </ul>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">read full</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">download pdf</a>
+                </li>
+                <li>
+                  <a class="in-text-link" href="#">cite</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BACK TO PROJECTS PAGE BUTTON -->
+    <div class="row">
+      <div class="col-md-5 ml-3 pl-md-6">
+        <a id='acrBack' onclick='javascript:history.back();' role="button" class="back-to-projects-link">
+          <p class="back-to-project-text"><img class="arrow-left" src="../../IMG/arrow-left.png">back to projects</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drop Down Abstract-->
+  <script src="../../SCRIPTS/dropdown.js"></script>
+
+</body>
+
+
+<!--------------------------------------------- EDIT FOOTER ---------------------------------------------->
+<footer>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="about.html">
+        <div class="footer-logo"></div>
+      </a>
+    </div>
+
+    <div class="col-md-4 white">
+      <p>Find Us</p>
+      <a href="#" class="fa fa-facebook white"></a>
+      <a href="#" class="fa fa-instagram white"></a>
+      <a href="#" class="fa fa-linkedin white"></a>
+      <a href="#" class="fa fa-youtube white"></a>
+    </div>
+
+    <div class="col-md-5">
+      <div class="footer-container-item white">
+        <p>Simon Fraser University - Surrey Campus</p>
+        <p>250-13450 102 Ave, Surrey, BC V3T 0A3</p>
+      </div>
+      <div class="footer-container-item">
+        <p><a href="mailto:someone@eample.com" class="white"><i class="material-icons md-1">&#xe0be;</i>email@sfu.ca</a>
+        </p>
+        <p class="white"><a href="tel:778.876.3456" class="white"><i
+              class="material-icons md-1">&#xe0cd;</i>778.876.3456</a></p>
+      </div>
+      <div class="footer-container-item">
+        <button class="secondary-button" onclick='location.href="#"'>Contact Now</button>
+      </div>
+      <p class="copyright light-blue">Computational Design Group, SFU. COPYRIGHT 2020.</p>
+    </div>
+  </div>
+</footer>
+
+</html>
