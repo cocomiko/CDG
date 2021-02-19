@@ -2654,10 +2654,4 @@ carousel next, previous buttons override*/
 
 }
 
-@media (min-width(1200px)){
-    .pl-xl-7 {
-        padding-left: 7rem !important;
-    }
-}
-
 /* --------END CUSTOM PADDING for SPECIFIC ELEMENTS---------- */
