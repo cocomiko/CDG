@@ -2312,7 +2312,7 @@ p.copyright {
 /*banner for smallest mobile size*/
 #bannerimage{
   width: 100%;
-  background-image: url(../IMG/Website-Images/home-xs-banner.png);
+  background-image: url(../IMG/Website-Images/home-xs-banner.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2324,7 +2324,7 @@ p.copyright {
 /*banner for mobile sizes and < */
 @media (min-width: 321px) {
  #bannerimage {
-    background-image: url(../IMG/Website-Images/home-mobile-banner.png);
+    background-image: url(../IMG/Website-Images/home-mobile-banner.jpg);
     height:800px;
     margin-bottom: 0rem;
  }
@@ -2333,7 +2333,7 @@ p.copyright {
 /*banner for tablet size and < */
 @media (min-width: 576px) {
   #bannerimage {
-    background-image: url(../IMG/Website-Images/home-tablet-banner.png);
+    background-image: url(../IMG/Website-Images/home-tablet-banner.jpg);
     height:770px;
   }
 }
@@ -2341,7 +2341,7 @@ p.copyright {
 /*banner for descktop and <*/
 @media (min-width: 992px){
   #bannerimage {
-    background-image: url(../IMG/Website-Images/home-banner.png);
+    background-image: url(../IMG/Website-Images/home-banner.jpg);
     height:771px;
     margin-bottom: 2em;
   }
@@ -2352,7 +2352,7 @@ p.copyright {
   #bannerimage {
     object-fit: cover;
     background-size: cover;
-    background-image: url(../IMG/Website-Images/home-xl-banner.png);
+    background-image: url(../IMG/Website-Images/home-xl-banner.jpg);
     height:1220px;
     background-repeat: no-repeat;
   }
