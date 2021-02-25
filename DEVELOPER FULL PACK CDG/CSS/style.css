@@ -1390,7 +1390,8 @@ list-style-type: none; /* Remove bullets */
 /* ------------ INDIVIDUAL PROJECT PAGE SPECIFICS ------------ */
 /* ----------------------------------------------------------- */
 
-/* The Modal (bg) */
+/* The Modal for Gallery 
+   (bg) */
 .modal {
     display: none;
     position: fixed;
@@ -1500,6 +1501,65 @@ list-style-type: none; /* Remove bullets */
     border-top-right-radius: 5px;
   
   }
+
+
+  /* Column devider for project info */
+  .grid-divider {
+    overflow-x: hidden; /*  //quickfix to hide divider on left side*/
+    position: relative;
+  }
+
+  .grid-divider > [class*=col-]:nth-child(n+3):after {
+    content: "";
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  /* Horizontal deviders between columns */
+  @media (max-width: 576px) {
+    .grid-divider > [class*=col-]:nth-child(n+2):after {
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: -0.4em;
+    }
+  }
+
+  /* Vertical deviders between columns while in row + centered text */
+  @media (min-width: 576px) {
+    .grid-divider{
+      text-align: center;
+      padding-top:1.5em;
+    }
+      
+    .grid-divider > [class*=col-]:nth-child(n+2):after {
+      width: 1px;
+      height: auto;
+      left: -1px;
+    }
+  }
+
+  /* Horizontal deviders between columns + text left aligned */
+  @media (min-width: 992px) {
+    .grid-divider{
+      text-align: left;
+      padding-top: 0;
+    }
+      
+    .grid-divider >hr{
+      width: 80%;
+    }
+  
+    .grid-divider > [class*=col-]:nth-child(n+2):after {
+      width: 80%;
+      height: 1px;
+      left: 0;
+      top: -4px;
+    }
+  }
+
 
 /*Back to projects btn for single proj page*/
 .back-to-projects-link:hover img {

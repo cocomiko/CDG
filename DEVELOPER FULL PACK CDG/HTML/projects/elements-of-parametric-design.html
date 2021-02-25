@@ -10,20 +10,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-  <!-- SLICK carousel-->
-  <link rel="stylesheet" type="text/css" href="../../slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css" />
-
+ 
   <!-- Native Stylesheets -->
   <link href="../../CSS/style.css" rel="stylesheet">
-
-  <!-- Modal Gallery script-->
-  <script src="../../SCRIPTS/main.js"></script>
-
 
   <!-- Fonts -->
   <link
@@ -73,7 +62,7 @@
 
   <!------------------------------------------- EDIT IMAGE GALLERY PREVIEWS --------------------------------------------->
   <section>
-    <div class="container-fluid px-md-5 px-1" id="gallery">
+    <div class="container-fluid px-md-5 py-5 px-1" id="gallery">
       <div class="single-3-images row z-index-1 position-relative order-2">
 
         <div class="col-md-4 col-lg-4 d-md-block force-height px-0 middle-smaller-height">
@@ -155,15 +144,15 @@
   </section>
 
   <!------------------------------------------- EDIT PROJECT INFO --------------------------------------------->
-  <div class="project-info px-2 px-md-6 pb-5">
+  <div class="project-info px-2 px-sm-4 px-md-6 pb-5">
     <div class="row">
       <!--   Project Title -->
-      <div class="col-md-5">
+      <div class="col-lg-5">
         <h1>Elements of Parametric Design</h1>
         <!--   Project Specifcs-->
-        <div class="px-1">
-          <hr>
-          <div class="project-team">
+        <div class="row px-1 grid-divider justify-content-around">
+          <hr class="d-sm-none d-lg-block">
+          <div class="project-team py-2 col-lg-12 col-sm-4">
             <p class="paragraph">Robert Woodbury</p>
             <p class="paragraph">Roham Sheikholeslami</p>
             <p class="paragraph">Brady Peters</p>
@@ -172,39 +161,25 @@
             <p class="paragraph">Maryam Maleki</p>
             <p class="paragraph">Victor Chen</p>
           </div>
-          <hr>
-          <div class="project-tags">
+          <div class="project-tags py-2 col-lg-12 col-sm-4">
             <p class="body">Parametric Design</p>
             <p class="body">User Interfaces</p>
           </div>
-          <hr>
-          <div class="project-year">
+          <div class="project-year pt-2 col-lg-12 col-sm-4">
             <p class="body">2013</p>
           </div>
-          <hr>
+          <hr class="d-sm-none d-lg-block">
 
         </div>
       </div>
       <!-- Project Summary -->
-      <div class="col-md-7 py-5 py-md-0">
-        <div class="project-description">
-          <p class="body">Experts use their experience of solving problems in the past to build on and create new
-            solutions in new situations. Such experience is part of what makes them experts. Some of these reusable
-            solutions can be expressed in what are known as design patterns. Patterns express design work at a tactical
-            level, above simple editing and below overall conception. A pattern comprises several components, including
-            a name, a problem description, an abstract solution and a discussion of consequences.</p>
-          <br>
-          <p class="body">Through ethnographic studies, we show how patterns can be used to improve learning and work
-            with parametric modeling and discern patterns invented by designers. We argue that the need for patterns
-            indicates the absence of appropriate support for complexity in a parametric modeling system and seek new
-            features and interface designs that enable working at high levels of complexity.</p>
-          <br>
-          <p class="body">The website <a href="http://www.elementsofparametricdesign.com/" class="in-text-link"
-              target="_blank">www.elementsofparametricdesign.com</a> provides the parametric modeling community with
-            well-crafted examples of reusable code. By explaining the motivation, context and details of the code, it
-            enables people to more effectively learn parametric modeling systems and to build larger and more complex
-            models with confidence. Further, the patterns themselves suggest new directions for the design of such
-            systems as GenerativeComponents.</p>
+      <div class="col-lg-7 py-5 py-lg-0">
+          <div class="project-description">
+              <p class="body">Experts use their experience of solving problems in the past to build on and create newcsolutions in new situations. Such experience is part of what makes them experts. Some of these reusable solutions can be expressed in what are known as design patterns. Patterns express design work at a tactical level, above simple editing and below overall conception. A pattern comprises several components, including a name, a problem description, an abstract solution and a discussion of consequences.</p>
+              <br>
+              <p class="body">Through ethnographic studies, we show how patterns can be used to improve learning and work with parametric modeling and discern patterns invented by designers. We argue that the need for patterns indicates the absence of appropriate support for complexity in a parametric modeling system and seek new features and interface designs that enable working at high levels of complexity.</p>
+              <br>
+              <p class="body">The website <a href="http://www.elementsofparametricdesign.com/" class="in-text-link" target="_blank">www.elementsofparametricdesign.com</a> provides the parametric modeling community with well-crafted examples of reusable code. By explaining the motivation, context and details of the code, it enables people to more effectively learn parametric modeling systems and to build larger and more complex models with confidence. Further, the patterns themselves suggest new directions for the design of such systems as GenerativeComponents.</p>
         </div>
       </div>
     </div>
@@ -212,7 +187,7 @@
 
   <!------------------------------------------- EDIT PUBLICATIONS --------------------------------------------->
   <section class="related-publications" id="solidbgblock">
-    <div class="row px-2 py-5 px-md-6">
+    <div class="row px-2 px-sm-4 py-5 px-md-6">
       <div class="col-md-5">
         <h2>Related Publications</h2>
       </div>
@@ -555,8 +530,21 @@
     </div>
   </section>
 
-  <!-- Drop Down Abstract-->
+  <!-------------------------------------------------- SCRIPTS ---------------------------------------------------------->
+    
+  <!-- Bootstrap SCRIPTS jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+       
+    
+  <!-- Drop Down Abstract Script-->
   <script src="../../SCRIPTS/dropdown.js"></script>
+    
+  <!-- Modal Gallery script-->
+  <script src="../../SCRIPTS/main.js"></script>
+    
+  <!----------------------------------------------- END OF SCRIPTS ------------------------------------------------------>
 
 </body>
 
